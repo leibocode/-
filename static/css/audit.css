@@ -1,0 +1,12 @@
+.desc-text { color: #666;font-size: 14px; line-height:25px;}
+.search-bg{ background:#39a0ff; border-bottom:0px}
+.weui-cell-desc__text{color:#666;font-weight:400;}
+.weui-cell-desc__sign{color:#39a0ff;font-weight:400;}
+.weui-cell-desc__emphasis{ background:#39a0ff; color:#fff;padding:3px; border-radius: 4px;}
+.weui-cell-icon{background:url('/icon/down.png');width:18px;height:14px;display:inline-block; background-size:cover;}
+.weui-tabbar--bg{background-color:#39a0ff;}
+.weui-tabbar-cell-text{color:#fff}
+.weui-dialog-title-height{height:9px;background-color: #1e69c6;border-radius:3px;}
+.weui-border {border-radius:3px;border:1px solid #8a8a8a; }
+.weui-dialog-p-text{color:#666;font-weight:400;text-align:left;}
+.weui-dialog-head-p{text-align:left;margin-top:-14px;}

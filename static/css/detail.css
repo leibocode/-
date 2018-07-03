@@ -1,0 +1,40 @@
+.desc-text {
+    color: #666;
+    font-size: 14px;
+    line-height:25px;
+}
+.search-bg{
+    background:#39a0ff;
+    border-bottom:0px;
+}
+
+.weui-cell-desc__text{
+    color:#666;
+    font-weight:bold;
+}
+.weui-cell-desc__sign{
+    color:#39a0ff;
+    font-weight:bold;
+}
+.weui-cell-desc__emphasis{
+    background:#39a0ff;
+    color:#fff;
+    padding:3px;
+    border-radius: 4px;
+}
+.weui-tanbar-btn{
+    width:100%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom:7px;
+    background:#39a0ff;
+    line-height: 2;
+}
+.weui-cell-icon{
+    background:url('/icon/down.png');
+    width:18px;
+    height:14px;
+    display:inline-block;
+    background-size:cover;
+
+}

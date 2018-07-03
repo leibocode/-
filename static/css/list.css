@@ -1,0 +1,32 @@
+.desc-text {
+    color: #666;
+    font-size: 14px;
+    line-height:25px;
+}
+.search-bg{
+    background:#39a0ff;
+    border-bottom:0px;
+}
+.weui-cell-icon {
+    width: 63px;
+    height: 63px;
+    margin-right: 5px;
+    display: block;
+}
+.weui-cell-desc__text{
+    color:#666;
+    font-weight:bold;
+}
+.weui-cell-desc__sign{
+    color:#39a0ff;
+    font-weight:bold;
+}
+.weui-cell-desc__emphasis{
+    background:#39a0ff;
+    color:#fff;
+    padding:3px;
+    border-radius: 4px;
+}
+.weui-cell-from {
+    height:28px;
+}
