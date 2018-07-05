@@ -85,13 +85,13 @@ module.exports = __webpack_require__(41);
   "db": "mongodb://localhost/ice",
   "base": "http://127.0.0.1:3000",
   "apiUrl": "http://jgjzkj.rjtms.com/",
-  "SITE_ROOT_URL": "http://183828tz49.iask.in",
+  "SITE_ROOT_URL": "http://jg.imtudou.cn",
   "wechat": {
-    "corpid": "wwd26b75ddd104d1c5",
-    "secret": "q9xXCSZ7tAAPS6k1oW2k8eWCZCGJCbU3e7Pcg43kIEc",
-    "appsecret": "GUs8J6SAxkIOm9t1msLLWv_A71T6Jp9zaAOsUQhCttA",
+    "corpid": "ww72312644c862daf9", //企业ID 
+    "secret": "UMPfSQdbLenHfmc-h-779Qsieug8Sdm3K7yKpaYQHW0", //通讯录secret
+    "appsecret": "UFKu1RBnA22PLhHJIG5zmGATiCJWXlAW8EPRKlsLhGU", //应用secret
     "token": "5lCT",
-    "encodingaeskey": "qajOt6CT9Kshq1XkPMNpnUtEJQLR4CzRvA407HoVcQi",
+    "encodingaeskey": "qajOt6CT9Kshq1XkPMNpnUtEJQLR4CzRvA407HoVcQi", //
     "agentId": 1000002
   },
   "mina": {
@@ -6701,9 +6701,9 @@ var tip = '欢迎来到建顾管理管理应用,当前版本v1.0.0.\n' + '1~查�
 // 	console.log(data)
 // })
 
-//  client.createMenu(menu).then((data)=>{
-// 	 console.log(data)
-//  })
+client.createMenu(menu).then(function (data) {
+	console.log(data);
+});
 
 //client.createMenu(menu).then(()=>{
 //	console.log('创建成功')
@@ -7058,7 +7058,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 // Import and Set Nuxt.js options
 var config = __webpack_require__(17);
-config.dev = !("production" === 'production');
+config.dev = !("development" === 'production');
 
 var r = function r(path) {
   return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_path__["resolve"])(__dirname, path);
