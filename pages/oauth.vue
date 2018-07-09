@@ -21,6 +21,7 @@ function getUrlParam (param) {
   return result ? decodeURIComponent(result[2]) : null
 }
 
+import wechat_config from '../server/config' 
 export default {
   head () {
     return {
@@ -30,15 +31,30 @@ export default {
 
   async beforeMount () {
     const url = window.location.href
+    console.log(url)
     const { data } = await this.$store.dispatch('getWechatOAuth', url)
     console.log(data)
 
     if (data.success) {
       await this.$store.dispatch('setAuthUser', data.data)
 
-      const paramsArr = getUrlParam('state').split('_')
-      const visit = paramsArr ==null ? `/${paramsArr[0]}` : `/${paramsArr[0]}?id=${paramsArr[1]}`
-      this.$router.replace(visit)
+      let paramsArr = getUrlParam('state').split('_')
+      
+      console.log(paramsArr)
+
+      const visit = paramsArr ==null ? `/${paramsArr[0]}` : `/${paramsArr[0]}}`
+      console.log(visit)
+      let vist =`${paramsArr[0]}`
+      console.log(vist)
+      console.log(paramsArr[0]==='/')
+     if(paramsArr[0]==='/'){
+       vist =`/`
+       
+     }
+     console.log('匹配之后')
+     console.log(vist)
+      
+      this.$router.replace(vist)
     } else {
       throw new Error('用户信息获取失败')
     }

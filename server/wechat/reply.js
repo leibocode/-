@@ -10,13 +10,11 @@ const querystring = require("querystring")
 const manba =require('manba')
 const menu = require('./menu')
 const sd = require('silly-datetime');
+const transliteration =require('transliteration')
 
 const client =getWechat()
 const tip = '欢迎来到建顾管理管理应用,当前版本v1.0.0.\n'+'1~查询项目请以项目开头跟上空格,项目名称结尾的格式输入.\n'+'2~文本回复请输入1,2,建顾,以及任意文案\n'+'3~项目操作请点击下方菜单,点击项目查询,查询到当前用户最新的项目,点击我的项目进入项目列表,点击建顾进入平台首页.\n'+'4~当前版本v1,您有更好的想法请联系开发者.'
 
-
-
-//getAllUsers()
 
 // const getAll = async()=>{
 // 	console.log(api.project.GetAllStaff())
@@ -29,9 +27,9 @@ const tip = '欢迎来到建顾管理管理应用,当前版本v1.0.0.\n'+'1~查�
 // 	console.log(data)
 // })
 
- client.createMenu(menu).then((data)=>{
-	 console.log(data)
- })
+//  client.createMenu(menu).then((data)=>{
+// 	 console.log(data)
+//  })
 
 //client.createMenu(menu).then(()=>{
 //	console.log('创建成功')
@@ -46,6 +44,7 @@ export const  reply =async(ctx,next)=> {
 	console.log(username)
 	let person = await client.getUser(username);
 	console.log('微信回复')
+	console.log(person)
 	let usercode = person.name;
 	console.log(usercode)
 	if (message.MsgType === 'event') {
