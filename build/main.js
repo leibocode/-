@@ -85,7 +85,7 @@ module.exports = __webpack_require__(41);
   "db": "mongodb://localhost/ice",
   "base": "http://127.0.0.1:3000",
   "apiUrl": "http://jgjzkj.rjtms.com/",
-  "SITE_ROOT_URL": "183828tz49.iask.in",
+  "SITE_ROOT_URL": "http://jg.imtudou.cn",
   "wechat": {
     "corpid": "ww72312644c862daf9", //企业ID 
     "secret": "UMPfSQdbLenHfmc-h-779Qsieug8Sdm3K7yKpaYQHW0", //通讯录secret
@@ -490,8 +490,8 @@ var addSession = function addSession(app) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__dirname) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__);
+/* WEBPACK VAR INJECTION */(function(__dirname) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa_router__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_koa_router__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_path__ = __webpack_require__(3);
@@ -542,9 +542,9 @@ var router = function router(app) {
    */
 
   router.get('/wx', function () {
-    var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
+    var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
       var middle;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
@@ -567,9 +567,9 @@ var router = function router(app) {
   }());
 
   router.get('/createDep', function () {
-    var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(ctx, next) {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(ctx, next) {
       var dep;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
         while (1) {
           switch (_context2.prev = _context2.next) {
             case 0:
@@ -595,8 +595,8 @@ var router = function router(app) {
   }());
 
   router.get('/createSatff', function () {
-    var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(ctx, next) {
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(ctx, next) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
         while (1) {
           switch (_context3.prev = _context3.next) {
             case 0:
@@ -616,9 +616,9 @@ var router = function router(app) {
   }());
 
   router.post('/wx', function () {
-    var _ref4 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee4(ctx, next) {
+    var _ref4 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee4(ctx, next) {
       var middle;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee4$(_context4) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee4$(_context4) {
         while (1) {
           switch (_context4.prev = _context4.next) {
             case 0:
@@ -640,9 +640,9 @@ var router = function router(app) {
   }());
 
   router.get('/WW_verify_j4MyzAjMcHIQbgYm.txt', function () {
-    var _ref5 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee5(ctx, next) {
+    var _ref5 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee5(ctx, next) {
       var data;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee5$(_context5) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee5$(_context5) {
         while (1) {
           switch (_context5.prev = _context5.next) {
             case 0:
@@ -663,8 +663,8 @@ var router = function router(app) {
   }());
 
   router.post('/wechat-pay', function () {
-    var _ref6 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee6(ctx, next) {
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee6$(_context6) {
+    var _ref6 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee6(ctx, next) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee6$(_context6) {
         while (1) {
           switch (_context6.prev = _context6.next) {
             case 0:
@@ -681,8 +681,8 @@ var router = function router(app) {
   }());
 
   router.get('/wechat-signature', function () {
-    var _ref7 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee7(ctx, next) {
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee7$(_context7) {
+    var _ref7 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee7(ctx, next) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee7$(_context7) {
         while (1) {
           switch (_context7.prev = _context7.next) {
             case 0:
@@ -703,8 +703,8 @@ var router = function router(app) {
   }());
 
   router.get('/wechat-redirect', function () {
-    var _ref8 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee8(ctx, next) {
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee8$(_context8) {
+    var _ref8 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee8(ctx, next) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee8$(_context8) {
         while (1) {
           switch (_context8.prev = _context8.next) {
             case 0:
@@ -725,8 +725,8 @@ var router = function router(app) {
   }());
 
   router.get('/wechat-oauth', function () {
-    var _ref9 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee9(ctx, next) {
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee9$(_context9) {
+    var _ref9 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee9(ctx, next) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee9$(_context9) {
         while (1) {
           switch (_context9.prev = _context9.next) {
             case 0:
@@ -752,9 +752,9 @@ var router = function router(app) {
    */
 
   router.get('/api/EmphasisProject', function () {
-    var _ref10 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee10(ctx, next) {
+    var _ref10 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee10(ctx, next) {
       var page, query, data;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee10$(_context10) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee10$(_context10) {
         while (1) {
           switch (_context10.prev = _context10.next) {
             case 0:
@@ -809,10 +809,10 @@ var router = function router(app) {
   }());
 
   router.get('/api/ProjectList', function () {
-    var _ref11 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee11(ctx, next) {
+    var _ref11 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee11(ctx, next) {
       var _ctx$query, typeCode, page, query, user, data;
 
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee11$(_context11) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee11$(_context11) {
         while (1) {
           switch (_context11.prev = _context11.next) {
             case 0:
@@ -885,9 +885,9 @@ var router = function router(app) {
   }());
 
   router.get('/api/GetRoles', function () {
-    var _ref12 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee12(ctx, next) {
+    var _ref12 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee12(ctx, next) {
       var user, data;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee12$(_context12) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee12$(_context12) {
         while (1) {
           switch (_context12.prev = _context12.next) {
             case 0:
@@ -942,10 +942,10 @@ var router = function router(app) {
   }());
 
   router.get('/api/ProjectDateil', function () {
-    var _ref13 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee13(ctx, next) {
+    var _ref13 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee13(ctx, next) {
       var _ctx$query2, Id, Classification, user, query, data;
 
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee13$(_context13) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee13$(_context13) {
         while (1) {
           switch (_context13.prev = _context13.next) {
             case 0:
@@ -1013,10 +1013,10 @@ var router = function router(app) {
   }());
 
   router.get('/api/AuditProject/:_id', function () {
-    var _ref14 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee14(ctx, next) {
+    var _ref14 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee14(ctx, next) {
       var _id, query, user, data, BusinessData;
 
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee14$(_context14) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee14$(_context14) {
         while (1) {
           switch (_context14.prev = _context14.next) {
             case 0:
@@ -1076,9 +1076,9 @@ var router = function router(app) {
 
   //指派联系人
   router.get('/api/GetContact', function () {
-    var _ref15 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee15(ctx, next) {
+    var _ref15 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee15(ctx, next) {
       var user, id, data;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee15$(_context15) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee15$(_context15) {
         while (1) {
           switch (_context15.prev = _context15.next) {
             case 0:
@@ -1141,10 +1141,10 @@ var router = function router(app) {
 
   //撤销项目
   router.get('/api/RemoveAction', function () {
-    var _ref16 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee16(ctx, next) {
+    var _ref16 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee16(ctx, next) {
       var _ctx$query3, HandleStatus, NextSetp, PreStep, id, requestData, user, data;
 
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee16$(_context16) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee16$(_context16) {
         while (1) {
           switch (_context16.prev = _context16.next) {
             case 0:
@@ -1197,10 +1197,10 @@ var router = function router(app) {
 
   //审核项目
   router.get('/api/SubmitAudit', function () {
-    var _ref17 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee17(ctx, next) {
+    var _ref17 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee17(ctx, next) {
       var _ctx$query4, HandleStatus, NextSetp, PreStep, id, Remark, requestData, username, data;
 
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee17$(_context17) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee17$(_context17) {
         while (1) {
           switch (_context17.prev = _context17.next) {
             case 0:
@@ -1254,10 +1254,10 @@ var router = function router(app) {
 
   //获取单位
   router.get('/api/getOptions', function () {
-    var _ref18 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee18(ctx, next) {
+    var _ref18 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee18(ctx, next) {
       var user, username, _ctx$query5, OrgProperty, CompanyType, page, rows, data, res;
 
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee18$(_context18) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee18$(_context18) {
         while (1) {
           switch (_context18.prev = _context18.next) {
             case 0:
@@ -1310,10 +1310,10 @@ var router = function router(app) {
 
   //
   router.get('/api/getClientUnit', function () {
-    var _ref19 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee19(ctx, next) {
+    var _ref19 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee19(ctx, next) {
       var _ctx$query6, OrgProperty, page, rows, data, user, username, res;
 
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee19$(_context19) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee19$(_context19) {
         while (1) {
           switch (_context19.prev = _context19.next) {
             case 0:
@@ -1366,9 +1366,9 @@ var router = function router(app) {
 
   //项目提交
   router.post('/api/commitProject', function () {
-    var _ref20 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee20(ctx, next) {
+    var _ref20 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee20(ctx, next) {
       var projectInfo, user, data;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee20$(_context20) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee20$(_context20) {
         while (1) {
           switch (_context20.prev = _context20.next) {
             case 0:
@@ -1438,10 +1438,10 @@ var router = function router(app) {
 
   //搜索项目
   router.get('/api/search', function () {
-    var _ref21 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee21(ctx, next) {
+    var _ref21 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee21(ctx, next) {
       var _ctx$query7, searchText, page, user, query, data;
 
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee21$(_context21) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee21$(_context21) {
         while (1) {
           switch (_context21.prev = _context21.next) {
             case 0:
@@ -1513,10 +1513,10 @@ var router = function router(app) {
 
   //查询每个阶段的项目详情
   router.get('/api/getSectionDetail', function () {
-    var _ref22 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee22(ctx, next) {
+    var _ref22 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee22(ctx, next) {
       var _ctx$query8, type, Id, data, user;
 
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee22$(_context22) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee22$(_context22) {
         while (1) {
           switch (_context22.prev = _context22.next) {
             case 0:
@@ -1620,9 +1620,9 @@ var router = function router(app) {
   }());
 
   router.post('/api/ProjecyUpdate/:_id', function () {
-    var _ref23 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee23(ctx, next) {
+    var _ref23 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee23(ctx, next) {
       var data, id, user, result;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee23$(_context23) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee23$(_context23) {
         while (1) {
           switch (_context23.prev = _context23.next) {
             case 0:
@@ -1693,9 +1693,9 @@ var router = function router(app) {
   }());
 
   router.get('/api/ProjectBusiness', function () {
-    var _ref24 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee24(ctx, next) {
+    var _ref24 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee24(ctx, next) {
       var Id, user, query, data;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee24$(_context24) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee24$(_context24) {
         while (1) {
           switch (_context24.prev = _context24.next) {
             case 0:
@@ -1749,9 +1749,9 @@ var router = function router(app) {
 
   //提交商务阶段
   router.post('/api/BusinessCommit', function () {
-    var _ref25 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee25(ctx, next) {
+    var _ref25 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee25(ctx, next) {
       var data, user, result;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee25$(_context25) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee25$(_context25) {
         while (1) {
           switch (_context25.prev = _context25.next) {
             case 0:
@@ -1801,9 +1801,9 @@ var router = function router(app) {
 
   //商务阶段跟踪反馈
   router.post('/api/PhaseFeedback', function () {
-    var _ref26 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee26(ctx, next) {
+    var _ref26 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee26(ctx, next) {
       var data, user, username, result;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee26$(_context26) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee26$(_context26) {
         while (1) {
           switch (_context26.prev = _context26.next) {
             case 0:
@@ -1858,9 +1858,9 @@ var router = function router(app) {
 
   //收款登记
   router.get('/api/ReceiveGroup', function () {
-    var _ref27 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee27(ctx, next) {
+    var _ref27 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee27(ctx, next) {
       var Id, user, username, query, result;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee27$(_context27) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee27$(_context27) {
         while (1) {
           switch (_context27.prev = _context27.next) {
             case 0:
@@ -1912,9 +1912,9 @@ var router = function router(app) {
 
   //收款登记提交
   router.post('/api/ReceiveCommit', function () {
-    var _ref28 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee28(ctx, next) {
+    var _ref28 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee28(ctx, next) {
       var Id, user, username, query, result;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee28$(_context28) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee28$(_context28) {
         while (1) {
           switch (_context28.prev = _context28.next) {
             case 0:
@@ -1964,9 +1964,9 @@ var router = function router(app) {
   }());
 
   router.get('/api/GetBiding', function () {
-    var _ref29 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee29(ctx, next) {
+    var _ref29 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee29(ctx, next) {
       var Id, query, user, username, result;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee29$(_context29) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee29$(_context29) {
         while (1) {
           switch (_context29.prev = _context29.next) {
             case 0:
@@ -2020,9 +2020,9 @@ var router = function router(app) {
   }());
 
   router.get('/api/QuotedPrice', function () {
-    var _ref30 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee30(ctx, next) {
+    var _ref30 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee30(ctx, next) {
       var Id, query, user, result;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee30$(_context30) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee30$(_context30) {
         while (1) {
           switch (_context30.prev = _context30.next) {
             case 0:
@@ -2057,9 +2057,9 @@ var router = function router(app) {
   }());
 
   router.post('/api/CommitQuoted', function () {
-    var _ref31 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee31(ctx, next) {
+    var _ref31 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee31(ctx, next) {
       var data, user, result;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee31$(_context31) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee31$(_context31) {
         while (1) {
           switch (_context31.prev = _context31.next) {
             case 0:
@@ -2114,9 +2114,9 @@ var router = function router(app) {
   }());
 
   router.post('/api/CommitBiding', function () {
-    var _ref32 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee32(ctx, next) {
+    var _ref32 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee32(ctx, next) {
       var data, user, result;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee32$(_context32) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee32$(_context32) {
         while (1) {
           switch (_context32.prev = _context32.next) {
             case 0:
@@ -2154,9 +2154,9 @@ var router = function router(app) {
   }());
 
   router.post('/api/AuditItem', function () {
-    var _ref33 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee33(ctx, next) {
+    var _ref33 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee33(ctx, next) {
       var form, data, user;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee33$(_context33) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee33$(_context33) {
         while (1) {
           switch (_context33.prev = _context33.next) {
             case 0:
@@ -2218,9 +2218,9 @@ var router = function router(app) {
   }());
 
   router.post('/api/RevocationItem', function () {
-    var _ref34 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee34(ctx, next) {
+    var _ref34 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee34(ctx, next) {
       var form, data, user;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee34$(_context34) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee34$(_context34) {
         while (1) {
           switch (_context34.prev = _context34.next) {
             case 0:
@@ -2282,9 +2282,9 @@ var router = function router(app) {
   }());
 
   router.get('/api/BusinessStage', function () {
-    var _ref35 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee35(ctx, next) {
+    var _ref35 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee35(ctx, next) {
       var Id, user, data, map, phaseId;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee35$(_context35) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee35$(_context35) {
         while (1) {
           switch (_context35.prev = _context35.next) {
             case 0:
@@ -2337,9 +2337,9 @@ var router = function router(app) {
   }());
 
   router.get('/api/GetDetailByBusiness', function () {
-    var _ref36 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee36(ctx, next) {
+    var _ref36 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee36(ctx, next) {
       var Id, user, data, map, phaseId, query, result;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee36$(_context36) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee36$(_context36) {
         while (1) {
           switch (_context36.prev = _context36.next) {
             case 0:
@@ -2425,9 +2425,9 @@ var router = function router(app) {
   }());
 
   router.post('/api/SetDateilCommitState', function () {
-    var _ref37 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee37(ctx, next) {
+    var _ref37 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee37(ctx, next) {
       var form, data, user;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee37$(_context37) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee37$(_context37) {
         while (1) {
           switch (_context37.prev = _context37.next) {
             case 0:
@@ -2506,9 +2506,9 @@ var router = function router(app) {
   }());
 
   router.get('/api/CheckReceive', function () {
-    var _ref38 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee38(ctx, next) {
+    var _ref38 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee38(ctx, next) {
       var Id, user, query, data;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee38$(_context38) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee38$(_context38) {
         while (1) {
           switch (_context38.prev = _context38.next) {
             case 0:
@@ -2572,9 +2572,9 @@ var router = function router(app) {
   }());
 
   router.post('/api/CommitContract', function () {
-    var _ref39 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee39(ctx, next) {
+    var _ref39 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee39(ctx, next) {
       var data, user, result;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee39$(_context39) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee39$(_context39) {
         while (1) {
           switch (_context39.prev = _context39.next) {
             case 0:
@@ -2632,8 +2632,8 @@ var router = function router(app) {
 
   //检查用户的权限
   router.get('checkUser', function () {
-    var _ref40 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee40(ctx, next) {
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee40$(_context40) {
+    var _ref40 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee40(ctx, next) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee40$(_context40) {
         while (1) {
           switch (_context40.prev = _context40.next) {
             case 0:
@@ -2650,9 +2650,9 @@ var router = function router(app) {
   }());
 
   router.post('/api/CommitReceive', function () {
-    var _ref41 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee41(ctx, next) {
+    var _ref41 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee41(ctx, next) {
       var data, user, result;
-      return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee41$(_context41) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee41$(_context41) {
         while (1) {
           switch (_context41.prev = _context41.next) {
             case 0:
@@ -2740,8 +2740,8 @@ var requestCode = {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_request_promise__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_request_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_request_promise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config__ = __webpack_require__(1);
@@ -2812,9 +2812,9 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 var requests = function () {
-    var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(options) {
+    var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(options) {
         var response;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
             while (1) {
                 switch (_context.prev = _context.next) {
                     case 0:
@@ -2897,9 +2897,9 @@ var api = {
 };
 
 var apiToken = function () {
-    var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(username, code) {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(username, code) {
         var api, url, options, data, err;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
             while (1) {
                 switch (_context2.prev = _context2.next) {
                     case 0:
@@ -2946,10 +2946,10 @@ var apiToken = function () {
 }();
 
 var getPhoneCode = function () {
-    var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(username) {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(username) {
         var url, options, _data, err;
 
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
             while (1) {
                 switch (_context3.prev = _context3.next) {
                     case 0:
@@ -2990,10 +2990,10 @@ var getPhoneCode = function () {
 
 //请求重点项目
 var EmphasisProject = function () {
-    var _ref4 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee4(username, query) {
+    var _ref4 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee4(username, query) {
         var code, token, url, options, _data2;
 
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee4$(_context4) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee4$(_context4) {
             while (1) {
                 switch (_context4.prev = _context4.next) {
                     case 0:
@@ -3049,9 +3049,9 @@ var EmphasisProject = function () {
 
 //项目列表
 var ProjectList = function () {
-    var _ref5 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee5(username, query) {
+    var _ref5 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee5(username, query) {
         var code, token, url, pageSize, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee5$(_context5) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee5$(_context5) {
             while (1) {
                 switch (_context5.prev = _context5.next) {
                     case 0:
@@ -3117,9 +3117,9 @@ var ProjectList = function () {
 
 //BusinessPhase 商务阶段跟新
 var BusinessPhase = function () {
-    var _ref6 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee6(username, id) {
+    var _ref6 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee6(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee6$(_context6) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee6$(_context6) {
             while (1) {
                 switch (_context6.prev = _context6.next) {
                     case 0:
@@ -3162,9 +3162,9 @@ var BusinessPhase = function () {
 
 //项目商务阶段进度跟踪反馈
 var BusinessPhaseGroup = function () {
-    var _ref7 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee7(username, id) {
+    var _ref7 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee7(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee7$(_context7) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee7$(_context7) {
             while (1) {
                 switch (_context7.prev = _context7.next) {
                     case 0:
@@ -3211,9 +3211,9 @@ var BusinessPhaseGroup = function () {
 
 //项目投标申请
 var Biding = function () {
-    var _ref8 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee8(username, id) {
+    var _ref8 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee8(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee8$(_context8) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee8$(_context8) {
             while (1) {
                 switch (_context8.prev = _context8.next) {
                     case 0:
@@ -3256,9 +3256,9 @@ var Biding = function () {
 
 //项目报价申请
 var QuotedPrice = function () {
-    var _ref9 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee9(username, id) {
+    var _ref9 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee9(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee9$(_context9) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee9$(_context9) {
             while (1) {
                 switch (_context9.prev = _context9.next) {
                     case 0:
@@ -3304,9 +3304,9 @@ var QuotedPrice = function () {
 
 //合同管理
 var Contract = function () {
-    var _ref10 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee10(username, id) {
+    var _ref10 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee10(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee10$(_context10) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee10$(_context10) {
             while (1) {
                 switch (_context10.prev = _context10.next) {
                     case 0:
@@ -3349,9 +3349,9 @@ var Contract = function () {
 
 //项目报价申请
 var Receive = function () {
-    var _ref11 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee11(username, id) {
+    var _ref11 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee11(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee11$(_context11) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee11$(_context11) {
             while (1) {
                 switch (_context11.prev = _context11.next) {
                     case 0:
@@ -3394,9 +3394,9 @@ var Receive = function () {
 
 //项目设计深化申请
 var DesignDeepen = function () {
-    var _ref12 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee12(username, id) {
+    var _ref12 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee12(username, id) {
         var code, token, url, options;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee12$(_context12) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee12$(_context12) {
             while (1) {
                 switch (_context12.prev = _context12.next) {
                     case 0:
@@ -3433,9 +3433,9 @@ var DesignDeepen = function () {
 
 //项目设计任务
 var DesignTask = function () {
-    var _ref13 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee13(username, id) {
+    var _ref13 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee13(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee13$(_context13) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee13$(_context13) {
             while (1) {
                 switch (_context13.prev = _context13.next) {
                     case 0:
@@ -3478,9 +3478,9 @@ var DesignTask = function () {
 
 //项目基本信息
 var ProjectAuditById = function () {
-    var _ref14 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee14(username, query) {
+    var _ref14 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee14(username, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee14$(_context14) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee14$(_context14) {
             while (1) {
                 switch (_context14.prev = _context14.next) {
                     case 0:
@@ -3523,9 +3523,9 @@ var ProjectAuditById = function () {
 
 //项目阶段
 var ProjectStage = function () {
-    var _ref15 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee15(username, id) {
+    var _ref15 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee15(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee15$(_context15) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee15$(_context15) {
             while (1) {
                 switch (_context15.prev = _context15.next) {
                     case 0:
@@ -3568,9 +3568,9 @@ var ProjectStage = function () {
 
 //项目委托信息
 var ProjectDelegate = function () {
-    var _ref16 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee16(username, id) {
+    var _ref16 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee16(username, id) {
         var code, token;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee16$(_context16) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee16$(_context16) {
             while (1) {
                 switch (_context16.prev = _context16.next) {
                     case 0:
@@ -3599,9 +3599,9 @@ var ProjectDelegate = function () {
 }();
 
 var getContact = function () {
-    var _ref17 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee17(username, id) {
+    var _ref17 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee17(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee17$(_context17) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee17$(_context17) {
             while (1) {
                 switch (_context17.prev = _context17.next) {
                     case 0:
@@ -3645,9 +3645,9 @@ var getContact = function () {
 }();
 
 var RemoveAction = function () {
-    var _ref18 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee18(user, query) {
+    var _ref18 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee18(user, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee18$(_context18) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee18$(_context18) {
             while (1) {
                 switch (_context18.prev = _context18.next) {
                     case 0:
@@ -3694,9 +3694,9 @@ var RemoveAction = function () {
 
 //提交审核
 var SubmitAudit = function () {
-    var _ref19 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee19(user, query) {
+    var _ref19 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee19(user, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee19$(_context19) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee19$(_context19) {
             while (1) {
                 switch (_context19.prev = _context19.next) {
                     case 0:
@@ -3741,9 +3741,9 @@ var SubmitAudit = function () {
 
 //商务阶段详细
 var ProjectBusiness = function () {
-    var _ref20 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee20(user, query) {
+    var _ref20 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee20(user, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee20$(_context20) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee20$(_context20) {
             while (1) {
                 switch (_context20.prev = _context20.next) {
                     case 0:
@@ -3787,9 +3787,9 @@ var ProjectBusiness = function () {
 
 //商务最新的阶段
 var BusinessStage = function () {
-    var _ref21 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee21(username, Id) {
+    var _ref21 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee21(username, Id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee21$(_context21) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee21$(_context21) {
             while (1) {
                 switch (_context21.prev = _context21.next) {
                     case 0:
@@ -3834,9 +3834,9 @@ var BusinessStage = function () {
 }();
 
 var GetOptions = function () {
-    var _ref22 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee22(username, query) {
+    var _ref22 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee22(username, query) {
         var OrgProperty, CompanyType, rows, page, code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee22$(_context22) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee22$(_context22) {
             while (1) {
                 switch (_context22.prev = _context22.next) {
                     case 0:
@@ -3881,9 +3881,9 @@ var GetOptions = function () {
 }();
 
 var GetClientUnit = function () {
-    var _ref23 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee23(username, query) {
+    var _ref23 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee23(username, query) {
         var OrgProperty, rows, page, code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee23$(_context23) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee23$(_context23) {
             while (1) {
                 switch (_context23.prev = _context23.next) {
                     case 0:
@@ -3926,9 +3926,9 @@ var GetClientUnit = function () {
 }();
 
 var CommitProject = function () {
-    var _ref24 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee24(username, form) {
+    var _ref24 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee24(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee24$(_context24) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee24$(_context24) {
             while (1) {
                 switch (_context24.prev = _context24.next) {
                     case 0:
@@ -3972,9 +3972,9 @@ var CommitProject = function () {
 }();
 
 var CommitBiding = function () {
-    var _ref25 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee25(username, form) {
+    var _ref25 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee25(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee25$(_context25) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee25$(_context25) {
             while (1) {
                 switch (_context25.prev = _context25.next) {
                     case 0:
@@ -4018,9 +4018,9 @@ var CommitBiding = function () {
 }();
 
 var CommitQuotedPrice = function () {
-    var _ref26 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee26(username, form) {
+    var _ref26 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee26(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee26$(_context26) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee26$(_context26) {
             while (1) {
                 switch (_context26.prev = _context26.next) {
                     case 0:
@@ -4065,9 +4065,9 @@ var CommitQuotedPrice = function () {
 
 //审核数据
 var SetBusinessState = function () {
-    var _ref27 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee27(username, form) {
+    var _ref27 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee27(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee27$(_context27) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee27$(_context27) {
             while (1) {
                 switch (_context27.prev = _context27.next) {
                     case 0:
@@ -4112,9 +4112,9 @@ var SetBusinessState = function () {
 
 //审核商务阶段跟踪反馈数据
 var SetBusinessPhaseState = function () {
-    var _ref28 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee28(username, form) {
+    var _ref28 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee28(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee28$(_context28) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee28$(_context28) {
             while (1) {
                 switch (_context28.prev = _context28.next) {
                     case 0:
@@ -4159,9 +4159,9 @@ var SetBusinessPhaseState = function () {
 
 //审核报价申请
 var SetQuotedPriceState = function () {
-    var _ref29 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee29(username, form) {
+    var _ref29 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee29(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee29$(_context29) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee29$(_context29) {
             while (1) {
                 switch (_context29.prev = _context29.next) {
                     case 0:
@@ -4206,9 +4206,9 @@ var SetQuotedPriceState = function () {
 
 //商务阶段提交撤销
 var RemoveBusiness = function () {
-    var _ref30 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee30(username, form) {
+    var _ref30 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee30(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee30$(_context30) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee30$(_context30) {
             while (1) {
                 switch (_context30.prev = _context30.next) {
                     case 0:
@@ -4253,9 +4253,9 @@ var RemoveBusiness = function () {
 
 //商务阶段撤销提交
 var RemoveBusinessPhaseGroup = function () {
-    var _ref31 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee31(username, form) {
+    var _ref31 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee31(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee31$(_context31) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee31$(_context31) {
             while (1) {
                 switch (_context31.prev = _context31.next) {
                     case 0:
@@ -4300,9 +4300,9 @@ var RemoveBusinessPhaseGroup = function () {
 
 //报价申请数据撤销
 var RemoveQuotedPrice = function () {
-    var _ref32 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee32(username, form) {
+    var _ref32 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee32(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee32$(_context32) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee32$(_context32) {
             while (1) {
                 switch (_context32.prev = _context32.next) {
                     case 0:
@@ -4349,9 +4349,9 @@ var RemoveQuotedPrice = function () {
 
 //撤销投标申请
 var RemoveBiding = function () {
-    var _ref33 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee33(username, form) {
+    var _ref33 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee33(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee33$(_context33) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee33$(_context33) {
             while (1) {
                 switch (_context33.prev = _context33.next) {
                     case 0:
@@ -4396,9 +4396,9 @@ var RemoveBiding = function () {
 
 //合同
 var RemoveContact = function () {
-    var _ref34 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee34(username, form) {
+    var _ref34 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee34(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee34$(_context34) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee34$(_context34) {
             while (1) {
                 switch (_context34.prev = _context34.next) {
                     case 0:
@@ -4443,9 +4443,9 @@ var RemoveContact = function () {
 
 //收款登记
 var RemoveReceive = function () {
-    var _ref35 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee35(username, form) {
+    var _ref35 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee35(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee35$(_context35) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee35$(_context35) {
             while (1) {
                 switch (_context35.prev = _context35.next) {
                     case 0:
@@ -4490,9 +4490,9 @@ var RemoveReceive = function () {
 
 //搜索
 var Search = function () {
-    var _ref36 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee36(username, query) {
+    var _ref36 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee36(username, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee36$(_context36) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee36$(_context36) {
             while (1) {
                 switch (_context36.prev = _context36.next) {
                     case 0:
@@ -4537,9 +4537,9 @@ var Search = function () {
 }();
 
 var ProjectUpdtae = function () {
-    var _ref37 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee37(username, id, form) {
+    var _ref37 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee37(username, id, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee37$(_context37) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee37$(_context37) {
             while (1) {
                 switch (_context37.prev = _context37.next) {
                     case 0:
@@ -4584,9 +4584,9 @@ var ProjectUpdtae = function () {
 
 //更新技术指派人
 var EditTechnicalManager = function () {
-    var _ref38 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee38(username, id, form) {
+    var _ref38 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee38(username, id, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee38$(_context38) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee38$(_context38) {
             while (1) {
                 switch (_context38.prev = _context38.next) {
                     case 0:
@@ -4635,9 +4635,9 @@ var EditTechnicalManager = function () {
 
 // 更新商务阶段指派人
 var EditBusinessManager = function () {
-    var _ref39 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee39(username, id, form) {
+    var _ref39 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee39(username, id, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee39$(_context39) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee39$(_context39) {
             while (1) {
                 switch (_context39.prev = _context39.next) {
                     case 0:
@@ -4684,9 +4684,9 @@ var EditBusinessManager = function () {
 
 //商务阶段更新提交
 var BusinessCommit = function () {
-    var _ref40 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee40(username, form) {
+    var _ref40 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee40(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee40$(_context40) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee40$(_context40) {
             while (1) {
                 switch (_context40.prev = _context40.next) {
                     case 0:
@@ -4731,9 +4731,9 @@ var BusinessCommit = function () {
 
 //项目收款登记
 var ReceiveGroup = function () {
-    var _ref41 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee41(username, query) {
+    var _ref41 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee41(username, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee41$(_context41) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee41$(_context41) {
             while (1) {
                 switch (_context41.prev = _context41.next) {
                     case 0:
@@ -4782,9 +4782,9 @@ var ReceiveGroup = function () {
 
 //项目投标
 var GetBiding = function () {
-    var _ref42 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee42(username, query) {
+    var _ref42 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee42(username, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee42$(_context42) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee42$(_context42) {
             while (1) {
                 switch (_context42.prev = _context42.next) {
                     case 0:
@@ -4832,9 +4832,9 @@ var GetBiding = function () {
 
 //项目商务阶段跟踪任务反馈提交 
 var PhaseFeedback = function () {
-    var _ref43 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee43(username, form) {
+    var _ref43 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee43(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee43$(_context43) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee43$(_context43) {
             while (1) {
                 switch (_context43.prev = _context43.next) {
                     case 0:
@@ -4878,9 +4878,9 @@ var PhaseFeedback = function () {
 }();
 
 var BidingCommit = function () {
-    var _ref44 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee44() {
+    var _ref44 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee44() {
         var code, token, url, options;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee44$(_context44) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee44$(_context44) {
             while (1) {
                 switch (_context44.prev = _context44.next) {
                     case 0:
@@ -4918,9 +4918,9 @@ var BidingCommit = function () {
 }();
 
 var CommitQutoedPrice = function () {
-    var _ref45 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee45(username, form) {
+    var _ref45 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee45(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee45$(_context45) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee45$(_context45) {
             while (1) {
                 switch (_context45.prev = _context45.next) {
                     case 0:
@@ -4960,9 +4960,9 @@ var CommitQutoedPrice = function () {
 }();
 
 var CommitContract = function () {
-    var _ref46 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee46(username, form) {
+    var _ref46 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee46(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee46$(_context46) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee46$(_context46) {
             while (1) {
                 switch (_context46.prev = _context46.next) {
                     case 0:
@@ -5001,9 +5001,9 @@ var CommitContract = function () {
 }();
 
 var GetQuotedPrice = function () {
-    var _ref47 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee47(username, query) {
+    var _ref47 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee47(username, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee47$(_context47) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee47$(_context47) {
             while (1) {
                 switch (_context47.prev = _context47.next) {
                     case 0:
@@ -5046,9 +5046,9 @@ var GetQuotedPrice = function () {
 
 //检查当前项目有没有合同
 var CheckReceive = function () {
-    var _ref48 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee48(username, query) {
+    var _ref48 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee48(username, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee48$(_context48) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee48$(_context48) {
             while (1) {
                 switch (_context48.prev = _context48.next) {
                     case 0:
@@ -5093,9 +5093,9 @@ var CheckReceive = function () {
 
 //添加收款登记
 var CommitReceive = function () {
-    var _ref49 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee49(username, form) {
+    var _ref49 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee49(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee49$(_context49) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee49$(_context49) {
             while (1) {
                 switch (_context49.prev = _context49.next) {
                     case 0:
@@ -5141,9 +5141,9 @@ var CommitReceive = function () {
 //导入人员
 
 var GetAllStaff = function () {
-    var _ref50 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee50(url, username, form) {
+    var _ref50 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee50(url, username, form) {
         var code, token, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee50$(_context50) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee50$(_context50) {
             while (1) {
                 switch (_context50.prev = _context50.next) {
                     case 0:
@@ -5187,9 +5187,9 @@ var GetAllStaff = function () {
 
 //权限--用户角色
 var GetRoles = function () {
-    var _ref51 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee51(username, userCode) {
+    var _ref51 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee51(username, userCode) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee51$(_context51) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee51$(_context51) {
             while (1) {
                 switch (_context51.prev = _context51.next) {
                     case 0:
@@ -5237,8 +5237,8 @@ var GetRoles = function () {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wechat__ = __webpack_require__(2);
 /* harmony export (immutable) */ exports["getAuthorizeURL"] = getAuthorizeURL;
 /* harmony export (binding) */ __webpack_require__.d(exports, "getUserByCode", function() { return getUserByCode; });
@@ -5271,9 +5271,9 @@ function getAuthorizeURL() {
 }
 
 var getUserByCode = function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(code) {
+  var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(code) {
     var oauth, ticket, data, user;
-    return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+    return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
@@ -5321,8 +5321,8 @@ var getUserByCode = function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_url__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_url___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_url__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_querystring__ = __webpack_require__(12);
@@ -5345,9 +5345,9 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 var signature = function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
+  var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
     var url, params;
-    return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+    return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
@@ -5384,10 +5384,10 @@ var signature = function () {
 }();
 
 var redirect = function () {
-  var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(ctx, next) {
+  var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(ctx, next) {
     var target, scope, _ctx$query, visit, id, params, url;
 
-    return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+    return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
@@ -5415,9 +5415,9 @@ var redirect = function () {
 }();
 
 var oauth = function () {
-  var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(ctx, next) {
+  var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(ctx, next) {
     var url, urlObj, params, code, user;
-    return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
+    return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
       while (1) {
         switch (_context3.prev = _context3.next) {
           case 0:
@@ -5494,8 +5494,8 @@ exports.writeFileAsync = function (fpath, content) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__api__ = __webpack_require__(4);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return getAllUsers; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return createDep; });
@@ -5512,9 +5512,9 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 var transliteration = __webpack_require__(6);
 
 var getAllUsers = function () {
-    var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee() {
+    var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee() {
         var page, base, url, username, map, dep, form, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
             while (1) {
                 switch (_context.prev = _context.next) {
                     case 0:
@@ -5559,9 +5559,9 @@ var getAllUsers = function () {
 }();
 
 var createDep = function () {
-    var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2() {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2() {
         var page, username, form, base, url, dep, data;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
             while (1) {
                 switch (_context2.prev = _context2.next) {
                     case 0:
@@ -5619,8 +5619,8 @@ var createDep = function () {
 }();
 
 var clearDepData = function () {
-    var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(depName, depMap) {
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(depName, depMap) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
             while (1) {
                 switch (_context3.prev = _context3.next) {
                     case 0:
@@ -6265,8 +6265,8 @@ module.exports = Wechat;
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sha1__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sha1___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_sha1__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_raw_body__ = __webpack_require__(40);
@@ -6289,9 +6289,9 @@ var Wechat = __webpack_require__(2);
 /* harmony default export */ exports["a"] = function (opts, reply) {
 	var wechat = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__wechat_index__["getWechat"])();
 	return function () {
-		var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
+		var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
 			var token, msg_signature, nonce, encodingaeskey, timestamp, echostr, str, a, data, content, xmlmsg, json, message, replyBody, msg, xml, msgEncrypt, opt;
-			return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+			return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
 				while (1) {
 					switch (_context.prev = _context.next) {
 						case 0:
@@ -6392,8 +6392,8 @@ var Wechat = __webpack_require__(2);
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_request_promise__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_request_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_request_promise__);
 
@@ -6425,9 +6425,9 @@ var workOAuth = function () {
     _createClass(workOAuth, [{
         key: 'request',
         value: function () {
-            var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(options) {
+            var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(options) {
                 var response;
-                return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+                return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
                     while (1) {
                         switch (_context.prev = _context.next) {
                             case 0:
@@ -6474,9 +6474,9 @@ var workOAuth = function () {
     }, {
         key: 'fetchAccessToken',
         value: function () {
-            var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(access_token, code) {
+            var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(access_token, code) {
                 var url, data;
-                return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+                return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
                     while (1) {
                         switch (_context2.prev = _context2.next) {
                             case 0:
@@ -6505,9 +6505,9 @@ var workOAuth = function () {
     }, {
         key: 'fetchUserInfo',
         value: function () {
-            var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(access_token, user_ticket) {
+            var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(access_token, user_ticket) {
                 var url, options, data;
-                return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
+                return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
                     while (1) {
                         switch (_context3.prev = _context3.next) {
                             case 0:
@@ -6658,8 +6658,8 @@ exports = module.exports = {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__api__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wechat__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config__ = __webpack_require__(1);
@@ -6700,19 +6700,19 @@ var tip = '欢迎来到建顾管理管理应用,当前版本v1.0.0.\n' + '1~查�
 // 	console.log(data)
 // })
 
-//  client.createMenu(menu).then((data)=>{
-// 	 console.log(data)
-//  })
+client.createMenu(menu).then(function (data) {
+	console.log(data);
+});
 
 //client.createMenu(menu).then(()=>{
 //	console.log('创建成功')
 //})
 
 var reply = function () {
-	var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
+	var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
 		var message, reply, date, username, person, usercode, data, params, title, result, sendMsg, card, msg, content, searchText, query, projects, project, _card;
 
-		return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+		return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
 			while (1) {
 				switch (_context.prev = _context.next) {
 					case 0:
@@ -7027,8 +7027,8 @@ module.exports = require("uuid");
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(__dirname) {Object.defineProperty(exports, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_koa__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nuxt__ = __webpack_require__(21);
@@ -7096,11 +7096,11 @@ var Server = function () {
   }, {
     key: 'start',
     value: function () {
-      var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2() {
+      var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2() {
         var _this = this;
 
         var nuxt, builder;
-        return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
@@ -7134,8 +7134,8 @@ var Server = function () {
               case 14:
 
                 this.app.use(function () {
-                  var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
-                    return __WEBPACK_IMPORTED_MODULE_0_G_wx_exploit_nuxt_wechat_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+                  var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
+                    return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
                       while (1) {
                         switch (_context.prev = _context.next) {
                           case 0:

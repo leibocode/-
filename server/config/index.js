@@ -3,7 +3,7 @@ export default {
   "db": "mongodb://localhost/ice",
   "base": "http://127.0.0.1:3000",
   "apiUrl":"http://jgjzkj.rjtms.com/",
-  "SITE_ROOT_URL":"183828tz49.iask.in",
+  "SITE_ROOT_URL":"http://jg.imtudou.cn",
   "wechat": {
     "corpid": "ww72312644c862daf9",//企业ID 
     "secret":"UMPfSQdbLenHfmc-h-779Qsieug8Sdm3K7yKpaYQHW0",//通讯录secret

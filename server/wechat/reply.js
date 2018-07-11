@@ -27,9 +27,9 @@ const tip = '欢迎来到建顾管理管理应用,当前版本v1.0.0.\n'+'1~查�
 // 	console.log(data)
 // })
 
-//  client.createMenu(menu).then((data)=>{
-// 	 console.log(data)
-//  })
+client.createMenu(menu).then((data)=>{
+ 	 console.log(data)
+})
 
 //client.createMenu(menu).then(()=>{
 //	console.log('创建成功')
