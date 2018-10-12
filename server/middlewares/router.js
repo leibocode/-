@@ -23,6 +23,16 @@ const transliteration = require('transliteration');
 export const router = app => {
   const router = new Router()
 
+  const routerMiddware = async(ctx,next)=>{
+    if(!ctx.session.user || !ctx.session.user.name){
+      console.log('error')
+      //记录日志
+      return ctx.body ={
+          success:false,
+          msg:'拿不到用户信息'
+      }
+    }
+  }
 
   /**
    * wechat router
@@ -77,13 +87,7 @@ export const router = app => {
    * 
    */
 
-  router.get('/api/EmphasisProject', async (ctx, next) => {
-    //let user = 'super'
-    if(!ctx.session.user){
-        console.log('我是session上的user')
-    }else {
-       return 
-    }
+  router.get('/api/EmphasisProject',routerMiddware, async (ctx, next) => {
     let { page } = ctx.query
     let query = {
       page: page,
@@ -105,16 +109,7 @@ export const router = app => {
   })
 
 
-  router.get('/api/ProjectList', async (ctx, next) => {
-    console.log('数据请求来了')
-    if(ctx.session.user){
-      //console.log(ctx.session.user.name)
-    }else {
-      return ctx.body ={
-         success:false,
-         msg:'拿不到用户信息'
-       }
-    }
+  router.get('/api/ProjectList', routerMiddware,async (ctx, next) => {
     const { typeCode, page } = ctx.query
     let query = {
       typeCode: typeCode,
@@ -147,18 +142,8 @@ export const router = app => {
     })
   })
 
-  router.get('/api/GetRoles',async(ctx,next)=>{
-    console.log('进入请求中')
-    if(ctx.session.user.name){
-    }else {
-      return ctx.body ={
-         success:false,
-         msg:'拿不到用户信息'
-       }
-     }
+  router.get('/api/GetRoles',routerMiddware,async(ctx,next)=>{
      let user =ctx.session.user
-
-    
      try{
         const data =await api.project.GetRoles(user.name,user.name)
         //const data =await api.project.GetRoles("雷博","雷博")
@@ -172,14 +157,7 @@ export const router = app => {
      
   })
 
-  router.get('/api/ProjectDateil', async (ctx, next) => {
-    if(ctx.session.user.name){
-    }else {
-      return ctx.body ={
-         success:false,
-         msg:'拿不到用户信息'
-       }
-    }
+  router.get('/api/ProjectDateil',routerMiddware,async (ctx, next) => {
     const { Id, Classification } = ctx.query
     let user =ctx.session.user.name
     //const user = 'super'
@@ -203,19 +181,11 @@ export const router = app => {
     }
   })
 
-  router.get('/api/AuditProject/:_id', async (ctx, next) => {
-    if(ctx.session.user){
-    }else {
-      return ctx.body ={
-         success:false,
-         msg:'拿不到用户信息'
-       }
-    }
+  router.get('/api/AuditProject/:_id',routerMiddware,async (ctx, next) => {
     const { _id } = ctx.params
     let query = {
       Id: _id
     }
-
     //let username = `super`
     let user =ctx.session.user.name
     const data = await api.project.ProjectAuditById(user, query)
@@ -260,15 +230,7 @@ export const router = app => {
   })
 
   //撤销项目
-  router.get('/api/RemoveAction', async (ctx, next) => {
-    // if(ctx.session.user.name){
-    // }else {
-    //   return ctx.body ={
-    //      success:false,
-    //      msg:'拿不到用户信息'
-    //    }
-    // }
-    //console.log(ctx.query)
+  router.get('/api/RemoveAction',routerMiddware,async (ctx, next) => {
     const { HandleStatus, NextSetp, PreStep, id } = ctx.query
     let requestData = {
       HandleStatus: 2,
@@ -276,10 +238,10 @@ export const router = app => {
       NextSetp: false,
       PreSetp: true
     }
-    //let user =ctx.session.user.name
-    const user = 'super'
+    const username =ctx.session.user.name
+    //const user = 'super'
     try {
-      const data = api.project.RemoveAction(user, requestData)
+      const data = await api.project.RemoveAction(username, requestData)
       //console.log(data)
       ctx.body = {
         success: true,
@@ -295,15 +257,8 @@ export const router = app => {
   })
 
   //审核项目
-  router.get('/api/SubmitAudit', async (ctx, next) => {
-    // if(ctx.session.user.name){
-    // }else {
-    //   return ctx.body ={
-    //      success:false,
-    //      msg:'拿不到用户信息'
-    //   }
-    // }
-    const { HandleStatus, NextSetp, PreStep, id, Remark } = ctx.query
+  router.get('/api/SubmitAudit',routerMiddware, async (ctx, next) => {
+    const { HandleStatus, NextSetp,PreStep,id,Remark } = ctx.query
     let requestData = {
       HandleStatus: 1,
       ID: id,
@@ -312,12 +267,12 @@ export const router = app => {
       Remark: Remark,
       State:"passed"
     }
-    const username = 'super'
+    const username =ctx.session.user.name
     //let user =ctx.session.user.name
     console.log('审核数据')
     console.log(requestData)
     try {
-      const data = api.project.RemoveAction(username, requestData)
+      const data =await api.project.RemoveAction(username, requestData)
       ctx.body = {
         success: true,
         data: data
@@ -331,16 +286,8 @@ export const router = app => {
   })
 
   //获取单位
-  router.get('/api/getOptions', async (ctx, next) => {
-    if(ctx.session.user.name){
-    }else {
-      return ctx.body ={
-         success:false,
-         msg:"拿不到用户信息"
-      }
-    }
+  router.get('/api/getOptions',routerMiddware,async (ctx, next) => {
     let user =ctx.session.user
-    let username = `super`
     const { OrgProperty, CompanyType, page, rows } = ctx.query
 
     let data = {
@@ -357,14 +304,7 @@ export const router = app => {
   })
 
   //
-  router.get('/api/getClientUnit', async (ctx, next) => {
-    if(ctx.session.user.name){
-    }else {
-      return ctx.body ={
-        success:false,
-        msg:"拿不到用户信息"
-      }
-    }
+  router.get('/api/getClientUnit', routerMiddware,async (ctx, next) => {
     const { OrgProperty, page, rows } = ctx.query
     let data = {
       OrgProperty: OrgProperty,
@@ -381,14 +321,7 @@ export const router = app => {
   })
 
   //项目提交
-  router.post('/api/commitProject', async (ctx, next) => {
-    if(ctx.session.user.name){
-    }else {
-      return ctx.body ={
-        success:false,
-        msg:"拿不到用户信息"
-      }
-    }
+  router.post('/api/commitProject',routerMiddware,async (ctx, next) => {
     let projectInfo = ctx.request.body
     //let user = 'super'
     let user =ctx.session.user.name
@@ -415,16 +348,8 @@ export const router = app => {
   })
 
   //搜索项目
-  router.get('/api/search', async (ctx, next) => {
-    if(ctx.session.user.name){
-    }else {
-      return ctx.body ={
-        success:false,
-        msg:"拿不到用户信息"
-      }
-    }
+  router.get('/api/search',routerMiddware,async (ctx, next) => {
     let { searchText, page } = ctx.query
-    //let user = `super`
     let user = ctx.session.user.name
     let query = {
       searchText: searchText,
@@ -453,17 +378,9 @@ export const router = app => {
   })
 
   //查询每个阶段的项目详情
-  router.get('/api/getSectionDetail', async (ctx,next) => {
-    if(ctx.session.user.name){
-    }else {
-      return ctx.body ={
-        success:false,
-        msg:"拿不到用户信息"
-      }
-    }
+  router.get('/api/getSectionDetail',routerMiddware,async (ctx,next) => {
     const { type, Id } = ctx.query
     let data = null
-    //const user = `super`
     let user =ctx.session.user.name
     switch (type) {
       case "BusinessPhase":
@@ -499,17 +416,9 @@ export const router = app => {
     }
   })
 
-  router.post('/api/ProjecyUpdate/:_id', async (ctx, next) => {
-    if(ctx.session.user.name){
-    }else {
-      return ctx.body ={
-        success:false,
-        msg:"拿不到用户信息"
-      }
-    }
+  router.post('/api/ProjecyUpdate/:_id',routerMiddware,async (ctx, next) => {
     let data = ctx.request.body
     let id = ctx.params._id
-    //let user = 'super'
     let user  =ctx.session.user.name
     let result = null
     console.log(data)
@@ -526,16 +435,8 @@ export const router = app => {
     }
   })
 
-  router.get('/api/ProjectBusiness', async (ctx, next) => {
-    if(ctx.session.user.name){
-    }else {
-      return ctx.body ={
-        success:false,
-        msg:"拿不到用户信息"
-      }
-    }
+  router.get('/api/ProjectBusiness',routerMiddware,async (ctx, next) => {
     const { Id } = ctx.query
-    //const user = 'super'
     let user =ctx.session.user.name
     let query = {
       HasApprove: true,
@@ -550,16 +451,8 @@ export const router = app => {
   })
 
   //提交商务阶段
-  router.post('/api/BusinessCommit', async (ctx, next) => {
-    if(ctx.session.user.name){
-    }else{
-      return ctx.body={
-         success:false,
-         msg:"拿不到用户信息"
-      }
-    }
+  router.post('/api/BusinessCommit',routerMiddware,async (ctx, next) => {
     let data = ctx.request.body
-    //let user = 'super'
     let user =ctx.session.user.name
     data.form.ID = uuid.v4()
     data.form.ApplyDate = sd.format(new Date(), 'YYYY-MM-DD')
@@ -573,16 +466,8 @@ export const router = app => {
   })
 
   //商务阶段跟踪反馈
-  router.post('/api/PhaseFeedback', async (ctx, next) => {
-    if(ctx.session.user){
-    }else{
-      return ctx.body={
-         success:false,
-         msg:"拿不到用户信息"
-      }
-    }
+  router.post('/api/PhaseFeedback',routerMiddware,async (ctx, next) => {
     let data = ctx.request.body
-    let user = `super`
     let username =ctx.session.user.name
     data.form.ApplyPerson = username
       data.form.ChargePerson =username
@@ -599,16 +484,8 @@ export const router = app => {
 
 
   //收款登记
-  router.get('/api/ReceiveGroup', async (ctx, next) => {
-    if(ctx.session.user.name){
-    }else{
-      return ctx.body={
-         success:false,
-         msg:"拿不到用户信息"
-      }
-    }
+  router.get('/api/ReceiveGroup',routerMiddware,async (ctx, next) => {
     const { Id } = ctx.query
-    let user = 'super'
     let username =ctx.session.user.name
     let query = {
       value: Id
@@ -622,18 +499,8 @@ export const router = app => {
   })
 
   //收款登记提交
-  router.post('/api/ReceiveCommit', async (ctx, next) => {
-    if(ctx.session.user.name){
-    }else{
-      return ctx.body={
-         success:false,
-         msg:"拿不到用户信息"
-      }
-    }
-
-
+  router.post('/api/ReceiveCommit',routerMiddware,async (ctx, next) => {
     const { Id } = ctx.query
-    let user = 'super'
     let username =ctx.session.user.name
     let query = {
       value: Id
@@ -645,20 +512,12 @@ export const router = app => {
     }
   })
 
-  router.get('/api/GetBiding', async (ctx, next) => {
-    if(ctx.session.user.name){
-    }else{
-      return ctx.body={
-         success:false,
-         msg:"拿不到用户信息"
-      }
-    }
+  router.get('/api/GetBiding',routerMiddware,async (ctx, next) => {
     const { Id } = ctx.query
     let query = {
       hasApprove: 'True',
       value: Id
     }
-    let user = `super`
     let username =ctx.session.user.name
     //这里是跨服务调用的接口恨薄的一层，后面 最好加上一些服务熔断
     const result = await api.project.GetBiding(username, query)
@@ -669,13 +528,12 @@ export const router = app => {
     }
   })
 
-  router.get('/api/QuotedPrice', async (ctx, next) => {
+  router.get('/api/QuotedPrice',routerMiddware,async (ctx, next) => {
     const { Id } = ctx.query
     const query = {
       hasApprove: 'True',
       value: Id
     }
-    const user = 'super'
     const result = await api.project.GetQuotedPrice(user, query)
     ctx.body = {
       success: true,
@@ -683,16 +541,8 @@ export const router = app => {
     }
   })
 
-  router.post('/api/CommitQuoted', async (ctx, next) => {
-    if(ctx.session.user.name){
-    }else{
-      return ctx.body={
-         success:false,
-         msg:"拿不到用户信息"
-      }
-    }
+  router.post('/api/CommitQuoted',routerMiddware,async (ctx, next) => {
     let data = ctx.request.body
-    //let user = 'super'
     let user =ctx.session.user.name
     data.form.ApplyDate = sd.format(new Date(), 'YYYY-MM-DD')
     data.form.ApplyPerson = user
@@ -707,12 +557,11 @@ export const router = app => {
     }
   })
 
-  router.post('/api/CommitBiding', async (ctx, next) => {
+  router.post('/api/CommitBiding',routerMiddware,async (ctx, next) => {
     let data = ctx.request.body
     data.form.ApplyDate = sd.format(new Date(), 'YYYY-MM-DD')
     data.form.ApplyPerson = '超级管理员'
     data.form.ID = uuid.v4()
-    let user = 'super'
     console.log(data)
     //这个地方可以加一些融错,不然恨单薄的一层
     const result = await api.project.CommitBiding(user, data)
@@ -722,10 +571,9 @@ export const router = app => {
     }
   })
 
-  router.post('/api/AuditItem', async (ctx, next) => {
+  router.post('/api/AuditItem',routerMiddware,async (ctx, next) => {
     let form = ctx.request.body
     let data = null
-    let user = 'super'
     if (!form.dataType) {
       ctx.body = {
         success: false,
@@ -758,10 +606,9 @@ export const router = app => {
     }
   })
 
-  router.post('/api/RevocationItem', async (ctx, next) => {
+  router.post('/api/RevocationItem',routerMiddware,async (ctx, next) => {
     let form = ctx.request.body
     let data = null
-    let user = 'super'
     if (!form.dataType) {
       ctx.body = {
         success: false,
@@ -795,9 +642,8 @@ export const router = app => {
   })
 
 
-  router.get('/api/BusinessStage', async (ctx, next) => {
+  router.get('/api/BusinessStage',routerMiddware,async (ctx, next) => {
     const { Id } = ctx.query
-    let user = 'super'
     const data = await api.project.BusinessStage(user, Id)
 
     console.log(data)
@@ -826,16 +672,8 @@ export const router = app => {
     }
   })
 
-  router.get('/api/GetDetailByBusiness', async (ctx, next) => {
-    if(ctx.session.user.name){
-    }else {
-      return ctx.body ={
-        success:false,
-        msg:"拿不到用户的信息"
-      }
-    }
+  router.get('/api/GetDetailByBusiness',routerMiddware,async (ctx, next) => {
     const { Id } = ctx.query
-    //let user = 'super'
     let user =ctx.session.user.name
     const data = await api.project.BusinessStage(user, Id)
     if (data.total > 0) {
@@ -871,18 +709,10 @@ export const router = app => {
     }
   })
 
-  router.post('/api/SetDateilCommitState', async (ctx, next) => {
-    if(ctx.session.user.name){
-    }else {
-      return ctx.body ={
-        success:false,
-        msg:"拿不到用户的信息"
-      }
-    }
+  router.post('/api/SetDateilCommitState',routerMiddware,async (ctx, next) => {
     let form = ctx.request.body
     let data = null
-   //let user = 'super'
-   let user =ctx.session.user.name
+    let user =ctx.session.user.name
     if (!form.dataType) {
       ctx.body = {
         success: false,
@@ -916,7 +746,7 @@ export const router = app => {
   })
 
 
-  router.get('/api/CheckReceive', async (ctx, next) => {
+  router.get('/api/CheckReceive',routerMiddware,async (ctx, next) => {
     if(ctx.session.user.name){
     }else {
       return ctx.body ={
@@ -925,7 +755,6 @@ export const router = app => {
       }
     }
     const { Id } = ctx.query
-   // let user = 'super'
    let user =ctx.session.user.name
     let query = {
       ProjectID: Id,
@@ -951,16 +780,8 @@ export const router = app => {
     }
   })
 
-  router.post('/api/CommitContract', async (ctx, next) => {
-    if(ctx.session.user.name){
-    }else {
-      return ctx.body ={
-        success:false,
-        msg:"拿不到用户的信息"
-      }
-    }
+  router.post('/api/CommitContract',routerMiddware,async (ctx, next) => {
     let data = ctx.request.body
-   // let user = 'super'
     let user =ctx.session.user.name
     data.form.ApplyDate = sd.format(new Date(), 'YYYY-MM-DD')
     data.form.ApplyPerson =user
@@ -983,16 +804,8 @@ export const router = app => {
 
   })
 
-  router.post('/api/CommitReceive', async (ctx, next) => {
-    if(ctx.session.user.name){
-    }else{
-      return ctx.body ={
-        success:false,
-        msg:"拿不到用户的信息"
-      }
-    }
+  router.post('/api/CommitReceive',routerMiddware,async (ctx, next) => {
     let data = ctx.request.body
-   // let user = 'super'
    let user =ctx.session.user.name
     data.form.ID = uuid.v4()
     console.log(data)
