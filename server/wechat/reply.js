@@ -145,23 +145,19 @@ export const  reply =async(ctx,next)=> {
 //这个地方没有做权限控制,
 //解决方式:1.最简单的就是锁定ip,
 // 2.添加OAuth协议
-export const send = (ctx,next)=> {
-	if (!ctx.req._parsedUrl.query) {
-		ctx.body = "参数错误"
-		return
-	}
-	let params = querystring.parse(ctx.req._parsedUrl.query)
-	let msg = params.msg;
-	let username = params.username
-	if (msg === '' || username === '' || typeof msg === 'undefined' || typeof username === 'undefined') {
-		ctx.body = "参数不合法"
-		return
-	}
 
-	if (msg.length > 100 || username.length > 5) {
-		ctx.body = "参数长度过大"
-		return;
+export const send =async(body)=>{
+	if(body.type==1){//文本消息
+	  const response =  await	client.sendMessgaebyText(body.username,body.text);
+	  return response
+	}else if(body.type==2){//卡片消息
+		// let card ={
+		// 	title:"项目查询",
+		// 	description: "<div class=\"gray\">查询时间:"+sd.format(new Date(), 'YYYY-MM-DD')+"</div> <div class=\"normal\">项目类型:"+
+		// 	project.Classification+ "</div><div class=\"highlight\">项目名称:"+project.ProjectName+"</div>",
+		// 	url:`${wechat_config.SITE_ROOT_URL }/detail?ID=${project.ID}`
+		// }
+	   const response =	await client.sendMessgaebycard(body.username,body.card)
+	   return response
 	}
-	//根据名字请求接口 GET
-	client.sendMessgae(username, msg)
 }

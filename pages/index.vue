@@ -151,14 +151,16 @@ export default {
      //请求后端
       const res =axios.get(`/api/ProjectList?page=${param.page}&typeCode=${param.code}`)
       res.then((data)=>{
-          if(data.status==200){
+         if(data.data.success){
               if(data.data.data.rows.length>0){
                  this.oneLoad =true
                  this.loading =false
               }
               ListUtil(data.data.data.rows,this.Data)
-          }else{
-
+          }else {
+            this.$router.push({
+               path:'/error/401'
+            })
           }
       },(error)=>{
 
