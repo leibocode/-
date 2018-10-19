@@ -36,6 +36,7 @@
     "sha1": "^1.1.1",
     "silly-datetime": "^0.1.2",
     "source-map-support": "^0.4.15",
+    "vux":"^2.9.1",
     "transliteration": "^1.6.2",
     "uuid": "^3.2.1",
     "wechat-pay": "^0.2.5",
