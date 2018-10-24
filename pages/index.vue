@@ -1,5 +1,5 @@
 <template lang="pug">
-#container.container
+#container.container.flex
   .page.tabbar.js_show
     .page__bd(style='height:100%;')
       .weui-tab
@@ -36,22 +36,19 @@
                 p.weui-tabbar__label.nav-text-color(style='color:#fff;',@click="addProject")  项目申请
             a.weui-tabbar__item.weui-bar__item_on(href='javascript:;')
               span(style='display: inline-block;position: relative;')
-                // <img src="/icon/pending.png" alt="" class="weui-tabbar__icon nav-icon">
-                //- span.weui-badge(style='position: absolute;top: -2px;right: -13px;') 2
-                p.weui-tabbar__label.nav-text-color(style='color: #fff;')
+                span.weui-badge(style='position: absolute;top: -2px;right: -13px;',v-show="roleCheck",v-text="applyNum")
+                p.weui-tabbar__label.nav-text-color(style='color: #fff;',@click="pending")
                   span.fa-stack.fa-2x
                     i.fa.fa-circle-thin.fa-stack-2x
                     i.fa.fa-bell-o
-                p.weui-tabbar__label.nav-text-color(style='color: #fff;',@click="pending") 待处理
+                p.weui-tabbar__label.nav-text-color(style='color: #fff;') 待处理
             a.weui-tabbar__item.weui-bar__item_on(href='javascript:;')
               span(style='display: inline-block;position: relative;')
-                // <img src="/icon/audit.png" alt="" class="weui-tabbar__icon nav-icon">
-                //- span.weui-badge(style='position: absolute;top: -2px;right: -13px;') 8
                 p.weui-tabbar__label.nav-text-color(style='color: #fff;')
                   span.fa-stack.fa-2x
                     i.fa.fa-circle-thin.fa-stack-2x
                     i.fa.fa-check
-                p.weui-tabbar__label.nav-text-color(style='color: #fff;',@click="processed") 已处理
+                p.weui-tabbar__label.nav-text-color(style='color: #fff;',@click="processed") 最近处理
           // 项目列表页
           mt-loadmore(:top-method="loadTop",:bottom-method="loadBottom",:bottom-all-loaded="allLoaded",ref="loadmore")
            ul.list(id="ul-box",class="ul-box starth" v-show="oneLoad")
@@ -90,19 +87,28 @@ import { mapState } from 'vuex'
 import axios from 'axios'
 import { ListUtil } from '../static/js/util'
 import Loading from '../components/loading/loading'
+import just from '../static/js/jurisdiction'
+import ajax from '../static/js/ajax'
+import config from '../static/js/config'
 export default {
- middleware: 'wechat-auth',
+  //middleware: 'wechat-auth',
   head () {
     return {
       title: '建顾基于微信的项目管理移动客户端软件'
     }
   },
   created(){
-    
-    
+    //查看 代办理项
+
   },
   mounted(){
-    console.log(this.authUser)
+    console.log('加载权限')
+    const apply = this.checkRole()
+    console.log(this.roleCheck)
+    if(this.roleCheck){
+      console.log('有apply权限')
+      this.getApply()
+    }
     this.loadOne()
   },
   data () {
@@ -126,7 +132,9 @@ export default {
        oneLoad:false,//第一次加载
        error:false,
        loading:true,
-       num:0
+       num:0,
+       roleCheck:false,
+       applyNum:0
     }
   },
   computed: {
@@ -136,10 +144,66 @@ export default {
   },
   methods: {
     pending(){
-      MessageBox.alert('正在开发中...')
+      if(!this.roleCheck){
+         MessageBox.alert('您当前没有待处理的项目')
+      }else {
+        this.$router.push({
+           path:'/apply',
+           query:{
+             Id:config.applyState
+           }
+        })
+      }
     },
     processed(){
-      MessageBox.alert('正在开发中...')
+
+    },
+    checkRole(){
+          const res =axios.get('/api/GetRoles')
+          res.then((data)=>{
+             console.log(res)
+             let roles = data.data.data
+             console.log(roles)
+             let rolesMap =[]
+             for(let i=0;i<roles.length;i++){
+                rolesMap.push(just[roles[i]])
+             }
+             console.log(rolesMap)
+             let middleArrs =[rolesMap[0]]
+             console.log(middleArrs)
+             rolesMap.forEach((item,index)=>{
+               console.log(item)
+               if(item.Project>middleArrs[0].Project){
+                  middleArrs[0].Project =item.Project
+               }
+
+               if(item.Biding>middleArrs[0].Biding){
+                 middleArrs[0].Biding =item.Biding
+               }
+
+               if(item.Apply>middleArrs[0].Apply){
+                 middleArrs[0].Apply =item.Apply
+               }
+
+             })
+             
+             let isApply =middleArrs[0].Apply>0?true:false
+             //console.log(isApply)
+             //this.roleCheck =true
+             if(isApply){
+                console.log('请求后端')
+                axios.get('/api/apply').then((data)=>{
+                   console.log('====================================');
+                   let result = (JSON.parse(data.data.data)).total
+
+                   if(result>0){
+                     this.applyNum = result
+                     this.roleCheck =isApply
+                   }
+                   console.log('====================================');
+                })
+             }
+           })
     },
     loadOne(){
       let param ={
@@ -174,6 +238,12 @@ export default {
           })
           this.error =true
       })
+    },
+    getApply(){
+       ajax.get('/api/apply').then((data)=>{
+          console.log('apply')
+          console.log(data)
+       })
     },
     loadTop(){//下拉刷新
       this.pageIndex =1
@@ -303,5 +373,8 @@ export default {
    margin-left:35%;
    font-size:16px;
    color:#666;
+}
+.flex {
+  display:flex;
 }
 </style>

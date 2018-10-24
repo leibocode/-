@@ -6,7 +6,8 @@ export default {
           "QuotedPrice":1,//报价申请
           "Contract":1,//合同管理
           "Receive":0,
-          "BusinessPhase":0
+          "BusinessPhase":0,
+          "Apply":0
      },//销售负责人
      "XiaoShou":{
          "Project":0,//
@@ -15,7 +16,8 @@ export default {
           "QuotedPrice":0,//报价申请
           "Contract":1,//合同管理
           "Receive":0,
-          "BusinessPhase":0          
+          "BusinessPhase":0,
+          "Apply":0     
      },//销售员
      "SheJiManager":{
         "Project":0,//
@@ -24,7 +26,8 @@ export default {
         "QuotedPrice":0,//报价申请
         "Contract":0,//合同管理
         "Receive":0,
-        "BusinessPhase":0        
+        "BusinessPhase":0,
+        "Apply":0      
      },//设计负责人
      "SheJiShi":{
         "Project":0,//
@@ -33,7 +36,8 @@ export default {
         "QuotedPrice":0,//报价申请
         "Contract":0,//合同管理
         "Receive":0,
-        "BusinessPhase":0       
+        "BusinessPhase":0,
+        "Apply":0   
      },//设计师
      "JiShuManager":{
         "Project":0,//
@@ -42,7 +46,8 @@ export default {
         "QuotedPrice":0,//报价申请
         "Contract":0,//合同管理
         "Receive":0,
-        "BusinessPhase":0       
+        "BusinessPhase":0,
+        "Apply":1
      },//技术负责人
      "ShengChanManager":{
         "Project":0,//
@@ -78,13 +83,21 @@ export default {
          "QuotedPrice":1,//报价申请
          "Contract":1,//合同管理
          "Receive":1,
-         "BusinessPhase":1
+         "BusinessPhase":1,
+         "Apply":1
      },//管理员
      "admin":{
 
      },
      "adminCode":{
-
+        "Project":1,//0-表示不可以审核,1表示可以审核
+        "Biding":1,
+        "BusinessPhaseGroup":1,//商务阶段跟踪反馈,
+        "QuotedPrice":1,//报价申请
+        "Contract":1,//合同管理
+        "Receive":1,
+        "BusinessPhase":1,
+        "Apply":1
      },
      "Manager1":{
 

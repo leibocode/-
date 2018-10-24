@@ -109,19 +109,21 @@ export const router = app => {
    */
 
   router.get('/api/EmphasisProject',async (ctx, next) => {
-   if(!ctx.session.user || !ctx.session.user.name){
-      console.log('error')
-      ctx.body ={
-        success:false,
-        msg:'拿不到用户信息'
-      }
-    }
-    await ro
+  //  if(!ctx.session.user || !ctx.session.user.name){
+  //     console.log('error')
+  //     ctx.body ={
+  //       success:false,
+  //       msg:'拿不到用户信息'
+  //     }
+  //   }
+
     let { page } = ctx.query
     let query = {
       page: page,
       rows: 10
     }
+    //let user = ctx.session.user.name
+    let user ='super'
     //  console.log(user)
     const data = await api.project.EmphasisProject(user, query)
 
@@ -139,14 +141,13 @@ export const router = app => {
 
 
   router.get('/api/ProjectList',async (ctx, next) => {
-    if(!ctx.session.user || !ctx.session.user.name){
-      console.log('error')
-      ctx.body ={
-        success:false,
-        msg:'拿不到用户信息'
-      }
-    }
-    await ro
+    // if(!ctx.session.user || !ctx.session.user.name){
+    //   console.log('error')
+    //   ctx.body ={
+    //     success:false,
+    //     msg:'拿不到用户信息'
+    //   }
+    // }
     const { typeCode, page } = ctx.query
     let query = {
       typeCode: typeCode,
@@ -160,8 +161,8 @@ export const router = app => {
     } else if (typeCode === '3') {
       query['HasMark'] = true
     }
-    let user = ctx.session.user.name
-     
+   // let user = ctx.session.user.name
+   let user ='super'
    // console.log(user)
     //let username ='super'
     const data = await api.project.ProjectList(user, query)
@@ -179,11 +180,40 @@ export const router = app => {
     })
   })
 
+
+  router.get('/api/apply',async(ctx,next)=>{
+    // if(!ctx.session.user || !ctx.session.user.name){
+    //    console.log('error')
+    //    ctx.body ={
+    //     success:false,
+    //     msg:'拿不到用户信息'
+    //    }
+    // }
+    //let user = ctx.session.user.name
+    let user ='super'
+    let form = {}
+    try{
+      const data =await api.project.GetApply(user,form)
+      // if(data.rows.length>0){
+      //   data.rows.forEach((item)=>{
+      //     item.ApplyDate = manba(item.ApplyDate).format()
+      //   })
+      // }
+      ctx.body ={
+        success:true,
+        data:data
+      }
+    }catch(e){
+
+    }
+  })
+
   router.get('/api/GetRoles',async(ctx,next)=>{
-     let user =ctx.session.user
+     //let user =ctx.session.user
+     console.log('111 roles')
+     let user ='super'
      try{
-        const data =await api.project.GetRoles(user.name,user.name)
-        //const data =await api.project.GetRoles("雷博","雷博")
+        const data =await api.project.GetRoles(user,user)
         ctx.body ={
           success:true,
           data:data.OrgBasic.RoleCode
@@ -341,7 +371,7 @@ export const router = app => {
   })
 
   //
-  router.get('/api/getClientUnit', routerMiddware,async (ctx, next) => {
+  router.get('/api/getClientUnit',async (ctx, next) => {
     const { OrgProperty, page, rows } = ctx.query
     let data = {
       OrgProperty: OrgProperty,

@@ -15,11 +15,15 @@ module.exports = {
 			 'name':'重点项目',
 			 'type':'click',
 			 'key':'menu_click_Ech'
+		 },{
+			 'name':'待办项',
+			 'type':'view',
+			 'url':`${wechat_config.SITE_ROOT_URL}/`
 		 }]
 	}, {
 		'type': 'view',
 		'name': '我的项目',
-		'url': `${wechat_config.SITE_ROOT_URL}/list`
+		'url': `${wechat_config.SITE_ROOT_URL}/apply`
 	}, {
 		'name': "平台管理",
 		'type':'view',

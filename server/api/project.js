@@ -64,7 +64,8 @@ const api = {
     ContractState:`${base}/api/BasicData/Contract/EditState/`,
     ReceiveState:`${base}/api/BasicData/Receive/EditState`,
     //PhaseFeedback:`${base}/api/BasicData/PhaseFeedback/EditState/`,
-    RoleUsers:`${base}api/Sys/User/GetUserOrgBasic?`
+    RoleUsers:`${base}api/Sys/User/GetUserOrgBasic?`,
+    Apply:`${base}api/BasicData/Project/GetHasApply?`
 }
 
 const apiToken = async (username, code) => {
@@ -926,6 +927,22 @@ export async function GetRoles(username,userCode){
     }
     const data =await requests(options)
     return data
+}
+
+export async function GetApply(username,form){
+    const code =await getPhoneCode(username)
+    const token = await apiToken(username,code.RandomCode)
+    const url = `${api.Apply}page=1&rows=20`
+    console.log(url)
+    const options ={
+        url:url,
+        headers:{
+            Authorization:token.token
+        },
+        method:'Get'
+    }
+    const data =await request(options)
+    return data 
 }
 
 

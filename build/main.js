@@ -333,11 +333,15 @@ module.exports = {
 			'name': '重点项目',
 			'type': 'click',
 			'key': 'menu_click_Ech'
+		}, {
+			'name': '待办项',
+			'type': 'view',
+			'url': __WEBPACK_IMPORTED_MODULE_0__config__["a" /* default */].SITE_ROOT_URL + '/'
 		}]
 	}, {
 		'type': 'view',
 		'name': '我的项目',
-		'url': __WEBPACK_IMPORTED_MODULE_0__config__["a" /* default */].SITE_ROOT_URL + '/list'
+		'url': __WEBPACK_IMPORTED_MODULE_0__config__["a" /* default */].SITE_ROOT_URL + '/apply'
 	}, {
 		'name': "平台管理",
 		'type': 'view',
@@ -490,8 +494,8 @@ var addSession = function addSession(app) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(__dirname) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
+/* WEBPACK VAR INJECTION */(function(__dirname) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa_router__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_koa_router__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_path__ = __webpack_require__(3);
@@ -542,9 +546,9 @@ var router = function router(app) {
    */
 
   router.get('/wx', function () {
-    var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
+    var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
       var middle;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
@@ -567,9 +571,9 @@ var router = function router(app) {
   }());
 
   router.get('/createDep', function () {
-    var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(ctx, next) {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(ctx, next) {
       var dep;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
         while (1) {
           switch (_context2.prev = _context2.next) {
             case 0:
@@ -595,8 +599,8 @@ var router = function router(app) {
   }());
 
   router.get('/createSatff', function () {
-    var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(ctx, next) {
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(ctx, next) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
         while (1) {
           switch (_context3.prev = _context3.next) {
             case 0:
@@ -616,9 +620,9 @@ var router = function router(app) {
   }());
 
   router.post('/wx', function () {
-    var _ref4 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee4(ctx, next) {
+    var _ref4 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee4(ctx, next) {
       var middle;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee4$(_context4) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee4$(_context4) {
         while (1) {
           switch (_context4.prev = _context4.next) {
             case 0:
@@ -640,9 +644,9 @@ var router = function router(app) {
   }());
 
   router.get('/WW_verify_j4MyzAjMcHIQbgYm.txt', function () {
-    var _ref5 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee5(ctx, next) {
+    var _ref5 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee5(ctx, next) {
       var data;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee5$(_context5) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee5$(_context5) {
         while (1) {
           switch (_context5.prev = _context5.next) {
             case 0:
@@ -663,8 +667,8 @@ var router = function router(app) {
   }());
 
   router.post('/wechat-pay', function () {
-    var _ref6 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee6(ctx, next) {
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee6$(_context6) {
+    var _ref6 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee6(ctx, next) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee6$(_context6) {
         while (1) {
           switch (_context6.prev = _context6.next) {
             case 0:
@@ -681,8 +685,8 @@ var router = function router(app) {
   }());
 
   router.get('/wechat-signature', function () {
-    var _ref7 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee7(ctx, next) {
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee7$(_context7) {
+    var _ref7 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee7(ctx, next) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee7$(_context7) {
         while (1) {
           switch (_context7.prev = _context7.next) {
             case 0:
@@ -703,8 +707,8 @@ var router = function router(app) {
   }());
 
   router.get('/wechat-redirect', function () {
-    var _ref8 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee8(ctx, next) {
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee8$(_context8) {
+    var _ref8 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee8(ctx, next) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee8$(_context8) {
         while (1) {
           switch (_context8.prev = _context8.next) {
             case 0:
@@ -725,8 +729,8 @@ var router = function router(app) {
   }());
 
   router.get('/wechat-oauth', function () {
-    var _ref9 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee9(ctx, next) {
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee9$(_context9) {
+    var _ref9 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee9(ctx, next) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee9$(_context9) {
         while (1) {
           switch (_context9.prev = _context9.next) {
             case 0:
@@ -747,55 +751,27 @@ var router = function router(app) {
   }());
 
   /**
-   * project router
-   * 
+   * cms router 
    */
-
-  router.get('/api/EmphasisProject', function () {
-    var _ref10 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee10(ctx, next) {
-      var page, query, data;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee10$(_context10) {
+  router.post('/api/send', function () {
+    var _ref10 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee10(ctx, next) {
+      var body;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee10$(_context10) {
         while (1) {
           switch (_context10.prev = _context10.next) {
             case 0:
-              if (ctx.session.user) {
-                _context10.next = 4;
-                break;
-              }
+              body = ctx.request.body;
 
-              console.log('我是session上的user');
-              _context10.next = 5;
-              break;
+              if (!body || !body.type || !body.username) {
+                ctx.body = {
+                  success: false,
+                  msg: '参数不合法'
+                };
+              }
+              _context10.next = 4;
+              return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__wechat_reply__["b" /* send */])(body);
 
             case 4:
-              return _context10.abrupt('return');
-
-            case 5:
-              page = ctx.query.page;
-              query = {
-                page: page,
-                rows: 10
-                //  console.log(user)
-              };
-              _context10.next = 9;
-              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.EmphasisProject(user, query);
-
-            case 9:
-              data = _context10.sent;
-
-
-              data.rows.forEach(function (item, index) {
-                if (item.ProjectName && item.ProjectName.length > 10) {
-                  item.ProjectName = item.ProjectName.substr(0, 10) + '...';
-                }
-              });
-
-              return _context10.abrupt('return', ctx.body = {
-                data: data,
-                success: true
-              });
-
-            case 12:
             case 'end':
               return _context10.stop();
           }
@@ -808,31 +784,118 @@ var router = function router(app) {
     };
   }());
 
-  router.get('/api/ProjectList', function () {
-    var _ref11 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee11(ctx, next) {
-      var _ctx$query, typeCode, page, query, user, data;
-
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee11$(_context11) {
+  router.get('/api/send', function () {
+    var _ref11 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee11(ctx, next) {
+      var query;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee11$(_context11) {
         while (1) {
           switch (_context11.prev = _context11.next) {
             case 0:
-              console.log('数据请求来了');
+              query = ctx.query;
 
-              if (!ctx.session.user) {
-                _context11.next = 4;
-                break;
+              if (!query.type) {
+                ctx.body = {
+                  success: false,
+                  msg: '参数不合法'
+                };
               }
-
+              console.log(query);
               _context11.next = 5;
-              break;
-
-            case 4:
-              return _context11.abrupt('return', ctx.body = {
-                success: false,
-                msg: '拿不到用户信息'
-              });
+              return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__wechat_reply__["b" /* send */])(query);
 
             case 5:
+              ctx.body = {
+                success: true
+              };
+
+            case 6:
+            case 'end':
+              return _context11.stop();
+          }
+        }
+      }, _callee11, _this);
+    }));
+
+    return function (_x21, _x22) {
+      return _ref11.apply(this, arguments);
+    };
+  }());
+
+  /**
+   * project router
+   * 
+   */
+
+  router.get('/api/EmphasisProject', function () {
+    var _ref12 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee12(ctx, next) {
+      var page, query, user, data;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee12$(_context12) {
+        while (1) {
+          switch (_context12.prev = _context12.next) {
+            case 0:
+              //  if(!ctx.session.user || !ctx.session.user.name){
+              //     console.log('error')
+              //     ctx.body ={
+              //       success:false,
+              //       msg:'拿不到用户信息'
+              //     }
+              //   }
+
+              page = ctx.query.page;
+              query = {
+                page: page,
+                rows: 10
+                //let user = ctx.session.user.name
+              };
+              user = 'super';
+              //  console.log(user)
+
+              _context12.next = 5;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.EmphasisProject(user, query);
+
+            case 5:
+              data = _context12.sent;
+
+
+              data.rows.forEach(function (item, index) {
+                if (item.ProjectName && item.ProjectName.length > 10) {
+                  item.ProjectName = item.ProjectName.substr(0, 10) + '...';
+                }
+              });
+
+              return _context12.abrupt('return', ctx.body = {
+                data: data,
+                success: true
+              });
+
+            case 8:
+            case 'end':
+              return _context12.stop();
+          }
+        }
+      }, _callee12, _this);
+    }));
+
+    return function (_x23, _x24) {
+      return _ref12.apply(this, arguments);
+    };
+  }());
+
+  router.get('/api/ProjectList', function () {
+    var _ref13 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee13(ctx, next) {
+      var _ctx$query, typeCode, page, query, user, data;
+
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee13$(_context13) {
+        while (1) {
+          switch (_context13.prev = _context13.next) {
+            case 0:
+              // if(!ctx.session.user || !ctx.session.user.name){
+              //   console.log('error')
+              //   ctx.body ={
+              //     success:false,
+              //     msg:'拿不到用户信息'
+              //   }
+              // }
               _ctx$query = ctx.query, typeCode = _ctx$query.typeCode, page = _ctx$query.page;
               query = {
                 typeCode: typeCode,
@@ -847,16 +910,16 @@ var router = function router(app) {
               } else if (typeCode === '3') {
                 query['HasMark'] = true;
               }
-              user = ctx.session.user.name;
-
+              // let user = ctx.session.user.name
+              user = 'super';
               // console.log(user)
               //let username ='super'
 
-              _context11.next = 11;
+              _context13.next = 6;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.ProjectList(user, query);
 
-            case 11:
-              data = _context11.sent;
+            case 6:
+              data = _context13.sent;
 
               //const data =await api.project.ProjectList('super',query)
               if (data.rows.length > 0) {
@@ -866,140 +929,12 @@ var router = function router(app) {
                   }
                 });
               }
-              return _context11.abrupt('return', ctx.body = {
+              return _context13.abrupt('return', ctx.body = {
                 data: data,
                 success: true
               });
 
-            case 14:
-            case 'end':
-              return _context11.stop();
-          }
-        }
-      }, _callee11, _this);
-    }));
-
-    return function (_x21, _x22) {
-      return _ref11.apply(this, arguments);
-    };
-  }());
-
-  router.get('/api/GetRoles', function () {
-    var _ref12 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee12(ctx, next) {
-      var user, data;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee12$(_context12) {
-        while (1) {
-          switch (_context12.prev = _context12.next) {
-            case 0:
-              console.log('进入请求中');
-
-              if (!ctx.session.user.name) {
-                _context12.next = 4;
-                break;
-              }
-
-              _context12.next = 5;
-              break;
-
-            case 4:
-              return _context12.abrupt('return', ctx.body = {
-                success: false,
-                msg: '拿不到用户信息'
-              });
-
-            case 5:
-              user = ctx.session.user;
-              _context12.prev = 6;
-              _context12.next = 9;
-              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.GetRoles(user.name, user.name);
-
             case 9:
-              data = _context12.sent;
-
-              //const data =await api.project.GetRoles("雷博","雷博")
-              ctx.body = {
-                success: true,
-                data: data.OrgBasic.RoleCode
-              };
-              _context12.next = 15;
-              break;
-
-            case 13:
-              _context12.prev = 13;
-              _context12.t0 = _context12['catch'](6);
-
-            case 15:
-            case 'end':
-              return _context12.stop();
-          }
-        }
-      }, _callee12, _this, [[6, 13]]);
-    }));
-
-    return function (_x23, _x24) {
-      return _ref12.apply(this, arguments);
-    };
-  }());
-
-  router.get('/api/ProjectDateil', function () {
-    var _ref13 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee13(ctx, next) {
-      var _ctx$query2, Id, Classification, user, query, data;
-
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee13$(_context13) {
-        while (1) {
-          switch (_context13.prev = _context13.next) {
-            case 0:
-              if (!ctx.session.user.name) {
-                _context13.next = 3;
-                break;
-              }
-
-              _context13.next = 4;
-              break;
-
-            case 3:
-              return _context13.abrupt('return', ctx.body = {
-                success: false,
-                msg: '拿不到用户信息'
-              });
-
-            case 4:
-              _ctx$query2 = ctx.query, Id = _ctx$query2.Id, Classification = _ctx$query2.Classification;
-              user = ctx.session.user.name;
-              //const user = 'super'
-
-              query = {
-                Id: Id,
-                Classification: Classification
-              };
-
-              if (!Id) {
-                _context13.next = 16;
-                break;
-              }
-
-              _context13.next = 10;
-              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.ProjectAuditById(user, query);
-
-            case 10:
-              data = _context13.sent;
-
-              console.log(data);
-              data.rows[0].ApplyDate = manba(data.rows[0].ApplyDate).format();
-              ctx.body = {
-                success: true,
-                data: data
-              };
-              _context13.next = 17;
-              break;
-
-            case 16:
-              ctx.body = {
-                success: false,
-                msg: 'Id不存在'
-              };
-
-            case 17:
             case 'end':
               return _context13.stop();
           }
@@ -1012,61 +947,52 @@ var router = function router(app) {
     };
   }());
 
-  router.get('/api/AuditProject/:_id', function () {
-    var _ref14 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee14(ctx, next) {
-      var _id, query, user, data, BusinessData;
-
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee14$(_context14) {
+  router.get('/api/apply', function () {
+    var _ref14 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee14(ctx, next) {
+      var user, form, data;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee14$(_context14) {
         while (1) {
           switch (_context14.prev = _context14.next) {
             case 0:
-              if (!ctx.session.user) {
-                _context14.next = 3;
-                break;
-              }
+              // if(!ctx.session.user || !ctx.session.user.name){
+              //    console.log('error')
+              //    ctx.body ={
+              //     success:false,
+              //     msg:'拿不到用户信息'
+              //    }
+              // }
+              //let user = ctx.session.user.name
+              user = 'super';
+              form = {};
+              _context14.prev = 2;
+              _context14.next = 5;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.GetApply(user, form);
 
-              _context14.next = 4;
-              break;
-
-            case 3:
-              return _context14.abrupt('return', ctx.body = {
-                success: false,
-                msg: '拿不到用户信息'
-              });
-
-            case 4:
-              _id = ctx.params._id;
-              query = {
-                Id: _id
-
-                //let username = `super`
-              };
-              user = ctx.session.user.name;
-              _context14.next = 9;
-              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.ProjectAuditById(user, query);
-
-            case 9:
+            case 5:
               data = _context14.sent;
 
-              // data.rows[0].CreateDate =manba(data.rows[0].CreateDate).format()
-              data.rows[0].ApplyDate = manba(data.rows[0].ApplyDate).format();
-              _context14.next = 13;
-              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.ProjectStage(user, _id);
+              // if(data.rows.length>0){
+              //   data.rows.forEach((item)=>{
+              //     item.ApplyDate = manba(item.ApplyDate).format()
+              //   })
+              // }
+              ctx.body = {
+                success: true,
+                data: data
+              };
+              _context14.next = 11;
+              break;
 
-            case 13:
-              BusinessData = _context14.sent;
-              return _context14.abrupt('return', ctx.body = {
-                data: data,
-                BusinessData: BusinessData,
-                success: true
-              });
+            case 9:
+              _context14.prev = 9;
+              _context14.t0 = _context14['catch'](2);
 
-            case 15:
+            case 11:
             case 'end':
               return _context14.stop();
           }
         }
-      }, _callee14, _this);
+      }, _callee14, _this, [[2, 9]]);
     }));
 
     return function (_x27, _x28) {
@@ -1074,64 +1000,40 @@ var router = function router(app) {
     };
   }());
 
-  //指派联系人
-  router.get('/api/GetContact', function () {
-    var _ref15 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee15(ctx, next) {
-      var user, id, data;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee15$(_context15) {
+  router.get('/api/GetRoles', function () {
+    var _ref15 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee15(ctx, next) {
+      var user, data;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee15$(_context15) {
         while (1) {
           switch (_context15.prev = _context15.next) {
             case 0:
-              if (!ctx.session.user.name) {
-                _context15.next = 3;
-                break;
-              }
+              //let user =ctx.session.user
+              console.log('111 roles');
+              user = 'super';
+              _context15.prev = 2;
+              _context15.next = 5;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.GetRoles(user, user);
 
-              _context15.next = 4;
-              break;
-
-            case 3:
-              return _context15.abrupt('return', ctx.body = {
-                success: false,
-                msg: '拿不到用户信息'
-              });
-
-            case 4:
-              //const user = `super`
-              user = ctx.session.user.name;
-              id = ctx.query.id;
-              _context15.prev = 6;
-              _context15.next = 9;
-              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.getContact(user, id);
-
-            case 9:
+            case 5:
               data = _context15.sent;
 
-              data.forEach(function (item) {
-                item.value = transliteration.slugify(item.UserCode).slice(0, 1);
-              });
               ctx.body = {
-                data: data,
-                success: true
+                success: true,
+                data: data.OrgBasic.RoleCode
               };
-              _context15.next = 17;
+              _context15.next = 11;
               break;
 
-            case 14:
-              _context15.prev = 14;
-              _context15.t0 = _context15['catch'](6);
+            case 9:
+              _context15.prev = 9;
+              _context15.t0 = _context15['catch'](2);
 
-              ctx.body = {
-                err: '网络请求出问题啦!',
-                success: false
-              };
-
-            case 17:
+            case 11:
             case 'end':
               return _context15.stop();
           }
         }
-      }, _callee15, _this, [[6, 14]]);
+      }, _callee15, _this, [[2, 9]]);
     }));
 
     return function (_x29, _x30) {
@@ -1139,50 +1041,50 @@ var router = function router(app) {
     };
   }());
 
-  //撤销项目
-  router.get('/api/RemoveAction', function () {
-    var _ref16 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee16(ctx, next) {
-      var _ctx$query3, HandleStatus, NextSetp, PreStep, id, requestData, user, data;
+  router.get('/api/ProjectDateil', function () {
+    var _ref16 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee16(ctx, next) {
+      var _ctx$query2, Id, Classification, user, query, data;
 
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee16$(_context16) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee16$(_context16) {
         while (1) {
           switch (_context16.prev = _context16.next) {
             case 0:
-              // if(ctx.session.user.name){
-              // }else {
-              //   return ctx.body ={
-              //      success:false,
-              //      msg:'拿不到用户信息'
-              //    }
-              // }
-              //console.log(ctx.query)
-              _ctx$query3 = ctx.query, HandleStatus = _ctx$query3.HandleStatus, NextSetp = _ctx$query3.NextSetp, PreStep = _ctx$query3.PreStep, id = _ctx$query3.id;
-              requestData = {
-                HandleStatus: 2,
-                ID: id,
-                NextSetp: false,
-                PreSetp: true
-                //let user =ctx.session.user.name
+              _ctx$query2 = ctx.query, Id = _ctx$query2.Id, Classification = _ctx$query2.Classification;
+              user = ctx.session.user.name;
+              //const user = 'super'
+
+              query = {
+                Id: Id,
+                Classification: Classification
               };
-              user = 'super';
 
-              try {
-                data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveAction(user, requestData);
-                //console.log(data)
-
-                ctx.body = {
-                  success: true,
-                  data: data
-                };
-              } catch (e) {
-                ctx.body = {
-                  success: false,
-                  msg: '请联系开发者',
-                  err: e
-                };
+              if (!Id) {
+                _context16.next = 12;
+                break;
               }
 
-            case 4:
+              _context16.next = 6;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.ProjectAuditById(user, query);
+
+            case 6:
+              data = _context16.sent;
+
+              console.log(data);
+              data.rows[0].ApplyDate = manba(data.rows[0].ApplyDate).format();
+              ctx.body = {
+                success: true,
+                data: data
+              };
+              _context16.next = 13;
+              break;
+
+            case 12:
+              ctx.body = {
+                success: false,
+                msg: 'Id不存在'
+              };
+
+            case 13:
             case 'end':
               return _context16.stop();
           }
@@ -1195,51 +1097,40 @@ var router = function router(app) {
     };
   }());
 
-  //审核项目
-  router.get('/api/SubmitAudit', function () {
-    var _ref17 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee17(ctx, next) {
-      var _ctx$query4, HandleStatus, NextSetp, PreStep, id, Remark, requestData, username, data;
+  router.get('/api/AuditProject/:_id', function () {
+    var _ref17 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee17(ctx, next) {
+      var _id, query, user, data, BusinessData;
 
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee17$(_context17) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee17$(_context17) {
         while (1) {
           switch (_context17.prev = _context17.next) {
             case 0:
-              // if(ctx.session.user.name){
-              // }else {
-              //   return ctx.body ={
-              //      success:false,
-              //      msg:'拿不到用户信息'
-              //   }
-              // }
-              _ctx$query4 = ctx.query, HandleStatus = _ctx$query4.HandleStatus, NextSetp = _ctx$query4.NextSetp, PreStep = _ctx$query4.PreStep, id = _ctx$query4.id, Remark = _ctx$query4.Remark;
-              requestData = {
-                HandleStatus: 1,
-                ID: id,
-                NextSetp: true,
-                PreSetp: false,
-                Remark: Remark,
-                State: "passed"
+              _id = ctx.params._id;
+              query = {
+                Id: _id
+                //let username = `super`
               };
-              username = 'super';
-              //let user =ctx.session.user.name
+              user = ctx.session.user.name;
+              _context17.next = 5;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.ProjectAuditById(user, query);
 
-              console.log('审核数据');
-              console.log(requestData);
-              try {
-                data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveAction(username, requestData);
+            case 5:
+              data = _context17.sent;
 
-                ctx.body = {
-                  success: true,
-                  data: data
-                };
-              } catch (e) {
-                ctx.body = {
-                  success: false,
-                  err: e
-                };
-              }
+              // data.rows[0].CreateDate =manba(data.rows[0].CreateDate).format()
+              data.rows[0].ApplyDate = manba(data.rows[0].ApplyDate).format();
+              _context17.next = 9;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.ProjectStage(user, _id);
 
-            case 6:
+            case 9:
+              BusinessData = _context17.sent;
+              return _context17.abrupt('return', ctx.body = {
+                data: data,
+                BusinessData: BusinessData,
+                success: true
+              });
+
+            case 11:
             case 'end':
               return _context17.stop();
           }
@@ -1252,12 +1143,11 @@ var router = function router(app) {
     };
   }());
 
-  //获取单位
-  router.get('/api/getOptions', function () {
-    var _ref18 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee18(ctx, next) {
-      var user, username, _ctx$query5, OrgProperty, CompanyType, page, rows, data, res;
-
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee18$(_context18) {
+  //指派联系人
+  router.get('/api/GetContact', function () {
+    var _ref18 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee18(ctx, next) {
+      var user, id, data;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee18$(_context18) {
         while (1) {
           switch (_context18.prev = _context18.next) {
             case 0:
@@ -1272,35 +1162,45 @@ var router = function router(app) {
             case 3:
               return _context18.abrupt('return', ctx.body = {
                 success: false,
-                msg: "拿不到用户信息"
+                msg: '拿不到用户信息'
               });
 
             case 4:
-              user = ctx.session.user;
-              username = 'super';
-              _ctx$query5 = ctx.query, OrgProperty = _ctx$query5.OrgProperty, CompanyType = _ctx$query5.CompanyType, page = _ctx$query5.page, rows = _ctx$query5.rows;
-              data = {
-                OrgProperty: OrgProperty,
-                CompanyType: CompanyType,
-                page: page,
-                rows: rows
-              };
-              _context18.next = 10;
-              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.GetOptions(user.name, data);
+              //const user = `super`
+              user = ctx.session.user.name;
+              id = ctx.query.id;
+              _context18.prev = 6;
+              _context18.next = 9;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.getContact(user, id);
 
-            case 10:
-              res = _context18.sent;
-              return _context18.abrupt('return', ctx.body = {
-                success: true,
-                data: res
+            case 9:
+              data = _context18.sent;
+
+              data.forEach(function (item) {
+                item.value = transliteration.slugify(item.UserCode).slice(0, 1);
               });
+              ctx.body = {
+                data: data,
+                success: true
+              };
+              _context18.next = 17;
+              break;
 
-            case 12:
+            case 14:
+              _context18.prev = 14;
+              _context18.t0 = _context18['catch'](6);
+
+              ctx.body = {
+                err: '网络请求出问题啦!',
+                success: false
+              };
+
+            case 17:
             case 'end':
               return _context18.stop();
           }
         }
-      }, _callee18, _this);
+      }, _callee18, _this, [[6, 14]]);
     }));
 
     return function (_x35, _x36) {
@@ -1308,30 +1208,171 @@ var router = function router(app) {
     };
   }());
 
-  //
-  router.get('/api/getClientUnit', function () {
-    var _ref19 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee19(ctx, next) {
-      var _ctx$query6, OrgProperty, page, rows, data, user, username, res;
+  //撤销项目
+  router.get('/api/RemoveAction', function () {
+    var _ref19 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee19(ctx, next) {
+      var _ctx$query3, HandleStatus, NextSetp, PreStep, id, requestData, username, data;
 
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee19$(_context19) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee19$(_context19) {
         while (1) {
           switch (_context19.prev = _context19.next) {
             case 0:
-              if (!ctx.session.user.name) {
-                _context19.next = 3;
-                break;
-              }
+              _ctx$query3 = ctx.query, HandleStatus = _ctx$query3.HandleStatus, NextSetp = _ctx$query3.NextSetp, PreStep = _ctx$query3.PreStep, id = _ctx$query3.id;
+              requestData = {
+                HandleStatus: 2,
+                ID: id,
+                NextSetp: false,
+                PreSetp: true
+              };
+              username = ctx.session.user.name;
+              //const user = 'super'
 
-              _context19.next = 4;
+              _context19.prev = 3;
+              _context19.next = 6;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveAction(username, requestData);
+
+            case 6:
+              data = _context19.sent;
+
+              //console.log(data)
+              ctx.body = {
+                success: true,
+                data: data
+              };
+              _context19.next = 13;
               break;
 
-            case 3:
-              return _context19.abrupt('return', ctx.body = {
+            case 10:
+              _context19.prev = 10;
+              _context19.t0 = _context19['catch'](3);
+
+              ctx.body = {
                 success: false,
-                msg: "拿不到用户信息"
+                msg: '请联系开发者',
+                err: _context19.t0
+              };
+
+            case 13:
+            case 'end':
+              return _context19.stop();
+          }
+        }
+      }, _callee19, _this, [[3, 10]]);
+    }));
+
+    return function (_x37, _x38) {
+      return _ref19.apply(this, arguments);
+    };
+  }());
+
+  //审核项目
+  router.get('/api/SubmitAudit', function () {
+    var _ref20 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee20(ctx, next) {
+      var _ctx$query4, HandleStatus, NextSetp, PreStep, id, Remark, requestData, username, data;
+
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee20$(_context20) {
+        while (1) {
+          switch (_context20.prev = _context20.next) {
+            case 0:
+              _ctx$query4 = ctx.query, HandleStatus = _ctx$query4.HandleStatus, NextSetp = _ctx$query4.NextSetp, PreStep = _ctx$query4.PreStep, id = _ctx$query4.id, Remark = _ctx$query4.Remark;
+              requestData = {
+                HandleStatus: 1,
+                ID: id,
+                NextSetp: true,
+                PreSetp: false,
+                Remark: Remark,
+                State: "passed"
+              };
+              username = ctx.session.user.name;
+              //let user =ctx.session.user.name
+
+              console.log('审核数据');
+              console.log(requestData);
+              _context20.prev = 5;
+              _context20.next = 8;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveAction(username, requestData);
+
+            case 8:
+              data = _context20.sent;
+
+              ctx.body = {
+                success: true,
+                data: data
+              };
+              _context20.next = 15;
+              break;
+
+            case 12:
+              _context20.prev = 12;
+              _context20.t0 = _context20['catch'](5);
+
+              ctx.body = {
+                success: false,
+                err: _context20.t0
+              };
+
+            case 15:
+            case 'end':
+              return _context20.stop();
+          }
+        }
+      }, _callee20, _this, [[5, 12]]);
+    }));
+
+    return function (_x39, _x40) {
+      return _ref20.apply(this, arguments);
+    };
+  }());
+
+  //获取单位
+  router.get('/api/getOptions', function () {
+    var _ref21 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee21(ctx, next) {
+      var user, _ctx$query5, OrgProperty, CompanyType, page, rows, data, res;
+
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee21$(_context21) {
+        while (1) {
+          switch (_context21.prev = _context21.next) {
+            case 0:
+              user = ctx.session.user;
+              _ctx$query5 = ctx.query, OrgProperty = _ctx$query5.OrgProperty, CompanyType = _ctx$query5.CompanyType, page = _ctx$query5.page, rows = _ctx$query5.rows;
+              data = {
+                OrgProperty: OrgProperty,
+                CompanyType: CompanyType,
+                page: page,
+                rows: rows
+              };
+              _context21.next = 5;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.GetOptions(user.name, data);
+
+            case 5:
+              res = _context21.sent;
+              return _context21.abrupt('return', ctx.body = {
+                success: true,
+                data: res
               });
 
-            case 4:
+            case 7:
+            case 'end':
+              return _context21.stop();
+          }
+        }
+      }, _callee21, _this);
+    }));
+
+    return function (_x41, _x42) {
+      return _ref21.apply(this, arguments);
+    };
+  }());
+
+  //
+  router.get('/api/getClientUnit', function () {
+    var _ref22 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee22(ctx, next) {
+      var _ctx$query6, OrgProperty, page, rows, data, user, username, res;
+
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee22$(_context22) {
+        while (1) {
+          switch (_context22.prev = _context22.next) {
+            case 0:
               _ctx$query6 = ctx.query, OrgProperty = _ctx$query6.OrgProperty, page = _ctx$query6.page, rows = _ctx$query6.rows;
               data = {
                 OrgProperty: OrgProperty,
@@ -1340,53 +1381,38 @@ var router = function router(app) {
               };
               user = ctx.session.user.name;
               username = 'super';
-              _context19.next = 10;
+              _context22.next = 6;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.GetClientUnit(user, data);
 
-            case 10:
-              res = _context19.sent;
+            case 6:
+              res = _context22.sent;
 
               ctx.body = {
                 success: true,
                 data: res
               };
 
-            case 12:
+            case 8:
             case 'end':
-              return _context19.stop();
+              return _context22.stop();
           }
         }
-      }, _callee19, _this);
+      }, _callee22, _this);
     }));
 
-    return function (_x37, _x38) {
-      return _ref19.apply(this, arguments);
+    return function (_x43, _x44) {
+      return _ref22.apply(this, arguments);
     };
   }());
 
   //项目提交
   router.post('/api/commitProject', function () {
-    var _ref20 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee20(ctx, next) {
+    var _ref23 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee23(ctx, next) {
       var projectInfo, user, data;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee20$(_context20) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee23$(_context23) {
         while (1) {
-          switch (_context20.prev = _context20.next) {
+          switch (_context23.prev = _context23.next) {
             case 0:
-              if (!ctx.session.user.name) {
-                _context20.next = 3;
-                break;
-              }
-
-              _context20.next = 4;
-              break;
-
-            case 3:
-              return _context20.abrupt('return', ctx.body = {
-                success: false,
-                msg: "拿不到用户信息"
-              });
-
-            case 4:
               projectInfo = ctx.request.body;
               //let user = 'super'
 
@@ -1399,82 +1425,65 @@ var router = function router(app) {
               //  projectInfo.form.StartTime =sd.format(new Date(),'YYYY-MM-DD')
               projectInfo.form.CreateDate = sd.format(new Date(), 'YYYY-MM-DD');
               console.log(projectInfo);
-              _context20.prev = 11;
-              _context20.next = 14;
+              _context23.prev = 7;
+              _context23.next = 10;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.CommitProject(user, projectInfo);
 
-            case 14:
-              data = _context20.sent;
+            case 10:
+              data = _context23.sent;
 
               console.log(data);
               ctx.body = {
                 success: true,
                 data: data
               };
-              _context20.next = 22;
+              _context23.next = 18;
               break;
 
-            case 19:
-              _context20.prev = 19;
-              _context20.t0 = _context20['catch'](11);
+            case 15:
+              _context23.prev = 15;
+              _context23.t0 = _context23['catch'](7);
 
               ctx.body = {
                 success: false,
-                err: _context20.t0
+                err: _context23.t0
               };
 
-            case 22:
+            case 18:
             case 'end':
-              return _context20.stop();
+              return _context23.stop();
           }
         }
-      }, _callee20, _this, [[11, 19]]);
+      }, _callee23, _this, [[7, 15]]);
     }));
 
-    return function (_x39, _x40) {
-      return _ref20.apply(this, arguments);
+    return function (_x45, _x46) {
+      return _ref23.apply(this, arguments);
     };
   }());
 
   //搜索项目
   router.get('/api/search', function () {
-    var _ref21 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee21(ctx, next) {
+    var _ref24 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee24(ctx, next) {
       var _ctx$query7, searchText, page, user, query, data;
 
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee21$(_context21) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee24$(_context24) {
         while (1) {
-          switch (_context21.prev = _context21.next) {
+          switch (_context24.prev = _context24.next) {
             case 0:
-              if (!ctx.session.user.name) {
-                _context21.next = 3;
-                break;
-              }
-
-              _context21.next = 4;
-              break;
-
-            case 3:
-              return _context21.abrupt('return', ctx.body = {
-                success: false,
-                msg: "拿不到用户信息"
-              });
-
-            case 4:
               _ctx$query7 = ctx.query, searchText = _ctx$query7.searchText, page = _ctx$query7.page;
-              //let user = `super`
-
               user = ctx.session.user.name;
               query = {
                 searchText: searchText,
                 page: page,
                 rows: 10
               };
-              _context21.prev = 7;
-              _context21.next = 10;
+              _context24.prev = 3;
+              _context24.next = 6;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.Search(user, query);
 
-            case 10:
-              data = _context21.sent;
+            case 6:
+              data = _context24.sent;
 
               data.rows.forEach(function (item, index) {
                 if (item.ProjectName.length > 10) {
@@ -1486,113 +1495,96 @@ var router = function router(app) {
                 success: true,
                 data: data
               };
-              _context21.next = 18;
+              _context24.next = 14;
               break;
 
-            case 15:
-              _context21.prev = 15;
-              _context21.t0 = _context21['catch'](7);
+            case 11:
+              _context24.prev = 11;
+              _context24.t0 = _context24['catch'](3);
 
               ctx.body = {
                 success: false,
-                err: _context21.t0
+                err: _context24.t0
               };
 
-            case 18:
+            case 14:
             case 'end':
-              return _context21.stop();
+              return _context24.stop();
           }
         }
-      }, _callee21, _this, [[7, 15]]);
+      }, _callee24, _this, [[3, 11]]);
     }));
 
-    return function (_x41, _x42) {
-      return _ref21.apply(this, arguments);
+    return function (_x47, _x48) {
+      return _ref24.apply(this, arguments);
     };
   }());
 
   //查询每个阶段的项目详情
   router.get('/api/getSectionDetail', function () {
-    var _ref22 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee22(ctx, next) {
+    var _ref25 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee25(ctx, next) {
       var _ctx$query8, type, Id, data, user;
 
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee22$(_context22) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee25$(_context25) {
         while (1) {
-          switch (_context22.prev = _context22.next) {
+          switch (_context25.prev = _context25.next) {
             case 0:
-              if (!ctx.session.user.name) {
-                _context22.next = 3;
-                break;
-              }
-
-              _context22.next = 4;
-              break;
-
-            case 3:
-              return _context22.abrupt('return', ctx.body = {
-                success: false,
-                msg: "拿不到用户信息"
-              });
-
-            case 4:
               _ctx$query8 = ctx.query, type = _ctx$query8.type, Id = _ctx$query8.Id;
               data = null;
-              //const user = `super`
-
               user = ctx.session.user.name;
-              _context22.t0 = type;
-              _context22.next = _context22.t0 === "BusinessPhase" ? 10 : _context22.t0 === "BusinessPhaseGroup" ? 14 : _context22.t0 === "QuotedPrice" ? 18 : _context22.t0 === "Biding" ? 22 : _context22.t0 === "Contract" ? 26 : _context22.t0 === "Receive" ? 30 : 34;
+              _context25.t0 = type;
+              _context25.next = _context25.t0 === "BusinessPhase" ? 6 : _context25.t0 === "BusinessPhaseGroup" ? 10 : _context25.t0 === "QuotedPrice" ? 14 : _context25.t0 === "Biding" ? 18 : _context25.t0 === "Contract" ? 22 : _context25.t0 === "Receive" ? 26 : 30;
               break;
 
-            case 10:
-              _context22.next = 12;
+            case 6:
+              _context25.next = 8;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.BusinessPhase(user, Id);
 
-            case 12:
-              data = _context22.sent;
-              return _context22.abrupt('break', 34);
+            case 8:
+              data = _context25.sent;
+              return _context25.abrupt('break', 30);
 
-            case 14:
-              _context22.next = 16;
+            case 10:
+              _context25.next = 12;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.BusinessPhaseGroup(user, Id);
 
-            case 16:
-              data = _context22.sent;
-              return _context22.abrupt('break', 34);
+            case 12:
+              data = _context25.sent;
+              return _context25.abrupt('break', 30);
 
-            case 18:
-              _context22.next = 20;
+            case 14:
+              _context25.next = 16;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.QuotedPrice(user, Id);
 
-            case 20:
-              data = _context22.sent;
-              return _context22.abrupt('break', 34);
+            case 16:
+              data = _context25.sent;
+              return _context25.abrupt('break', 30);
 
-            case 22:
-              _context22.next = 24;
+            case 18:
+              _context25.next = 20;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.Biding(user, Id);
 
-            case 24:
-              data = _context22.sent;
-              return _context22.abrupt('break', 34);
+            case 20:
+              data = _context25.sent;
+              return _context25.abrupt('break', 30);
 
-            case 26:
-              _context22.next = 28;
+            case 22:
+              _context25.next = 24;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.Contract(user, Id);
 
-            case 28:
-              data = _context22.sent;
-              return _context22.abrupt('break', 34);
+            case 24:
+              data = _context25.sent;
+              return _context25.abrupt('break', 30);
 
-            case 30:
-              _context22.next = 32;
+            case 26:
+              _context25.next = 28;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.Receive(user, Id);
 
-            case 32:
-              data = _context22.sent;
-              return _context22.abrupt('break', 34);
+            case 28:
+              data = _context25.sent;
+              return _context25.abrupt('break', 30);
 
-            case 34:
+            case 30:
               console.log(data);
               if (data.rows.length > 0) {
                 data.rows.forEach(function (item, index) {
@@ -1606,72 +1598,55 @@ var router = function router(app) {
                 data: data
               };
 
-            case 37:
+            case 33:
             case 'end':
-              return _context22.stop();
+              return _context25.stop();
           }
         }
-      }, _callee22, _this);
+      }, _callee25, _this);
     }));
 
-    return function (_x43, _x44) {
-      return _ref22.apply(this, arguments);
+    return function (_x49, _x50) {
+      return _ref25.apply(this, arguments);
     };
   }());
 
   router.post('/api/ProjecyUpdate/:_id', function () {
-    var _ref23 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee23(ctx, next) {
+    var _ref26 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee26(ctx, next) {
       var data, id, user, result;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee23$(_context23) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee26$(_context26) {
         while (1) {
-          switch (_context23.prev = _context23.next) {
+          switch (_context26.prev = _context26.next) {
             case 0:
-              if (!ctx.session.user.name) {
-                _context23.next = 3;
-                break;
-              }
-
-              _context23.next = 4;
-              break;
-
-            case 3:
-              return _context23.abrupt('return', ctx.body = {
-                success: false,
-                msg: "拿不到用户信息"
-              });
-
-            case 4:
               data = ctx.request.body;
               id = ctx.params._id;
-              //let user = 'super'
-
               user = ctx.session.user.name;
               result = null;
 
               console.log(data);
 
               if (!(data[0].Type === 1)) {
-                _context23.next = 14;
+                _context26.next = 10;
                 break;
               }
 
-              _context23.next = 12;
+              _context26.next = 8;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.EditBusinessManager(user, id, data);
 
-            case 12:
-              _context23.next = 17;
+            case 8:
+              _context26.next = 13;
               break;
 
-            case 14:
+            case 10:
               if (!(data[0].Type === 2)) {
-                _context23.next = 17;
+                _context26.next = 13;
                 break;
               }
 
-              _context23.next = 17;
+              _context26.next = 13;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.EditTechnicalManager(user, id, data);
 
-            case 17:
+            case 13:
               // const result =await api.project.ProjectUpdtae(user,id,data)
               console.log(result);
               ctx.body = {
@@ -1679,100 +1654,66 @@ var router = function router(app) {
                 data: result
               };
 
-            case 19:
+            case 15:
             case 'end':
-              return _context23.stop();
+              return _context26.stop();
           }
         }
-      }, _callee23, _this);
+      }, _callee26, _this);
     }));
 
-    return function (_x45, _x46) {
-      return _ref23.apply(this, arguments);
+    return function (_x51, _x52) {
+      return _ref26.apply(this, arguments);
     };
   }());
 
   router.get('/api/ProjectBusiness', function () {
-    var _ref24 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee24(ctx, next) {
+    var _ref27 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee27(ctx, next) {
       var Id, user, query, data;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee24$(_context24) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee27$(_context27) {
         while (1) {
-          switch (_context24.prev = _context24.next) {
+          switch (_context27.prev = _context27.next) {
             case 0:
-              if (!ctx.session.user.name) {
-                _context24.next = 3;
-                break;
-              }
-
-              _context24.next = 4;
-              break;
-
-            case 3:
-              return _context24.abrupt('return', ctx.body = {
-                success: false,
-                msg: "拿不到用户信息"
-              });
-
-            case 4:
               Id = ctx.query.Id;
-              //const user = 'super'
-
               user = ctx.session.user.name;
               query = {
                 HasApprove: true,
                 value: Id,
                 _valueFeild: 'value'
               };
-              _context24.next = 9;
+              _context27.next = 5;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.ProjectBusiness(user, query);
 
-            case 9:
-              data = _context24.sent;
+            case 5:
+              data = _context27.sent;
 
               ctx.body = {
                 data: data,
                 success: true
               };
 
-            case 11:
+            case 7:
             case 'end':
-              return _context24.stop();
+              return _context27.stop();
           }
         }
-      }, _callee24, _this);
+      }, _callee27, _this);
     }));
 
-    return function (_x47, _x48) {
-      return _ref24.apply(this, arguments);
+    return function (_x53, _x54) {
+      return _ref27.apply(this, arguments);
     };
   }());
 
   //提交商务阶段
   router.post('/api/BusinessCommit', function () {
-    var _ref25 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee25(ctx, next) {
+    var _ref28 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee28(ctx, next) {
       var data, user, result;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee25$(_context25) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee28$(_context28) {
         while (1) {
-          switch (_context25.prev = _context25.next) {
+          switch (_context28.prev = _context28.next) {
             case 0:
-              if (!ctx.session.user.name) {
-                _context25.next = 3;
-                break;
-              }
-
-              _context25.next = 4;
-              break;
-
-            case 3:
-              return _context25.abrupt('return', ctx.body = {
-                success: false,
-                msg: "拿不到用户信息"
-              });
-
-            case 4:
               data = ctx.request.body;
-              //let user = 'super'
-
               user = ctx.session.user.name;
 
               data.form.ID = uuid.v4();
@@ -1786,171 +1727,7 @@ var router = function router(app) {
                 data: result
               };
 
-            case 12:
-            case 'end':
-              return _context25.stop();
-          }
-        }
-      }, _callee25, _this);
-    }));
-
-    return function (_x49, _x50) {
-      return _ref25.apply(this, arguments);
-    };
-  }());
-
-  //商务阶段跟踪反馈
-  router.post('/api/PhaseFeedback', function () {
-    var _ref26 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee26(ctx, next) {
-      var data, user, username, result;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee26$(_context26) {
-        while (1) {
-          switch (_context26.prev = _context26.next) {
-            case 0:
-              if (!ctx.session.user) {
-                _context26.next = 3;
-                break;
-              }
-
-              _context26.next = 4;
-              break;
-
-            case 3:
-              return _context26.abrupt('return', ctx.body = {
-                success: false,
-                msg: "拿不到用户信息"
-              });
-
-            case 4:
-              data = ctx.request.body;
-              user = 'super';
-              username = ctx.session.user.name;
-
-              data.form.ApplyPerson = username;
-              data.form.ChargePerson = username;
-              data.form.FinishTime = sd.format(new Date(), 'YYYY-MM-DD');
-              data.form.ID = uuid.v4();
-              console.log('商务阶段跟踪反馈');
-              console.log(data);
-              _context26.next = 15;
-              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.PhaseFeedback(username, data);
-
-            case 15:
-              result = _context26.sent;
-
-              ctx.body = {
-                success: true,
-                data: result
-              };
-
-            case 17:
-            case 'end':
-              return _context26.stop();
-          }
-        }
-      }, _callee26, _this);
-    }));
-
-    return function (_x51, _x52) {
-      return _ref26.apply(this, arguments);
-    };
-  }());
-
-  //收款登记
-  router.get('/api/ReceiveGroup', function () {
-    var _ref27 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee27(ctx, next) {
-      var Id, user, username, query, result;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee27$(_context27) {
-        while (1) {
-          switch (_context27.prev = _context27.next) {
-            case 0:
-              if (!ctx.session.user.name) {
-                _context27.next = 3;
-                break;
-              }
-
-              _context27.next = 4;
-              break;
-
-            case 3:
-              return _context27.abrupt('return', ctx.body = {
-                success: false,
-                msg: "拿不到用户信息"
-              });
-
-            case 4:
-              Id = ctx.query.Id;
-              user = 'super';
-              username = ctx.session.user.name;
-              query = {
-                value: Id
-              };
-              _context27.next = 10;
-              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.ReceiveGroup(username, query);
-
-            case 10:
-              result = _context27.sent;
-
-              console.log(result);
-              ctx.body = {
-                success: true,
-                data: result
-              };
-
-            case 13:
-            case 'end':
-              return _context27.stop();
-          }
-        }
-      }, _callee27, _this);
-    }));
-
-    return function (_x53, _x54) {
-      return _ref27.apply(this, arguments);
-    };
-  }());
-
-  //收款登记提交
-  router.post('/api/ReceiveCommit', function () {
-    var _ref28 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee28(ctx, next) {
-      var Id, user, username, query, result;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee28$(_context28) {
-        while (1) {
-          switch (_context28.prev = _context28.next) {
-            case 0:
-              if (!ctx.session.user.name) {
-                _context28.next = 3;
-                break;
-              }
-
-              _context28.next = 4;
-              break;
-
-            case 3:
-              return _context28.abrupt('return', ctx.body = {
-                success: false,
-                msg: "拿不到用户信息"
-              });
-
-            case 4:
-              Id = ctx.query.Id;
-              user = 'super';
-              username = ctx.session.user.name;
-              query = {
-                value: Id
-              };
-              _context28.next = 10;
-              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.ReceiveGroup(username, query);
-
-            case 10:
-              result = _context28.sent;
-
-              ctx.body = {
-                success: true,
-                data: result
-              };
-
-            case 12:
+            case 8:
             case 'end':
               return _context28.stop();
           }
@@ -1963,43 +1740,28 @@ var router = function router(app) {
     };
   }());
 
-  router.get('/api/GetBiding', function () {
-    var _ref29 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee29(ctx, next) {
-      var Id, query, user, username, result;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee29$(_context29) {
+  //商务阶段跟踪反馈
+  router.post('/api/PhaseFeedback', function () {
+    var _ref29 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee29(ctx, next) {
+      var data, username, result;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee29$(_context29) {
         while (1) {
           switch (_context29.prev = _context29.next) {
             case 0:
-              if (!ctx.session.user.name) {
-                _context29.next = 3;
-                break;
-              }
-
-              _context29.next = 4;
-              break;
-
-            case 3:
-              return _context29.abrupt('return', ctx.body = {
-                success: false,
-                msg: "拿不到用户信息"
-              });
-
-            case 4:
-              Id = ctx.query.Id;
-              query = {
-                hasApprove: 'True',
-                value: Id
-              };
-              user = 'super';
+              data = ctx.request.body;
               username = ctx.session.user.name;
-              //这里是跨服务调用的接口恨薄的一层，后面 最好加上一些服务熔断
 
+              data.form.ApplyPerson = username;
+              data.form.ChargePerson = username;
+              data.form.FinishTime = sd.format(new Date(), 'YYYY-MM-DD');
+              data.form.ID = uuid.v4();
+              console.log('商务阶段跟踪反馈');
+              console.log(data);
               _context29.next = 10;
-              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.GetBiding(username, query);
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.PhaseFeedback(username, data);
 
             case 10:
               result = _context29.sent;
-
 
               ctx.body = {
                 success: true,
@@ -2019,31 +1781,32 @@ var router = function router(app) {
     };
   }());
 
-  router.get('/api/QuotedPrice', function () {
-    var _ref30 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee30(ctx, next) {
-      var Id, query, user, result;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee30$(_context30) {
+  //收款登记
+  router.get('/api/ReceiveGroup', function () {
+    var _ref30 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee30(ctx, next) {
+      var Id, username, query, result;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee30$(_context30) {
         while (1) {
           switch (_context30.prev = _context30.next) {
             case 0:
               Id = ctx.query.Id;
+              username = ctx.session.user.name;
               query = {
-                hasApprove: 'True',
                 value: Id
               };
-              user = 'super';
               _context30.next = 5;
-              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.GetQuotedPrice(user, query);
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.ReceiveGroup(username, query);
 
             case 5:
               result = _context30.sent;
 
+              console.log(result);
               ctx.body = {
                 success: true,
                 data: result
               };
 
-            case 7:
+            case 8:
             case 'end':
               return _context30.stop();
           }
@@ -2056,51 +1819,31 @@ var router = function router(app) {
     };
   }());
 
-  router.post('/api/CommitQuoted', function () {
-    var _ref31 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee31(ctx, next) {
-      var data, user, result;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee31$(_context31) {
+  //收款登记提交
+  router.post('/api/ReceiveCommit', function () {
+    var _ref31 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee31(ctx, next) {
+      var Id, username, query, result;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee31$(_context31) {
         while (1) {
           switch (_context31.prev = _context31.next) {
             case 0:
-              if (!ctx.session.user.name) {
-                _context31.next = 3;
-                break;
-              }
+              Id = ctx.query.Id;
+              username = ctx.session.user.name;
+              query = {
+                value: Id
+              };
+              _context31.next = 5;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.ReceiveGroup(username, query);
 
-              _context31.next = 4;
-              break;
-
-            case 3:
-              return _context31.abrupt('return', ctx.body = {
-                success: false,
-                msg: "拿不到用户信息"
-              });
-
-            case 4:
-              data = ctx.request.body;
-              //let user = 'super'
-
-              user = ctx.session.user.name;
-
-              data.form.ApplyDate = sd.format(new Date(), 'YYYY-MM-DD');
-              data.form.ApplyPerson = user;
-              data.form.ID = uuid.v4();
-              console.log(data);
-              _context31.next = 12;
-              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.CommitQutoedPrice(user, data);
-
-            case 12:
+            case 5:
               result = _context31.sent;
-
-              //跨进程的通信,可以加一些调用之间融错,不然恨单薄的一层,
 
               ctx.body = {
                 success: true,
                 data: result
               };
 
-            case 14:
+            case 7:
             case 'end':
               return _context31.stop();
           }
@@ -2113,34 +1856,34 @@ var router = function router(app) {
     };
   }());
 
-  router.post('/api/CommitBiding', function () {
-    var _ref32 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee32(ctx, next) {
-      var data, user, result;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee32$(_context32) {
+  router.get('/api/GetBiding', function () {
+    var _ref32 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee32(ctx, next) {
+      var Id, query, username, result;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee32$(_context32) {
         while (1) {
           switch (_context32.prev = _context32.next) {
             case 0:
-              data = ctx.request.body;
+              Id = ctx.query.Id;
+              query = {
+                hasApprove: 'True',
+                value: Id
+              };
+              username = ctx.session.user.name;
+              //这里是跨服务调用的接口恨薄的一层，后面 最好加上一些服务熔断
 
-              data.form.ApplyDate = sd.format(new Date(), 'YYYY-MM-DD');
-              data.form.ApplyPerson = '超级管理员';
-              data.form.ID = uuid.v4();
-              user = 'super';
+              _context32.next = 5;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.GetBiding(username, query);
 
-              console.log(data);
-              //这个地方可以加一些融错,不然恨单薄的一层
-              _context32.next = 8;
-              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.CommitBiding(user, data);
-
-            case 8:
+            case 5:
               result = _context32.sent;
+
 
               ctx.body = {
                 success: true,
                 data: result
               };
 
-            case 10:
+            case 7:
             case 'end':
               return _context32.stop();
           }
@@ -2153,58 +1896,30 @@ var router = function router(app) {
     };
   }());
 
-  router.post('/api/AuditItem', function () {
-    var _ref33 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee33(ctx, next) {
-      var form, data, user;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee33$(_context33) {
+  router.get('/api/QuotedPrice', function () {
+    var _ref33 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee33(ctx, next) {
+      var Id, query, result;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee33$(_context33) {
         while (1) {
           switch (_context33.prev = _context33.next) {
             case 0:
-              form = ctx.request.body;
-              data = null;
-              user = 'super';
+              Id = ctx.query.Id;
+              query = {
+                hasApprove: 'True',
+                value: Id
+              };
+              _context33.next = 4;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.GetQuotedPrice(user, query);
 
-              if (!form.dataType) {
-                ctx.body = {
-                  success: false,
-                  message: "缺少参数"
-                };
-              }
-              _context33.t0 = form.dataType;
-              _context33.next = _context33.t0 === 'BusinessPhase' ? 7 : _context33.t0 === "QuotedPrice" ? 9 : _context33.t0 === "Biding" ? 11 : _context33.t0 === "BusinessPhaseGroup" ? 13 : _context33.t0 === "Contract" ? 15 : _context33.t0 === "Receive" ? 17 : 19;
-              break;
+            case 4:
+              result = _context33.sent;
 
-            case 7:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.SetBusinessState(user, form);
-              return _context33.abrupt('break', 19);
-
-            case 9:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveQuotedPrice(user, form);
-              return _context33.abrupt('break', 19);
-
-            case 11:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveBiding(user, form);
-              return _context33.abrupt('break', 19);
-
-            case 13:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveBusinessPhaseGroup(user, form);
-              return _context33.abrupt('break', 19);
-
-            case 15:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveContact(user, form);
-              return _context33.abrupt('break', 19);
-
-            case 17:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveReceive(user, form);
-              return _context33.abrupt('break', 19);
-
-            case 19:
               ctx.body = {
                 success: true,
-                data: data
+                data: result
               };
 
-            case 20:
+            case 6:
             case 'end':
               return _context33.stop();
           }
@@ -2217,58 +1932,34 @@ var router = function router(app) {
     };
   }());
 
-  router.post('/api/RevocationItem', function () {
-    var _ref34 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee34(ctx, next) {
-      var form, data, user;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee34$(_context34) {
+  router.post('/api/CommitQuoted', function () {
+    var _ref34 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee34(ctx, next) {
+      var data, user, result;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee34$(_context34) {
         while (1) {
           switch (_context34.prev = _context34.next) {
             case 0:
-              form = ctx.request.body;
-              data = null;
-              user = 'super';
+              data = ctx.request.body;
+              user = ctx.session.user.name;
 
-              if (!form.dataType) {
-                ctx.body = {
-                  success: false,
-                  message: "缺少参数"
-                };
-              }
-              _context34.t0 = form.dataType;
-              _context34.next = _context34.t0 === 'BusinessPhase' ? 7 : _context34.t0 === "BusinessPhaseGroup" ? 9 : _context34.t0 === 'QuotedPrice' ? 11 : _context34.t0 === "Biding" ? 13 : _context34.t0 === "Contract" ? 15 : _context34.t0 === "Receive" ? 17 : 19;
-              break;
+              data.form.ApplyDate = sd.format(new Date(), 'YYYY-MM-DD');
+              data.form.ApplyPerson = user;
+              data.form.ID = uuid.v4();
+              console.log(data);
+              _context34.next = 8;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.CommitQutoedPrice(user, data);
 
-            case 7:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveBusiness(user, form);
-              return _context34.abrupt('break', 19);
+            case 8:
+              result = _context34.sent;
 
-            case 9:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveBusinessPhaseGroup(user, form);
-              return _context34.abrupt('break', 19);
+              //跨进程的通信,可以加一些调用之间融错,不然恨单薄的一层,
 
-            case 11:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveQuotedPrice(user, form);
-              return _context34.abrupt('break', 19);
-
-            case 13:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveBiding(user, form);
-              return _context34.abrupt('break', 19);
-
-            case 15:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveContact(user, form);
-              return _context34.abrupt('break', 19);
-
-            case 17:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveReceive(user, form);
-              return _context34.abrupt('break', 19);
-
-            case 19:
               ctx.body = {
                 success: true,
-                data: data
+                data: result
               };
 
-            case 20:
+            case 10:
             case 'end':
               return _context34.stop();
           }
@@ -2281,20 +1972,183 @@ var router = function router(app) {
     };
   }());
 
-  router.get('/api/BusinessStage', function () {
-    var _ref35 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee35(ctx, next) {
-      var Id, user, data, map, phaseId;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee35$(_context35) {
+  router.post('/api/CommitBiding', function () {
+    var _ref35 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee35(ctx, next) {
+      var data, result;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee35$(_context35) {
         while (1) {
           switch (_context35.prev = _context35.next) {
             case 0:
+              data = ctx.request.body;
+
+              data.form.ApplyDate = sd.format(new Date(), 'YYYY-MM-DD');
+              data.form.ApplyPerson = '超级管理员';
+              data.form.ID = uuid.v4();
+              console.log(data);
+              //这个地方可以加一些融错,不然恨单薄的一层
+              _context35.next = 7;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.CommitBiding(user, data);
+
+            case 7:
+              result = _context35.sent;
+
+              ctx.body = {
+                success: true,
+                data: result
+              };
+
+            case 9:
+            case 'end':
+              return _context35.stop();
+          }
+        }
+      }, _callee35, _this);
+    }));
+
+    return function (_x69, _x70) {
+      return _ref35.apply(this, arguments);
+    };
+  }());
+
+  router.post('/api/AuditItem', function () {
+    var _ref36 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee36(ctx, next) {
+      var form, data;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee36$(_context36) {
+        while (1) {
+          switch (_context36.prev = _context36.next) {
+            case 0:
+              form = ctx.request.body;
+              data = null;
+
+              if (!form.dataType) {
+                ctx.body = {
+                  success: false,
+                  message: "缺少参数"
+                };
+              }
+              _context36.t0 = form.dataType;
+              _context36.next = _context36.t0 === 'BusinessPhase' ? 6 : _context36.t0 === "QuotedPrice" ? 8 : _context36.t0 === "Biding" ? 10 : _context36.t0 === "BusinessPhaseGroup" ? 12 : _context36.t0 === "Contract" ? 14 : _context36.t0 === "Receive" ? 16 : 18;
+              break;
+
+            case 6:
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.SetBusinessState(user, form);
+              return _context36.abrupt('break', 18);
+
+            case 8:
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveQuotedPrice(user, form);
+              return _context36.abrupt('break', 18);
+
+            case 10:
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveBiding(user, form);
+              return _context36.abrupt('break', 18);
+
+            case 12:
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveBusinessPhaseGroup(user, form);
+              return _context36.abrupt('break', 18);
+
+            case 14:
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveContact(user, form);
+              return _context36.abrupt('break', 18);
+
+            case 16:
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveReceive(user, form);
+              return _context36.abrupt('break', 18);
+
+            case 18:
+              ctx.body = {
+                success: true,
+                data: data
+              };
+
+            case 19:
+            case 'end':
+              return _context36.stop();
+          }
+        }
+      }, _callee36, _this);
+    }));
+
+    return function (_x71, _x72) {
+      return _ref36.apply(this, arguments);
+    };
+  }());
+
+  router.post('/api/RevocationItem', function () {
+    var _ref37 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee37(ctx, next) {
+      var form, data;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee37$(_context37) {
+        while (1) {
+          switch (_context37.prev = _context37.next) {
+            case 0:
+              form = ctx.request.body;
+              data = null;
+
+              if (!form.dataType) {
+                ctx.body = {
+                  success: false,
+                  message: "缺少参数"
+                };
+              }
+              _context37.t0 = form.dataType;
+              _context37.next = _context37.t0 === 'BusinessPhase' ? 6 : _context37.t0 === "BusinessPhaseGroup" ? 8 : _context37.t0 === 'QuotedPrice' ? 10 : _context37.t0 === "Biding" ? 12 : _context37.t0 === "Contract" ? 14 : _context37.t0 === "Receive" ? 16 : 18;
+              break;
+
+            case 6:
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveBusiness(user, form);
+              return _context37.abrupt('break', 18);
+
+            case 8:
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveBusinessPhaseGroup(user, form);
+              return _context37.abrupt('break', 18);
+
+            case 10:
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveQuotedPrice(user, form);
+              return _context37.abrupt('break', 18);
+
+            case 12:
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveBiding(user, form);
+              return _context37.abrupt('break', 18);
+
+            case 14:
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveContact(user, form);
+              return _context37.abrupt('break', 18);
+
+            case 16:
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveReceive(user, form);
+              return _context37.abrupt('break', 18);
+
+            case 18:
+              ctx.body = {
+                success: true,
+                data: data
+              };
+
+            case 19:
+            case 'end':
+              return _context37.stop();
+          }
+        }
+      }, _callee37, _this);
+    }));
+
+    return function (_x73, _x74) {
+      return _ref37.apply(this, arguments);
+    };
+  }());
+
+  router.get('/api/BusinessStage', function () {
+    var _ref38 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee38(ctx, next) {
+      var Id, data, map, phaseId;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee38$(_context38) {
+        while (1) {
+          switch (_context38.prev = _context38.next) {
+            case 0:
               Id = ctx.query.Id;
-              user = 'super';
-              _context35.next = 4;
+              _context38.next = 3;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.BusinessStage(user, Id);
 
-            case 4:
-              data = _context35.sent;
+            case 3:
+              data = _context38.sent;
 
 
               console.log(data);
@@ -2323,53 +2177,36 @@ var router = function router(app) {
                 };
               }
 
-            case 7:
+            case 6:
             case 'end':
-              return _context35.stop();
+              return _context38.stop();
           }
         }
-      }, _callee35, _this);
+      }, _callee38, _this);
     }));
 
-    return function (_x69, _x70) {
-      return _ref35.apply(this, arguments);
+    return function (_x75, _x76) {
+      return _ref38.apply(this, arguments);
     };
   }());
 
   router.get('/api/GetDetailByBusiness', function () {
-    var _ref36 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee36(ctx, next) {
+    var _ref39 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee39(ctx, next) {
       var Id, user, data, map, phaseId, query, result;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee36$(_context36) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee39$(_context39) {
         while (1) {
-          switch (_context36.prev = _context36.next) {
+          switch (_context39.prev = _context39.next) {
             case 0:
-              if (!ctx.session.user.name) {
-                _context36.next = 3;
-                break;
-              }
-
-              _context36.next = 4;
-              break;
-
-            case 3:
-              return _context36.abrupt('return', ctx.body = {
-                success: false,
-                msg: "拿不到用户的信息"
-              });
-
-            case 4:
               Id = ctx.query.Id;
-              //let user = 'super'
-
               user = ctx.session.user.name;
-              _context36.next = 8;
+              _context39.next = 4;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.BusinessStage(user, Id);
 
-            case 8:
-              data = _context36.sent;
+            case 4:
+              data = _context39.sent;
 
               if (!(data.total > 0)) {
-                _context36.next = 22;
+                _context39.next = 18;
                 break;
               }
 
@@ -2390,11 +2227,11 @@ var router = function router(app) {
                 value: phaseId,
                 _valueFeild: 'value'
               };
-              _context36.next = 16;
+              _context39.next = 12;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.ProjectBusiness(user, query);
 
-            case 16:
-              result = _context36.sent;
+            case 12:
+              result = _context39.sent;
 
               console.log('reusk');
               console.log(result);
@@ -2402,54 +2239,37 @@ var router = function router(app) {
                 success: true,
                 data: result
               };
-              _context36.next = 23;
+              _context39.next = 19;
               break;
 
-            case 22:
+            case 18:
               ctx.body = {
                 success: true,
                 data: []
               };
 
-            case 23:
+            case 19:
             case 'end':
-              return _context36.stop();
+              return _context39.stop();
           }
         }
-      }, _callee36, _this);
+      }, _callee39, _this);
     }));
 
-    return function (_x71, _x72) {
-      return _ref36.apply(this, arguments);
+    return function (_x77, _x78) {
+      return _ref39.apply(this, arguments);
     };
   }());
 
   router.post('/api/SetDateilCommitState', function () {
-    var _ref37 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee37(ctx, next) {
+    var _ref40 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee40(ctx, next) {
       var form, data, user;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee37$(_context37) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee40$(_context40) {
         while (1) {
-          switch (_context37.prev = _context37.next) {
+          switch (_context40.prev = _context40.next) {
             case 0:
-              if (!ctx.session.user.name) {
-                _context37.next = 3;
-                break;
-              }
-
-              _context37.next = 4;
-              break;
-
-            case 3:
-              return _context37.abrupt('return', ctx.body = {
-                success: false,
-                msg: "拿不到用户的信息"
-              });
-
-            case 4:
               form = ctx.request.body;
               data = null;
-              //let user = 'super'
-
               user = ctx.session.user.name;
 
               if (!form.dataType) {
@@ -2458,89 +2278,87 @@ var router = function router(app) {
                   message: "缺少参数"
                 };
               }
-              _context37.t0 = form.dataType;
-              _context37.next = _context37.t0 === 'BusinessPhase' ? 11 : _context37.t0 === "BusinessPhaseGroup" ? 13 : _context37.t0 === "QuotedPrice" ? 15 : _context37.t0 === "Biding" ? 17 : _context37.t0 === "Contract" ? 19 : _context37.t0 === "Receive" ? 21 : 23;
+              _context40.t0 = form.dataType;
+              _context40.next = _context40.t0 === 'BusinessPhase' ? 7 : _context40.t0 === "BusinessPhaseGroup" ? 9 : _context40.t0 === "QuotedPrice" ? 11 : _context40.t0 === "Biding" ? 13 : _context40.t0 === "Contract" ? 15 : _context40.t0 === "Receive" ? 17 : 19;
               break;
 
-            case 11:
+            case 7:
               data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveBusiness(user, form);
-              return _context37.abrupt('break', 23);
+              return _context40.abrupt('break', 19);
+
+            case 9:
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveBusinessPhaseGroup(user, form);
+              return _context40.abrupt('break', 19);
+
+            case 11:
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveQuotedPrice(user, form);
+              return _context40.abrupt('break', 19);
 
             case 13:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveBusinessPhaseGroup(user, form);
-              return _context37.abrupt('break', 23);
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveBiding(user, form);
+              return _context40.abrupt('break', 19);
 
             case 15:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveQuotedPrice(user, form);
-              return _context37.abrupt('break', 23);
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveContact(user, form);
+              return _context40.abrupt('break', 19);
 
             case 17:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveBiding(user, form);
-              return _context37.abrupt('break', 23);
+              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveReceive(user, form);
+              return _context40.abrupt('break', 19);
 
             case 19:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveContact(user, form);
-              return _context37.abrupt('break', 23);
-
-            case 21:
-              data = __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.RemoveReceive(user, form);
-              return _context37.abrupt('break', 23);
-
-            case 23:
               ctx.body = {
                 success: true,
                 data: data
               };
 
-            case 24:
+            case 20:
             case 'end':
-              return _context37.stop();
+              return _context40.stop();
           }
         }
-      }, _callee37, _this);
+      }, _callee40, _this);
     }));
 
-    return function (_x73, _x74) {
-      return _ref37.apply(this, arguments);
+    return function (_x79, _x80) {
+      return _ref40.apply(this, arguments);
     };
   }());
 
   router.get('/api/CheckReceive', function () {
-    var _ref38 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee38(ctx, next) {
+    var _ref41 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee41(ctx, next) {
       var Id, user, query, data;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee38$(_context38) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee41$(_context41) {
         while (1) {
-          switch (_context38.prev = _context38.next) {
+          switch (_context41.prev = _context41.next) {
             case 0:
               if (!ctx.session.user.name) {
-                _context38.next = 3;
+                _context41.next = 3;
                 break;
               }
 
-              _context38.next = 4;
+              _context41.next = 4;
               break;
 
             case 3:
-              return _context38.abrupt('return', ctx.body = {
+              return _context41.abrupt('return', ctx.body = {
                 success: false,
                 msg: "拿不到用户的信息"
               });
 
             case 4:
               Id = ctx.query.Id;
-              // let user = 'super'
-
               user = ctx.session.user.name;
               query = {
                 ProjectID: Id,
                 page: 1,
                 rows: 20
               };
-              _context38.next = 9;
+              _context41.next = 9;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.CheckReceive(user, query);
 
             case 9:
-              data = _context38.sent;
+              data = _context41.sent;
 
               if (data.total > 0) {
                 // let phaseId =data.rows[0].ID
@@ -2560,137 +2378,6 @@ var router = function router(app) {
 
             case 11:
             case 'end':
-              return _context38.stop();
-          }
-        }
-      }, _callee38, _this);
-    }));
-
-    return function (_x75, _x76) {
-      return _ref38.apply(this, arguments);
-    };
-  }());
-
-  router.post('/api/CommitContract', function () {
-    var _ref39 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee39(ctx, next) {
-      var data, user, result;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee39$(_context39) {
-        while (1) {
-          switch (_context39.prev = _context39.next) {
-            case 0:
-              if (!ctx.session.user.name) {
-                _context39.next = 3;
-                break;
-              }
-
-              _context39.next = 4;
-              break;
-
-            case 3:
-              return _context39.abrupt('return', ctx.body = {
-                success: false,
-                msg: "拿不到用户的信息"
-              });
-
-            case 4:
-              data = ctx.request.body;
-              // let user = 'super'
-
-              user = ctx.session.user.name;
-
-              data.form.ApplyDate = sd.format(new Date(), 'YYYY-MM-DD');
-              data.form.ApplyPerson = user;
-              if (data.form.ID.length > 0) {} else {
-                data.form.ID = uuid.v4();
-              }
-              // console.log(data)
-              _context39.next = 11;
-              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.CommitContract(user, data);
-
-            case 11:
-              result = _context39.sent;
-
-              //跨进程的通信,可以加一些调用之间融错,不然恨单薄的一层,
-
-              ctx.body = {
-                success: true,
-                data: result
-              };
-
-            case 13:
-            case 'end':
-              return _context39.stop();
-          }
-        }
-      }, _callee39, _this);
-    }));
-
-    return function (_x77, _x78) {
-      return _ref39.apply(this, arguments);
-    };
-  }());
-
-  //检查用户的权限
-  router.get('checkUser', function () {
-    var _ref40 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee40(ctx, next) {
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee40$(_context40) {
-        while (1) {
-          switch (_context40.prev = _context40.next) {
-            case 0:
-            case 'end':
-              return _context40.stop();
-          }
-        }
-      }, _callee40, _this);
-    }));
-
-    return function (_x79, _x80) {
-      return _ref40.apply(this, arguments);
-    };
-  }());
-
-  router.post('/api/CommitReceive', function () {
-    var _ref41 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee41(ctx, next) {
-      var data, user, result;
-      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee41$(_context41) {
-        while (1) {
-          switch (_context41.prev = _context41.next) {
-            case 0:
-              if (!ctx.session.user.name) {
-                _context41.next = 3;
-                break;
-              }
-
-              _context41.next = 4;
-              break;
-
-            case 3:
-              return _context41.abrupt('return', ctx.body = {
-                success: false,
-                msg: "拿不到用户的信息"
-              });
-
-            case 4:
-              data = ctx.request.body;
-              // let user = 'super'
-
-              user = ctx.session.user.name;
-
-              data.form.ID = uuid.v4();
-              console.log(data);
-              _context41.next = 10;
-              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.CommitReceive(user, data);
-
-            case 10:
-              result = _context41.sent;
-
-              ctx.body = {
-                data: result,
-                success: true
-              };
-
-            case 12:
-            case 'end':
               return _context41.stop();
           }
         }
@@ -2699,6 +2386,103 @@ var router = function router(app) {
 
     return function (_x81, _x82) {
       return _ref41.apply(this, arguments);
+    };
+  }());
+
+  router.post('/api/CommitContract', function () {
+    var _ref42 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee42(ctx, next) {
+      var data, user, result;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee42$(_context42) {
+        while (1) {
+          switch (_context42.prev = _context42.next) {
+            case 0:
+              data = ctx.request.body;
+              user = ctx.session.user.name;
+
+              data.form.ApplyDate = sd.format(new Date(), 'YYYY-MM-DD');
+              data.form.ApplyPerson = user;
+              if (data.form.ID.length > 0) {} else {
+                data.form.ID = uuid.v4();
+              }
+              // console.log(data)
+              _context42.next = 7;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.CommitContract(user, data);
+
+            case 7:
+              result = _context42.sent;
+
+              //跨进程的通信,可以加一些调用之间融错,不然恨单薄的一层,
+
+              ctx.body = {
+                success: true,
+                data: result
+              };
+
+            case 9:
+            case 'end':
+              return _context42.stop();
+          }
+        }
+      }, _callee42, _this);
+    }));
+
+    return function (_x83, _x84) {
+      return _ref42.apply(this, arguments);
+    };
+  }());
+
+  //检查用户的权限
+  router.get('checkUser', function () {
+    var _ref43 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee43(ctx, next) {
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee43$(_context43) {
+        while (1) {
+          switch (_context43.prev = _context43.next) {
+            case 0:
+            case 'end':
+              return _context43.stop();
+          }
+        }
+      }, _callee43, _this);
+    }));
+
+    return function (_x85, _x86) {
+      return _ref43.apply(this, arguments);
+    };
+  }());
+
+  router.post('/api/CommitReceive', function () {
+    var _ref44 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee44(ctx, next) {
+      var data, user, result;
+      return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee44$(_context44) {
+        while (1) {
+          switch (_context44.prev = _context44.next) {
+            case 0:
+              data = ctx.request.body;
+              user = ctx.session.user.name;
+
+              data.form.ID = uuid.v4();
+              console.log(data);
+              _context44.next = 6;
+              return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.CommitReceive(user, data);
+
+            case 6:
+              result = _context44.sent;
+
+              ctx.body = {
+                data: result,
+                success: true
+              };
+
+            case 8:
+            case 'end':
+              return _context44.stop();
+          }
+        }
+      }, _callee44, _this);
+    }));
+
+    return function (_x87, _x88) {
+      return _ref44.apply(this, arguments);
     };
   }());
 
@@ -2740,8 +2524,8 @@ var requestCode = {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_request_promise__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_request_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_request_promise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config__ = __webpack_require__(1);
@@ -2796,6 +2580,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(exports, "CommitReceive", function() { return CommitReceive; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "GetAllStaff", function() { return GetAllStaff; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "GetRoles", function() { return GetRoles; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "GetApply", function() { return GetApply; });
 
 
 var _this = this;
@@ -2812,9 +2597,9 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 var requests = function () {
-    var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(options) {
+    var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(options) {
         var response;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
             while (1) {
                 switch (_context.prev = _context.next) {
                     case 0:
@@ -2893,13 +2678,14 @@ var api = {
     ContractState: base + '/api/BasicData/Contract/EditState/',
     ReceiveState: base + '/api/BasicData/Receive/EditState',
     //PhaseFeedback:`${base}/api/BasicData/PhaseFeedback/EditState/`,
-    RoleUsers: base + 'api/Sys/User/GetUserOrgBasic?'
+    RoleUsers: base + 'api/Sys/User/GetUserOrgBasic?',
+    Apply: base + 'api/BasicData/Project/GetHasApply?'
 };
 
 var apiToken = function () {
-    var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(username, code) {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(username, code) {
         var api, url, options, data, err;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
             while (1) {
                 switch (_context2.prev = _context2.next) {
                     case 0:
@@ -2946,10 +2732,10 @@ var apiToken = function () {
 }();
 
 var getPhoneCode = function () {
-    var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(username) {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(username) {
         var url, options, _data, err;
 
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
             while (1) {
                 switch (_context3.prev = _context3.next) {
                     case 0:
@@ -2990,10 +2776,10 @@ var getPhoneCode = function () {
 
 //请求重点项目
 var EmphasisProject = function () {
-    var _ref4 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee4(username, query) {
+    var _ref4 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee4(username, query) {
         var code, token, url, options, _data2;
 
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee4$(_context4) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee4$(_context4) {
             while (1) {
                 switch (_context4.prev = _context4.next) {
                     case 0:
@@ -3049,9 +2835,9 @@ var EmphasisProject = function () {
 
 //项目列表
 var ProjectList = function () {
-    var _ref5 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee5(username, query) {
+    var _ref5 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee5(username, query) {
         var code, token, url, pageSize, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee5$(_context5) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee5$(_context5) {
             while (1) {
                 switch (_context5.prev = _context5.next) {
                     case 0:
@@ -3117,9 +2903,9 @@ var ProjectList = function () {
 
 //BusinessPhase 商务阶段跟新
 var BusinessPhase = function () {
-    var _ref6 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee6(username, id) {
+    var _ref6 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee6(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee6$(_context6) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee6$(_context6) {
             while (1) {
                 switch (_context6.prev = _context6.next) {
                     case 0:
@@ -3162,9 +2948,9 @@ var BusinessPhase = function () {
 
 //项目商务阶段进度跟踪反馈
 var BusinessPhaseGroup = function () {
-    var _ref7 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee7(username, id) {
+    var _ref7 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee7(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee7$(_context7) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee7$(_context7) {
             while (1) {
                 switch (_context7.prev = _context7.next) {
                     case 0:
@@ -3211,9 +2997,9 @@ var BusinessPhaseGroup = function () {
 
 //项目投标申请
 var Biding = function () {
-    var _ref8 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee8(username, id) {
+    var _ref8 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee8(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee8$(_context8) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee8$(_context8) {
             while (1) {
                 switch (_context8.prev = _context8.next) {
                     case 0:
@@ -3256,9 +3042,9 @@ var Biding = function () {
 
 //项目报价申请
 var QuotedPrice = function () {
-    var _ref9 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee9(username, id) {
+    var _ref9 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee9(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee9$(_context9) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee9$(_context9) {
             while (1) {
                 switch (_context9.prev = _context9.next) {
                     case 0:
@@ -3304,9 +3090,9 @@ var QuotedPrice = function () {
 
 //合同管理
 var Contract = function () {
-    var _ref10 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee10(username, id) {
+    var _ref10 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee10(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee10$(_context10) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee10$(_context10) {
             while (1) {
                 switch (_context10.prev = _context10.next) {
                     case 0:
@@ -3349,9 +3135,9 @@ var Contract = function () {
 
 //项目报价申请
 var Receive = function () {
-    var _ref11 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee11(username, id) {
+    var _ref11 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee11(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee11$(_context11) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee11$(_context11) {
             while (1) {
                 switch (_context11.prev = _context11.next) {
                     case 0:
@@ -3394,9 +3180,9 @@ var Receive = function () {
 
 //项目设计深化申请
 var DesignDeepen = function () {
-    var _ref12 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee12(username, id) {
+    var _ref12 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee12(username, id) {
         var code, token, url, options;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee12$(_context12) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee12$(_context12) {
             while (1) {
                 switch (_context12.prev = _context12.next) {
                     case 0:
@@ -3433,9 +3219,9 @@ var DesignDeepen = function () {
 
 //项目设计任务
 var DesignTask = function () {
-    var _ref13 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee13(username, id) {
+    var _ref13 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee13(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee13$(_context13) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee13$(_context13) {
             while (1) {
                 switch (_context13.prev = _context13.next) {
                     case 0:
@@ -3478,9 +3264,9 @@ var DesignTask = function () {
 
 //项目基本信息
 var ProjectAuditById = function () {
-    var _ref14 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee14(username, query) {
+    var _ref14 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee14(username, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee14$(_context14) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee14$(_context14) {
             while (1) {
                 switch (_context14.prev = _context14.next) {
                     case 0:
@@ -3523,9 +3309,9 @@ var ProjectAuditById = function () {
 
 //项目阶段
 var ProjectStage = function () {
-    var _ref15 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee15(username, id) {
+    var _ref15 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee15(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee15$(_context15) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee15$(_context15) {
             while (1) {
                 switch (_context15.prev = _context15.next) {
                     case 0:
@@ -3568,9 +3354,9 @@ var ProjectStage = function () {
 
 //项目委托信息
 var ProjectDelegate = function () {
-    var _ref16 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee16(username, id) {
+    var _ref16 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee16(username, id) {
         var code, token;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee16$(_context16) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee16$(_context16) {
             while (1) {
                 switch (_context16.prev = _context16.next) {
                     case 0:
@@ -3599,9 +3385,9 @@ var ProjectDelegate = function () {
 }();
 
 var getContact = function () {
-    var _ref17 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee17(username, id) {
+    var _ref17 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee17(username, id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee17$(_context17) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee17$(_context17) {
             while (1) {
                 switch (_context17.prev = _context17.next) {
                     case 0:
@@ -3645,9 +3431,9 @@ var getContact = function () {
 }();
 
 var RemoveAction = function () {
-    var _ref18 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee18(user, query) {
+    var _ref18 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee18(user, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee18$(_context18) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee18$(_context18) {
             while (1) {
                 switch (_context18.prev = _context18.next) {
                     case 0:
@@ -3694,9 +3480,9 @@ var RemoveAction = function () {
 
 //提交审核
 var SubmitAudit = function () {
-    var _ref19 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee19(user, query) {
+    var _ref19 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee19(user, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee19$(_context19) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee19$(_context19) {
             while (1) {
                 switch (_context19.prev = _context19.next) {
                     case 0:
@@ -3741,9 +3527,9 @@ var SubmitAudit = function () {
 
 //商务阶段详细
 var ProjectBusiness = function () {
-    var _ref20 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee20(user, query) {
+    var _ref20 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee20(user, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee20$(_context20) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee20$(_context20) {
             while (1) {
                 switch (_context20.prev = _context20.next) {
                     case 0:
@@ -3787,9 +3573,9 @@ var ProjectBusiness = function () {
 
 //商务最新的阶段
 var BusinessStage = function () {
-    var _ref21 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee21(username, Id) {
+    var _ref21 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee21(username, Id) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee21$(_context21) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee21$(_context21) {
             while (1) {
                 switch (_context21.prev = _context21.next) {
                     case 0:
@@ -3834,9 +3620,9 @@ var BusinessStage = function () {
 }();
 
 var GetOptions = function () {
-    var _ref22 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee22(username, query) {
+    var _ref22 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee22(username, query) {
         var OrgProperty, CompanyType, rows, page, code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee22$(_context22) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee22$(_context22) {
             while (1) {
                 switch (_context22.prev = _context22.next) {
                     case 0:
@@ -3881,9 +3667,9 @@ var GetOptions = function () {
 }();
 
 var GetClientUnit = function () {
-    var _ref23 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee23(username, query) {
+    var _ref23 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee23(username, query) {
         var OrgProperty, rows, page, code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee23$(_context23) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee23$(_context23) {
             while (1) {
                 switch (_context23.prev = _context23.next) {
                     case 0:
@@ -3926,9 +3712,9 @@ var GetClientUnit = function () {
 }();
 
 var CommitProject = function () {
-    var _ref24 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee24(username, form) {
+    var _ref24 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee24(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee24$(_context24) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee24$(_context24) {
             while (1) {
                 switch (_context24.prev = _context24.next) {
                     case 0:
@@ -3972,9 +3758,9 @@ var CommitProject = function () {
 }();
 
 var CommitBiding = function () {
-    var _ref25 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee25(username, form) {
+    var _ref25 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee25(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee25$(_context25) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee25$(_context25) {
             while (1) {
                 switch (_context25.prev = _context25.next) {
                     case 0:
@@ -4018,9 +3804,9 @@ var CommitBiding = function () {
 }();
 
 var CommitQuotedPrice = function () {
-    var _ref26 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee26(username, form) {
+    var _ref26 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee26(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee26$(_context26) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee26$(_context26) {
             while (1) {
                 switch (_context26.prev = _context26.next) {
                     case 0:
@@ -4065,9 +3851,9 @@ var CommitQuotedPrice = function () {
 
 //审核数据
 var SetBusinessState = function () {
-    var _ref27 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee27(username, form) {
+    var _ref27 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee27(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee27$(_context27) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee27$(_context27) {
             while (1) {
                 switch (_context27.prev = _context27.next) {
                     case 0:
@@ -4112,9 +3898,9 @@ var SetBusinessState = function () {
 
 //审核商务阶段跟踪反馈数据
 var SetBusinessPhaseState = function () {
-    var _ref28 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee28(username, form) {
+    var _ref28 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee28(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee28$(_context28) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee28$(_context28) {
             while (1) {
                 switch (_context28.prev = _context28.next) {
                     case 0:
@@ -4159,9 +3945,9 @@ var SetBusinessPhaseState = function () {
 
 //审核报价申请
 var SetQuotedPriceState = function () {
-    var _ref29 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee29(username, form) {
+    var _ref29 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee29(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee29$(_context29) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee29$(_context29) {
             while (1) {
                 switch (_context29.prev = _context29.next) {
                     case 0:
@@ -4206,9 +3992,9 @@ var SetQuotedPriceState = function () {
 
 //商务阶段提交撤销
 var RemoveBusiness = function () {
-    var _ref30 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee30(username, form) {
+    var _ref30 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee30(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee30$(_context30) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee30$(_context30) {
             while (1) {
                 switch (_context30.prev = _context30.next) {
                     case 0:
@@ -4253,9 +4039,9 @@ var RemoveBusiness = function () {
 
 //商务阶段撤销提交
 var RemoveBusinessPhaseGroup = function () {
-    var _ref31 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee31(username, form) {
+    var _ref31 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee31(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee31$(_context31) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee31$(_context31) {
             while (1) {
                 switch (_context31.prev = _context31.next) {
                     case 0:
@@ -4300,9 +4086,9 @@ var RemoveBusinessPhaseGroup = function () {
 
 //报价申请数据撤销
 var RemoveQuotedPrice = function () {
-    var _ref32 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee32(username, form) {
+    var _ref32 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee32(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee32$(_context32) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee32$(_context32) {
             while (1) {
                 switch (_context32.prev = _context32.next) {
                     case 0:
@@ -4349,9 +4135,9 @@ var RemoveQuotedPrice = function () {
 
 //撤销投标申请
 var RemoveBiding = function () {
-    var _ref33 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee33(username, form) {
+    var _ref33 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee33(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee33$(_context33) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee33$(_context33) {
             while (1) {
                 switch (_context33.prev = _context33.next) {
                     case 0:
@@ -4396,9 +4182,9 @@ var RemoveBiding = function () {
 
 //合同
 var RemoveContact = function () {
-    var _ref34 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee34(username, form) {
+    var _ref34 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee34(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee34$(_context34) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee34$(_context34) {
             while (1) {
                 switch (_context34.prev = _context34.next) {
                     case 0:
@@ -4443,9 +4229,9 @@ var RemoveContact = function () {
 
 //收款登记
 var RemoveReceive = function () {
-    var _ref35 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee35(username, form) {
+    var _ref35 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee35(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee35$(_context35) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee35$(_context35) {
             while (1) {
                 switch (_context35.prev = _context35.next) {
                     case 0:
@@ -4490,9 +4276,9 @@ var RemoveReceive = function () {
 
 //搜索
 var Search = function () {
-    var _ref36 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee36(username, query) {
+    var _ref36 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee36(username, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee36$(_context36) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee36$(_context36) {
             while (1) {
                 switch (_context36.prev = _context36.next) {
                     case 0:
@@ -4537,9 +4323,9 @@ var Search = function () {
 }();
 
 var ProjectUpdtae = function () {
-    var _ref37 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee37(username, id, form) {
+    var _ref37 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee37(username, id, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee37$(_context37) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee37$(_context37) {
             while (1) {
                 switch (_context37.prev = _context37.next) {
                     case 0:
@@ -4584,9 +4370,9 @@ var ProjectUpdtae = function () {
 
 //更新技术指派人
 var EditTechnicalManager = function () {
-    var _ref38 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee38(username, id, form) {
+    var _ref38 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee38(username, id, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee38$(_context38) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee38$(_context38) {
             while (1) {
                 switch (_context38.prev = _context38.next) {
                     case 0:
@@ -4635,9 +4421,9 @@ var EditTechnicalManager = function () {
 
 // 更新商务阶段指派人
 var EditBusinessManager = function () {
-    var _ref39 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee39(username, id, form) {
+    var _ref39 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee39(username, id, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee39$(_context39) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee39$(_context39) {
             while (1) {
                 switch (_context39.prev = _context39.next) {
                     case 0:
@@ -4684,9 +4470,9 @@ var EditBusinessManager = function () {
 
 //商务阶段更新提交
 var BusinessCommit = function () {
-    var _ref40 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee40(username, form) {
+    var _ref40 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee40(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee40$(_context40) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee40$(_context40) {
             while (1) {
                 switch (_context40.prev = _context40.next) {
                     case 0:
@@ -4731,9 +4517,9 @@ var BusinessCommit = function () {
 
 //项目收款登记
 var ReceiveGroup = function () {
-    var _ref41 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee41(username, query) {
+    var _ref41 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee41(username, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee41$(_context41) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee41$(_context41) {
             while (1) {
                 switch (_context41.prev = _context41.next) {
                     case 0:
@@ -4782,9 +4568,9 @@ var ReceiveGroup = function () {
 
 //项目投标
 var GetBiding = function () {
-    var _ref42 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee42(username, query) {
+    var _ref42 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee42(username, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee42$(_context42) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee42$(_context42) {
             while (1) {
                 switch (_context42.prev = _context42.next) {
                     case 0:
@@ -4832,9 +4618,9 @@ var GetBiding = function () {
 
 //项目商务阶段跟踪任务反馈提交 
 var PhaseFeedback = function () {
-    var _ref43 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee43(username, form) {
+    var _ref43 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee43(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee43$(_context43) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee43$(_context43) {
             while (1) {
                 switch (_context43.prev = _context43.next) {
                     case 0:
@@ -4878,9 +4664,9 @@ var PhaseFeedback = function () {
 }();
 
 var BidingCommit = function () {
-    var _ref44 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee44() {
+    var _ref44 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee44() {
         var code, token, url, options;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee44$(_context44) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee44$(_context44) {
             while (1) {
                 switch (_context44.prev = _context44.next) {
                     case 0:
@@ -4918,9 +4704,9 @@ var BidingCommit = function () {
 }();
 
 var CommitQutoedPrice = function () {
-    var _ref45 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee45(username, form) {
+    var _ref45 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee45(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee45$(_context45) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee45$(_context45) {
             while (1) {
                 switch (_context45.prev = _context45.next) {
                     case 0:
@@ -4960,9 +4746,9 @@ var CommitQutoedPrice = function () {
 }();
 
 var CommitContract = function () {
-    var _ref46 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee46(username, form) {
+    var _ref46 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee46(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee46$(_context46) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee46$(_context46) {
             while (1) {
                 switch (_context46.prev = _context46.next) {
                     case 0:
@@ -5001,9 +4787,9 @@ var CommitContract = function () {
 }();
 
 var GetQuotedPrice = function () {
-    var _ref47 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee47(username, query) {
+    var _ref47 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee47(username, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee47$(_context47) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee47$(_context47) {
             while (1) {
                 switch (_context47.prev = _context47.next) {
                     case 0:
@@ -5046,9 +4832,9 @@ var GetQuotedPrice = function () {
 
 //检查当前项目有没有合同
 var CheckReceive = function () {
-    var _ref48 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee48(username, query) {
+    var _ref48 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee48(username, query) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee48$(_context48) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee48$(_context48) {
             while (1) {
                 switch (_context48.prev = _context48.next) {
                     case 0:
@@ -5093,9 +4879,9 @@ var CheckReceive = function () {
 
 //添加收款登记
 var CommitReceive = function () {
-    var _ref49 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee49(username, form) {
+    var _ref49 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee49(username, form) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee49$(_context49) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee49$(_context49) {
             while (1) {
                 switch (_context49.prev = _context49.next) {
                     case 0:
@@ -5141,9 +4927,9 @@ var CommitReceive = function () {
 //导入人员
 
 var GetAllStaff = function () {
-    var _ref50 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee50(url, username, form) {
+    var _ref50 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee50(url, username, form) {
         var code, token, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee50$(_context50) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee50$(_context50) {
             while (1) {
                 switch (_context50.prev = _context50.next) {
                     case 0:
@@ -5187,9 +4973,9 @@ var GetAllStaff = function () {
 
 //权限--用户角色
 var GetRoles = function () {
-    var _ref51 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee51(username, userCode) {
+    var _ref51 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee51(username, userCode) {
         var code, token, url, options, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee51$(_context51) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee51$(_context51) {
             while (1) {
                 switch (_context51.prev = _context51.next) {
                     case 0:
@@ -5231,14 +5017,61 @@ var GetRoles = function () {
     };
 }();
 
+var GetApply = function () {
+    var _ref52 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee52(username, form) {
+        var code, token, url, options, data;
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee52$(_context52) {
+            while (1) {
+                switch (_context52.prev = _context52.next) {
+                    case 0:
+                        _context52.next = 2;
+                        return getPhoneCode(username);
+
+                    case 2:
+                        code = _context52.sent;
+                        _context52.next = 5;
+                        return apiToken(username, code.RandomCode);
+
+                    case 5:
+                        token = _context52.sent;
+                        url = api.Apply + 'page=1&rows=20';
+
+                        console.log(url);
+                        options = {
+                            url: url,
+                            headers: {
+                                Authorization: token.token
+                            },
+                            method: 'Get'
+                        };
+                        _context52.next = 11;
+                        return __WEBPACK_IMPORTED_MODULE_1_request_promise___default()(options);
+
+                    case 11:
+                        data = _context52.sent;
+                        return _context52.abrupt('return', data);
+
+                    case 13:
+                    case 'end':
+                        return _context52.stop();
+                }
+            }
+        }, _callee52, this);
+    }));
+
+    return function GetApply(_x103, _x104) {
+        return _ref52.apply(this, arguments);
+    };
+}();
+
 /***/ },
 /* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wechat__ = __webpack_require__(2);
 /* harmony export (immutable) */ exports["getAuthorizeURL"] = getAuthorizeURL;
 /* harmony export (binding) */ __webpack_require__.d(exports, "getUserByCode", function() { return getUserByCode; });
@@ -5271,9 +5104,9 @@ function getAuthorizeURL() {
 }
 
 var getUserByCode = function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(code) {
+  var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(code) {
     var oauth, ticket, data, user;
-    return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+    return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
@@ -5321,8 +5154,8 @@ var getUserByCode = function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_url__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_url___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_url__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_querystring__ = __webpack_require__(12);
@@ -5345,9 +5178,9 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 var signature = function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
+  var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
     var url, params;
-    return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+    return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
@@ -5384,10 +5217,10 @@ var signature = function () {
 }();
 
 var redirect = function () {
-  var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(ctx, next) {
+  var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(ctx, next) {
     var target, scope, _ctx$query, visit, id, params, url;
 
-    return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+    return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
@@ -5415,9 +5248,9 @@ var redirect = function () {
 }();
 
 var oauth = function () {
-  var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(ctx, next) {
+  var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(ctx, next) {
     var url, urlObj, params, code, user;
-    return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
+    return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
       while (1) {
         switch (_context3.prev = _context3.next) {
           case 0:
@@ -5494,8 +5327,8 @@ exports.writeFileAsync = function (fpath, content) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__api__ = __webpack_require__(4);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return getAllUsers; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return createDep; });
@@ -5512,9 +5345,9 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 var transliteration = __webpack_require__(6);
 
 var getAllUsers = function () {
-    var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee() {
+    var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee() {
         var page, base, url, username, map, dep, form, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
             while (1) {
                 switch (_context.prev = _context.next) {
                     case 0:
@@ -5559,9 +5392,9 @@ var getAllUsers = function () {
 }();
 
 var createDep = function () {
-    var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2() {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2() {
         var page, username, form, base, url, dep, data;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
             while (1) {
                 switch (_context2.prev = _context2.next) {
                     case 0:
@@ -5619,8 +5452,8 @@ var createDep = function () {
 }();
 
 var clearDepData = function () {
-    var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(depName, depMap) {
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(depName, depMap) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
             while (1) {
                 switch (_context3.prev = _context3.next) {
                     case 0:
@@ -6265,8 +6098,8 @@ module.exports = Wechat;
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sha1__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_sha1___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_sha1__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_raw_body__ = __webpack_require__(40);
@@ -6289,9 +6122,9 @@ var Wechat = __webpack_require__(2);
 /* harmony default export */ exports["a"] = function (opts, reply) {
 	var wechat = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__wechat_index__["getWechat"])();
 	return function () {
-		var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
+		var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
 			var token, msg_signature, nonce, encodingaeskey, timestamp, echostr, str, a, data, content, xmlmsg, json, message, replyBody, msg, xml, msgEncrypt, opt;
-			return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+			return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
 				while (1) {
 					switch (_context.prev = _context.next) {
 						case 0:
@@ -6392,8 +6225,8 @@ var Wechat = __webpack_require__(2);
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_request_promise__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_request_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_request_promise__);
 
@@ -6425,9 +6258,9 @@ var workOAuth = function () {
     _createClass(workOAuth, [{
         key: 'request',
         value: function () {
-            var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(options) {
+            var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(options) {
                 var response;
-                return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+                return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
                     while (1) {
                         switch (_context.prev = _context.next) {
                             case 0:
@@ -6474,9 +6307,9 @@ var workOAuth = function () {
     }, {
         key: 'fetchAccessToken',
         value: function () {
-            var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(access_token, code) {
+            var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(access_token, code) {
                 var url, data;
-                return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+                return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
                     while (1) {
                         switch (_context2.prev = _context2.next) {
                             case 0:
@@ -6505,9 +6338,9 @@ var workOAuth = function () {
     }, {
         key: 'fetchUserInfo',
         value: function () {
-            var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(access_token, user_ticket) {
+            var _ref3 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee3(access_token, user_ticket) {
                 var url, options, data;
-                return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
+                return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
                     while (1) {
                         switch (_context3.prev = _context3.next) {
                             case 0:
@@ -6658,15 +6491,15 @@ exports = module.exports = {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__api__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wechat__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_constants__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_constants___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_constants__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return reply; });
-/* unused harmony export send */
+/* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return send; });
 
 
 var _this = this;
@@ -6700,19 +6533,19 @@ var tip = '欢迎来到建顾管理管理应用,当前版本v1.0.0.\n' + '1~查�
 // 	console.log(data)
 // })
 
-client.createMenu(menu).then(function (data) {
-	console.log(data);
-});
+// client.createMenu(menu).then((data)=>{
+//  	 console.log(data)
+// })
 
 //client.createMenu(menu).then(()=>{
 //	console.log('创建成功')
 //})
 
 var reply = function () {
-	var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
-		var message, reply, date, username, person, usercode, data, params, title, result, sendMsg, card, msg, content, searchText, query, projects, project, _card;
+	var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
+		var message, reply, date, username, person, usercode, data, params, title, result, sendMsg, projectStatus, status, card, msg, content, searchText, query, projects, project, _card;
 
-		return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+		return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
 			while (1) {
 				switch (_context.prev = _context.next) {
 					case 0:
@@ -6737,7 +6570,7 @@ var reply = function () {
 						console.log(usercode);
 
 						if (!(message.MsgType === 'event')) {
-							_context.next = 34;
+							_context.next = 53;
 							break;
 						}
 
@@ -6748,12 +6581,12 @@ var reply = function () {
 
 						reply = tip;
 						client.sendMessgaebyText(message.FromUserName, reply);
-						_context.next = 32;
+						_context.next = 51;
 						break;
 
 					case 19:
 						if (!(message.Event === 'click')) {
-							_context.next = 31;
+							_context.next = 50;
 							break;
 						}
 
@@ -6785,36 +6618,65 @@ var reply = function () {
 						result = _context.sent;
 
 						console.log(result);
-						if (result.rows.length > 0) {
-							sendMsg = result.rows[0];
-							card = {
-								title: '项目查询:' + title,
-								description: "<div class=\"gray\">查询时间:" + sd.format(new Date(), 'YYYY-MM-DD') + "</div> <div class=\"normal\">项目类型:" + sendMsg.Classification + "</div><div class=\"highlight\">项目名称:" + sendMsg.ProjectName + "</div>",
-								url: __WEBPACK_IMPORTED_MODULE_3__config__["a" /* default */].SITE_ROOT_URL + '/detail?ID=' + sendMsg.ID
-							};
 
-							client.sendMessgaebycard(message.FromUserName, card);
-						} else {
-							msg = '您当前没有项目哦';
-
-							client.sendMessgaebyText(message.FromUserName, msg);
+						if (!(result.rows.length > 0)) {
+							_context.next = 46;
+							break;
 						}
 
-						_context.next = 32;
+						sendMsg = result.rows[0];
+						projectStatus = sendMsg.HandleStatus;
+
+						console.log(projectStatus);
+						status = null;
+						_context.t0 = projectStatus;
+						_context.next = _context.t0 === 0 ? 36 : _context.t0 === 1 ? 38 : _context.t0 === 2 ? 40 : 42;
 						break;
 
-					case 31:
+					case 36:
+						status = '待提交';
+						return _context.abrupt('break', 42);
+
+					case 38:
+						status = '已提交';
+						return _context.abrupt('break', 42);
+
+					case 40:
+						status = '已审核';
+						return _context.abrupt('break', 42);
+
+					case 42:
+						card = {
+							title: '项目查询:' + title,
+							description: "<div class=\"gray\">查询时间:" + sd.format(new Date(), 'YYYY-MM-DD') + "</div> <div class=\"normal\">项目类型:" + sendMsg.Classification + "</div><div class=\"highlight\">项目名称:" + sendMsg.ProjectName + "</div></div><div class=\"highlight\">项目状态:" + status + "</div>",
+							url: __WEBPACK_IMPORTED_MODULE_3__config__["a" /* default */].SITE_ROOT_URL + '/detail?ID=' + sendMsg.ID
+						};
+
+						client.sendMessgaebycard(message.FromUserName, card);
+						_context.next = 48;
+						break;
+
+					case 46:
+						msg = '您当前没有项目哦';
+
+						client.sendMessgaebyText(message.FromUserName, msg);
+
+					case 48:
+						_context.next = 51;
+						break;
+
+					case 50:
 						if (message.Event === 'view') {
 							//跳转到详情
 						}
 
-					case 32:
-						_context.next = 71;
+					case 51:
+						_context.next = 90;
 						break;
 
-					case 34:
+					case 53:
 						if (!(message.MsgType === 'text')) {
-							_context.next = 70;
+							_context.next = 89;
 							break;
 						}
 
@@ -6823,37 +6685,37 @@ var reply = function () {
 						reply = '\u60A8\u8BF4\u7684' + content + '\u590D\u6742\u4E86,\u6211\u4E0D\u61C2.....';
 
 						if (!(content === "1")) {
-							_context.next = 41;
+							_context.next = 60;
 							break;
 						}
 
 						reply = '\u4F60\u597D\uFF0C\u6B22\u8FCE\u6765\u5230\u5EFA\u987E\u9879\u76EE\u7BA1\u7406';
-						_context.next = 67;
+						_context.next = 86;
 						break;
 
-					case 41:
+					case 60:
 						if (!(content === "2")) {
-							_context.next = 45;
+							_context.next = 64;
 							break;
 						}
 
 						reply = 'Hi, \u5FEB\u53BB\u67E5\u8BE2\u6211\u7684\u9879\u76EE\u5427';
-						_context.next = 67;
+						_context.next = 86;
 						break;
 
-					case 45:
+					case 64:
 						if (!(content === "建顾")) {
-							_context.next = 49;
+							_context.next = 68;
 							break;
 						}
 
 						reply = '\u4E0A\u6D77\u5EFA\u987E\u51CF\u9707\u79D1\u6280\u6709\u9650\u516C\u53F8\u662F\u4E00\u5BB6\u63D0\u4F9B\u7ED3\u6784\u51CF\u9694\u9707\u7CFB\u7EDF\u89E3\u51B3\u65B9\u6848\u7684\u9AD8\u79D1\u6280\u4F01\u4E1A\uFF0C\u6CE8\u518C\u8D44\u91D1\u4E3A7000\u4E07\uFF0C\u6240\u6D89\u53CA\u7684\u5DE5\u7A0B\u9886\u57DF\u904D\u5E03\u5EFA\u7B51\u3001\u6865\u6881\u3001\u7535\u529B\u3001\u57FA\u7840\u8BBE\u65BD\u3001\u8BBE\u5907\u3001\u519B\u5DE5\u3001\u77F3\u5316\u3001\u6784\u7B51\u7269\u3001\u65B0\u80FD\u6E90\u7B49\u65B9\u9762\u3002\u4F9D\u6258\u4E8E\u540C\u6D4E\u5927\u5B66\u5F3A\u5927\u7684\u667A\u5E93\u652F\u6301\uFF0C\u516C\u53F8\u62E5\u6709\u672C\u884C\u4E1A\u8D85\u5F3A\u7684\u6280\u672F\u56E2\u961F\uFF0C\u7814\u53D1\u9AA8\u5E72\u5747\u5177\u6709\u540D\u6821\u535A\u58EB\u5B66\u4F4D\uFF0C\u5728\u7ED3\u6784\u8BBE\u8BA1\u4F18\u5316\u54A8\u8BE2\u3001\u51CF\u9694\u9707\u4EA7\u54C1\u7814\u53D1\u3001\u8BBE\u8BA1\u53CA\u5E94\u7528\u7B49\u65B9\u9762\u79EF\u7D2F\u4E86\u6DF1\u539A\u7684\u7ECF\u9A8C\uFF0C\u4E0E\u6B64\u914D\u5957\u7684\u7CBE\u7EC6\u5316\u7684\u751F\u4EA7\u5236\u9020\u4E0E\u5DE5\u7A0B\u5B9E\u65BD\u961F\u4F0D\u5219\u4E3A\u89E3\u51B3\u65B9\u6848\u7684\u7CFB\u7EDF\u843D\u5730\u63D0\u4F9B\u4E86\u5207\u5B9E\u7684\u4FDD\u969C\u3002\u516C\u53F8\u603B\u90E8\u5728\u4E0A\u6D77\uFF0C\u4E0B\u8BBE\u5E02\u573A\u3001\u8BBE\u8BA1\u3001\u751F\u4EA7\u3001\u7814\u53D1\u3001\u5DE5\u7A0B\u7B49\u90E8\u95E8\uFF0C\u5E76\u5728\u65B0\u7586\u3001\u4E91\u5357\u5EFA\u7ACB\u5206\u516C\u53F8\uFF0C\u897F\u5B89\u3001\u6B66\u6C49\u3001\u6210\u90FD\u3001\u6DF1\u5733\u3001\u5317\u4EAC\u3001\u6D77\u5357\u7B49\u5730\u8BBE\u7ACB\u4E1A\u52A1\u5206\u652F\u673A\u6784';
-						_context.next = 67;
+						_context.next = 86;
 						break;
 
-					case 49:
+					case 68:
 						if (!(content.indexOf('项目') !== -1)) {
-							_context.next = 66;
+							_context.next = 85;
 							break;
 						}
 
@@ -6866,17 +6728,17 @@ var reply = function () {
 							rows: 10
 							//console.log(query)
 						};
-						_context.next = 55;
+						_context.next = 74;
 						return __WEBPACK_IMPORTED_MODULE_1__api__["a" /* default */].project.Search(usercode, query);
 
-					case 55:
+					case 74:
 						projects = _context.sent;
 
 						//console.log(projects)
 						project = projects.rows[0];
 
 						if (!(projects.rows.length > 0)) {
-							_context.next = 63;
+							_context.next = 82;
 							break;
 						}
 
@@ -6889,29 +6751,29 @@ var reply = function () {
 						client.sendMessgaebycard(message.FromUserName, _card);
 						return _context.abrupt('return');
 
-					case 63:
+					case 82:
 						reply = '\u6CA1\u6709' + searchText + '\u8FD9\u4E2A\u9879\u76EE\u54E6,\u70B9\u51FB<a href="' + __WEBPACK_IMPORTED_MODULE_3__config__["a" /* default */].SITE_ROOT_URL + '/project/commit">\u6DFB\u52A0\u9879\u76EE</a>';
 
-					case 64:
-						_context.next = 67;
+					case 83:
+						_context.next = 86;
 						break;
 
-					case 66:
+					case 85:
 						reply = tip;
 
-					case 67:
+					case 86:
 						client.sendMessgaebyText(message.FromUserName, reply);
-						_context.next = 71;
+						_context.next = 90;
 						break;
 
-					case 70:
+					case 89:
 						if (message.MsgType === 'voice') {
 							//语音识别在企业微信中没有开放,
 							//   const voiceText = message.Recognition
 							//   console.log(voiceText)
 						}
 
-					case 71:
+					case 90:
 					case 'end':
 						return _context.stop();
 				}
@@ -6928,26 +6790,52 @@ var reply = function () {
 //这个地方没有做权限控制,
 //解决方式:1.最简单的就是锁定ip,
 // 2.添加OAuth协议
-var send = function send(ctx, next) {
-	if (!ctx.req._parsedUrl.query) {
-		ctx.body = "参数错误";
-		return;
-	}
-	var params = querystring.parse(ctx.req._parsedUrl.query);
-	var msg = params.msg;
-	var username = params.username;
-	if (msg === '' || username === '' || typeof msg === 'undefined' || typeof username === 'undefined') {
-		ctx.body = "参数不合法";
-		return;
-	}
 
-	if (msg.length > 100 || username.length > 5) {
-		ctx.body = "参数长度过大";
-		return;
-	}
-	//根据名字请求接口 GET
-	client.sendMessgae(username, msg);
-};
+var send = function () {
+	var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2(body) {
+		var response, _response;
+
+		return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+			while (1) {
+				switch (_context2.prev = _context2.next) {
+					case 0:
+						if (!(body.type == 1)) {
+							_context2.next = 7;
+							break;
+						}
+
+						_context2.next = 3;
+						return client.sendMessgaebyText(body.username, body.text);
+
+					case 3:
+						response = _context2.sent;
+						return _context2.abrupt('return', response);
+
+					case 7:
+						if (!(body.type == 2)) {
+							_context2.next = 12;
+							break;
+						}
+
+						_context2.next = 10;
+						return client.sendMessgaebycard(body.username, body.card);
+
+					case 10:
+						_response = _context2.sent;
+						return _context2.abrupt('return', _response);
+
+					case 12:
+					case 'end':
+						return _context2.stop();
+				}
+			}
+		}, _callee2, _this);
+	}));
+
+	return function send(_x3) {
+		return _ref2.apply(this, arguments);
+	};
+}();
 
 /***/ },
 /* 33 */
@@ -7027,8 +6915,8 @@ module.exports = require("uuid");
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(__dirname) {Object.defineProperty(exports, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_koa__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nuxt__ = __webpack_require__(21);
@@ -7096,11 +6984,11 @@ var Server = function () {
   }, {
     key: 'start',
     value: function () {
-      var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2() {
+      var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2() {
         var _this = this;
 
         var nuxt, builder;
-        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+        return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
@@ -7134,8 +7022,8 @@ var Server = function () {
               case 14:
 
                 this.app.use(function () {
-                  var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
-                    return __WEBPACK_IMPORTED_MODULE_0_H_wechat_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+                  var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
+                    return __WEBPACK_IMPORTED_MODULE_0_H_wechat_v1_0_enterprise_wechat_line_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
                       while (1) {
                         switch (_context.prev = _context.next) {
                           case 0:

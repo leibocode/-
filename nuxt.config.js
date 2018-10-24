@@ -1,5 +1,3 @@
-const path = require('path')
-const vuxLoader=require('vux-loader')
 module.exports = {
   /**
    * 
@@ -52,33 +50,26 @@ module.exports = {
    ** Build configuration
    */
   plugins: [
+    {
+      src: '~plugins/mint-ui', ssr: true
+    }//,
     // {
-    //   src: '~plugins/mint-ui', ssr: true
-    // }//,
-    // // {
-    // //   src:'~plugins/fastclick',ssr:false
-    // // }
-    {
-      src: '~/plugins/vux-plugins',
-      ssr: false
-    },
-    {
-      src: '~/plugins/vux-components',
-      ssr: true
-    }
+    //   src:'~plugins/fastclick',ssr:false
+    // }
   ],
   build: {
-    extend(config,{isDev,isClient}){
-      const configs = vuxLoader.merge(config, {
-        options: {
-          ssr: true
-        },
-        plugins: ['vux-ui', {
-          name: 'less-theme',
-          path: path.join(__dirname, './styles/theme.less')
-        }]
-      })
-      return configs
-    }
+    /*
+     ** Run ESLINT on save
+     */
+    // extend (config, ctx) {
+    //   if (ctx.isClient) {
+    //     config.module.rules.push({
+    //       enforce: 'pre',
+    //       test: /\.(js|vue)$/,
+    //       loader: 'eslint-loader',
+    //       exclude: /(node_modules)/
+    //     })
+    //   }
+    // }
   }
 }
