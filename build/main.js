@@ -885,13 +885,13 @@ var router = function router(app) {
         while (1) {
           switch (_context13.prev = _context13.next) {
             case 0:
-              // if(!ctx.session.user || !ctx.session.user.name){
-              //   console.log('error')
-              //   ctx.body ={
-              //     success:false,
-              //     msg:'拿不到用户信息'
-              //   }
-              // }
+              if (!ctx.session.user || !ctx.session.user.name) {
+                console.log('error');
+                ctx.body = {
+                  success: false,
+                  msg: '拿不到用户信息'
+                };
+              }
               _ctx$query = ctx.query, typeCode = _ctx$query.typeCode, page = _ctx$query.page;
               query = {
                 typeCode: typeCode,
@@ -909,22 +909,13 @@ var router = function router(app) {
               // let user = ctx.session.user.name
               user = 'super';
               // console.log(user)
-              //let username ='super'
+              // let username ='super'
 
-              _context13.next = 6;
+              _context13.next = 7;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.ProjectList(user, query);
 
-            case 6:
+            case 7:
               data = _context13.sent;
-
-              //const data =await api.project.ProjectList('super',query)
-              if (data.rows.length > 0) {
-                data.rows.forEach(function (item, index) {
-                  if (item.ProjectName && item.ProjectName.length > 10) {
-                    item.ProjectName = item.ProjectName.substr(0, 10) + '...';
-                  }
-                });
-              }
               return _context13.abrupt('return', ctx.body = {
                 data: data,
                 success: true
@@ -950,21 +941,22 @@ var router = function router(app) {
         while (1) {
           switch (_context14.prev = _context14.next) {
             case 0:
-              // if(!ctx.session.user || !ctx.session.user.name){
-              //    console.log('error')
-              //    ctx.body ={
-              //     success:false,
-              //     msg:'拿不到用户信息'
-              //    }
-              // }
-              //let user = ctx.session.user.name
-              user = 'super';
+              if (!ctx.session.user || !ctx.session.user.name) {
+                console.log('error');
+                ctx.body = {
+                  success: false,
+                  msg: '拿不到用户信息'
+                };
+              }
+              user = ctx.session.user.name;
+              //let user ='super'
+
               form = {};
-              _context14.prev = 2;
-              _context14.next = 5;
+              _context14.prev = 3;
+              _context14.next = 6;
               return __WEBPACK_IMPORTED_MODULE_3__api__["a" /* default */].project.GetApply(user, form);
 
-            case 5:
+            case 6:
               data = _context14.sent;
 
               // if(data.rows.length>0){
@@ -976,19 +968,19 @@ var router = function router(app) {
                 success: true,
                 data: data
               };
-              _context14.next = 11;
+              _context14.next = 12;
               break;
 
-            case 9:
-              _context14.prev = 9;
-              _context14.t0 = _context14['catch'](2);
+            case 10:
+              _context14.prev = 10;
+              _context14.t0 = _context14['catch'](3);
 
-            case 11:
+            case 12:
             case 'end':
               return _context14.stop();
           }
         }
-      }, _callee14, _this, [[2, 9]]);
+      }, _callee14, _this, [[3, 10]]);
     }));
 
     return function (_x27, _x28) {
@@ -6529,9 +6521,9 @@ var tip = '欢迎来到建顾管理管理应用,当前版本v1.0.0.\n' + '1~查�
 // 	console.log(data)
 // })
 
-client.createMenu(menu).then(function (data) {
-	console.log(data);
-});
+// client.createMenu(menu).then((data)=>{
+//  	 console.log(data)
+// })
 
 //client.createMenu(menu).then(()=>{
 //	console.log('创建成功')

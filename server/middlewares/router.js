@@ -164,17 +164,9 @@ export const router = app => {
    // let user = ctx.session.user.name
    let user ='super'
    // console.log(user)
-    //let username ='super'
+   // let username ='super'
     const data = await api.project.ProjectList(user, query)
     //const data =await api.project.ProjectList('super',query)
-    if (data.rows.length > 0) {
-      data.rows.forEach((item, index) => {
-        if (item.ProjectName && item.ProjectName.length > 10) {
-          item.ProjectName = item.ProjectName.substr(0, 10) + '...'
-          item.ApplyDate = manba(item.ApplyDate).format()
-        }
-      })
-    }
     return (ctx.body = {
       data: data,
       success: true
@@ -183,15 +175,15 @@ export const router = app => {
 
 
   router.get('/api/apply',async(ctx,next)=>{
-    // if(!ctx.session.user || !ctx.session.user.name){
-    //    console.log('error')
-    //    ctx.body ={
-    //     success:false,
-    //     msg:'拿不到用户信息'
-    //    }
-    // }
-    //let user = ctx.session.user.name
-    let user ='super'
+    if(!ctx.session.user || !ctx.session.user.name){
+       console.log('error')
+       ctx.body ={
+        success:false,
+        msg:'拿不到用户信息'
+       }
+    }
+    let user = ctx.session.user.name
+    //let user ='super'
     let form = {}
     try{
       const data =await api.project.GetApply(user,form)
