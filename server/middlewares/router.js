@@ -141,13 +141,13 @@ export const router = app => {
 
 
   router.get('/api/ProjectList',async (ctx, next) => {
-    // if(!ctx.session.user || !ctx.session.user.name){
-    //   console.log('error')
-    //   ctx.body ={
-    //     success:false,
-    //     msg:'拿不到用户信息'
-    //   }
-    // }
+    if(!ctx.session.user || !ctx.session.user.name){
+      console.log('error')
+      ctx.body ={
+        success:false,
+        msg:'拿不到用户信息'
+      }
+    }
     const { typeCode, page } = ctx.query
     let query = {
       typeCode: typeCode,
@@ -171,6 +171,7 @@ export const router = app => {
       data.rows.forEach((item, index) => {
         if (item.ProjectName && item.ProjectName.length > 10) {
           item.ProjectName = item.ProjectName.substr(0, 10) + '...'
+          item.ApplyDate = manba(item.ApplyDate).format()
         }
       })
     }

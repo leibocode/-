@@ -59,7 +59,7 @@
                    i.fa.fa-star.icon-important-color.fa-3x
               .weui-cell__bd
                 p {{item.ProjectName}}
-                p.desc-text 项目地址:{{item.Address?item.Address:'暂无地址'}}
+                p.desc-text 提交时间:{{item.ApplyDate}}
                 p.desc-text 项目类型: {{item.Classification}}
               .weui-cell__ft
                 p.fa.fa-angle-right.fa-2x
@@ -91,7 +91,7 @@ import just from '../static/js/jurisdiction'
 import ajax from '../static/js/ajax'
 import config from '../static/js/config'
 export default {
-  //middleware: 'wechat-auth',
+  middleware: 'wechat-auth',
   head () {
     return {
       title: '建顾基于微信的项目管理移动客户端软件'
