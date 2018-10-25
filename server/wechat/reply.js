@@ -27,9 +27,9 @@ const tip = '欢迎来到建顾管理管理应用,当前版本v1.0.0.\n'+'1~查�
 // 	console.log(data)
 // })
 
-// client.createMenu(menu).then((data)=>{
-//  	 console.log(data)
-// })
+client.createMenu(menu).then((data)=>{
+ 	 console.log(data)
+})
 
 //client.createMenu(menu).then(()=>{
 //	console.log('创建成功')
@@ -94,7 +94,7 @@ export const  reply =async(ctx,next)=> {
 				 let card ={
 					 title:'项目查询:'+title,
 					 description: "<div class=\"gray\">查询时间:"+sd.format(new Date(), 'YYYY-MM-DD')+"</div> <div class=\"normal\">项目类型:"+
-					 sendMsg.Classification+ "</div><div class=\"highlight\">项目名称:"+sendMsg.ProjectName+"</div></div><div class=\"highlight\">项目状态:"+status+"</div>",
+					 sendMsg.Classification+ "</div><div class=\"highlight\">项目名称:"+sendMsg.ProjectName+"</div><div class=\"highlight\">项目状态:"+status+"</div>",
 					 url:`${wechat_config.SITE_ROOT_URL }/detail?ID=${sendMsg.ID}`
 				 }
 				 client.sendMessgaebycard(message.FromUserName,card)

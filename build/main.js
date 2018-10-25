@@ -333,15 +333,11 @@ module.exports = {
 			'name': '重点项目',
 			'type': 'click',
 			'key': 'menu_click_Ech'
-		}, {
-			'name': '待办项',
-			'type': 'view',
-			'url': __WEBPACK_IMPORTED_MODULE_0__config__["a" /* default */].SITE_ROOT_URL + '/'
 		}]
 	}, {
 		'type': 'view',
 		'name': '我的项目',
-		'url': __WEBPACK_IMPORTED_MODULE_0__config__["a" /* default */].SITE_ROOT_URL + '/apply'
+		'url': __WEBPACK_IMPORTED_MODULE_0__config__["a" /* default */].SITE_ROOT_URL + '/list'
 	}, {
 		'name': "平台管理",
 		'type': 'view',
@@ -6533,9 +6529,9 @@ var tip = '欢迎来到建顾管理管理应用,当前版本v1.0.0.\n' + '1~查�
 // 	console.log(data)
 // })
 
-// client.createMenu(menu).then((data)=>{
-//  	 console.log(data)
-// })
+client.createMenu(menu).then(function (data) {
+	console.log(data);
+});
 
 //client.createMenu(menu).then(()=>{
 //	console.log('创建成功')
@@ -6648,7 +6644,7 @@ var reply = function () {
 					case 42:
 						card = {
 							title: '项目查询:' + title,
-							description: "<div class=\"gray\">查询时间:" + sd.format(new Date(), 'YYYY-MM-DD') + "</div> <div class=\"normal\">项目类型:" + sendMsg.Classification + "</div><div class=\"highlight\">项目名称:" + sendMsg.ProjectName + "</div></div><div class=\"highlight\">项目状态:" + status + "</div>",
+							description: "<div class=\"gray\">查询时间:" + sd.format(new Date(), 'YYYY-MM-DD') + "</div> <div class=\"normal\">项目类型:" + sendMsg.Classification + "</div><div class=\"highlight\">项目名称:" + sendMsg.ProjectName + "</div><div class=\"highlight\">项目状态:" + status + "</div>",
 							url: __WEBPACK_IMPORTED_MODULE_3__config__["a" /* default */].SITE_ROOT_URL + '/detail?ID=' + sendMsg.ID
 						};
 
