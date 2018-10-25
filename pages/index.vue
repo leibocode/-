@@ -1,7 +1,7 @@
 <template lang="pug">
 #container.container.flex
   .page.tabbar.js_show
-    .page__bd
+    .page__bd(style='height:100%;')
       .weui-tab
         .weui-tab__panel
           // 首页搜索
@@ -66,7 +66,7 @@
             li(v-show="allLoaded")
              span.weui-cell-ptetx 已经加载全部数据
       // tabbar
-      .weui-tabbar(style="position:flxed;")
+      .weui-tabbar
         a.weui-tabbar__item(href='#',v-for="(item,index) in tabbar",:key="index",:class="{'weui-bar__item_on':index===num}",@click="swichTabbar(item)")
           span(style='display: inline-block;position: relative;')
             p.weui-tabbar__label.nav-text-color.icon-default-color
