@@ -1,5 +1,5 @@
 <template lang="pug">
-#container.container(style="height:225%",ref="container")
+#container.containers(ref="container")
  .page__bd
    .weui-cells__title 项目申请表
    .weui-cells
@@ -7,86 +7,111 @@
       .weui-cell__hd
         label 项目名称
       .weui-cell__bd
-        input.weui-input.text-ui(style="margin-left:34%",type="text",placeholder="请输入项目名称",v-model="projectData.projectName")
-     .weui-cell.weui-cell_access(@click="pickerProjectType")
-      .weui-cell__bd
-       p(@click="pickerProjectType") 项目类别
-      .weui-cell__ft {{projectData.projectType}}
+        input.weui-input.text-ui(type="text",placeholder="请输入项目名称",v-model="projectData.projectName")
+     .weui-cell.weui-cell_access(@click="pickerProjectType",)
+      .weui-cell__hd(style="width:68.76%")
+       label(@click="pickerProjectType") 项目类别
+       .weui-cell__bd
+      input.weui-input.text-ui(style="margin-left:7.2%;",type="text",placeholder="请输入项目类别",v-model="projectData.projectType")
+      .weui-cell__ft
      .weui-cell.weui-cell_access(@click="pickerProjectKind")
-      .weui-cell__bd
-       p(@click='pickerProjectKind') 项目分类
-      .weui-cell__ft {{projectData.classification}}
-     .weui-cell.weui-cell_access
-      .weui-cell__bd
-       p(@click="areaPicker") 项目地址
-      .weui-cell__ft {{projectData.regionCode}}
+      .weui-cell__hd(style="width:68.76%")
+       label(@click="pickerProjectKind") 项目分类
+       .weui-cell__bd
+      input.weui-input.text-ui(style="margin-left:7.2%;",type="text",placeholder="请输入项目分类",v-model="projectData.classification")
+      .weui-cell__ft
+
+   .weui-cells
+     .weui-cell.weui-cell_access(@click="areaPicker")
+      .weui-cell__hd(style="width:68.76%")
+       label(@click="areaPicker") 项目地a址
+       .weui-cell__bd
+      input.weui-input.text-ui(style="margin-left:7.2%;",type="text",placeholder="请输入项目地a址",v-model="projectData.regionCode")
+      .weui-cell__ft
      .weui-cell
-      .weui-cell__hd
-        label 详细地址
       .weui-cell__bd
-        input.weui-input.text-ui(style="margin-left:34%",type="text",placeholder="请输入详细地址",v-model="projectCommit.address")
+        input.weui-input.text-ui(style="margin-left: 0.3%;",type="text",placeholder="请输入详细地址",v-model="projectCommit.address")
+   .weui-cells
      .weui-cell.weui-cell_access(@click="surveyUnit")
-      .weui-cell__bd
-       p 勘测设计单位
-      .weui-cell__ft {{projectData.designUnit}}
+      .weui-cell__hd(style="width:68.76%")
+       label(@click="surveyUnit") 勘测设计单位
+       .weui-cell__bd
+      input.weui-input.text-ui(style="margin-left:7.2%;",type="text",placeholder="请输入勘测设计单位",v-model="projectData.surveyUnit")
+      .weui-cell__ft
      .weui-cell
       .weui-cell__bd
-       p 勘测设计地址
-      .weui-cell__ft {{projectData.designUnitAddress?projectData.designUnitAddress:'暂无地址'}}
+        input.weui-input.text-ui(style="margin-left: 0.3%;",type="text",placeholder="请输入勘测设计地址",v-model="projectCommit.designUnitAddress")
+   .weui-cells
      .weui-cell.weui-cell_access(@click="developmentPicker")
-      .weui-cell__bd
-       p 建设单位
-      .weui-cell__ft {{projectData.clientUnit}}
+      .weui-cell__hd(style="width:68.76%")
+       label(@click="developmentPicker") 建设单位
+       .weui-cell__bd
+      input.weui-input.text-ui(style="margin-left:7.2%;",type="text",placeholder="请输入建设单位",v-model="projectData.clientUnit")
+      .weui-cell__ft
      .weui-cell
       .weui-cell__hd
         label (建设)联系人
       .weui-cell__bd
-        input.weui-input.text-ui(style="margin-left:29%",type="text",placeholder="请输入建设人姓名",v-model="projectData.clientContacts")
+        input.weui-input.text-ui(type="text",placeholder="请输入建设人姓名",v-model="projectData.clientContacts")
      .weui-cell
       .weui-cell__hd
         label (建设)联系人电话
       .weui-cell__bd
-        input.weui-input.text-ui(style="margin-left:19%",type="number",placeholder="请输入建设人电话",v-model="projectData.clientPhone")
+        input.weui-input.text-ui(type="number",placeholder="请输入建设人电话",v-model="projectData.clientPhone")
+   .weui-cells
      .weui-cell.weui-cell_access(@click="roadWorkPicker")
-      .weui-cell__bd
-       p 施工单位
-      .weui-cell__ft {{projectCommit.constructUnit}}
+      .weui-cell__hd(style="width:68.76%")
+       label(@click="roadWorkPicker") 施工单位
+       .weui-cell__bd
+      input.weui-input.text-ui(style="margin-left:7.2%;",type="text",placeholder="请输入施工单位",v-model="projectData.constructUnit")
+      .weui-cell__ft
      .weui-cell
       .weui-cell__hd
        label (施工)联系人
       .weui-cell__bd
-       input.weui-input.text-ui(style="margin-left:29%",type="text",placeholder="请输入施工联系姓名",v-model="projectData.constructContacts")
+       input.weui-input.text-ui(type="text",placeholder="请输入施工联系姓名",v-model="projectData.constructContacts")
      .weui-cell
       .weui-cell__hd
        label (施工)联系人电话
       .weui-cell__bd
-       input.weui-input.text-ui(style="margin-left:19%",type="number",placeholder="请输入施工联系电话",v-model="projectData.constructtPhone")
-     .weui-cell.weui-cell_access(@click='selectShock')
-      .weui-cell__bd
-       p 减震配合单位
-      .weui-cell__ft {{projectData.shock}}
-     .weui-cell.weui-cell_access(@click="projectSource") 
-      .weui-cell__bd
-       p 项目信息来源
-      .weui-cell__ft {{projectData.informationSource}}
+       input.weui-input.text-ui(type="number",placeholder="请输入施工联系电话",v-model="projectData.constructtPhone")
+   .weui-cells    
+     .weui-cell.weui-cell_access(@click="selectShock")
+      .weui-cell__hd(style="width:68.76%")
+       label(@click="selectShock") 减震配合单位
+       .weui-cell__bd
+      input.weui-input.text-ui(style="margin-left:7.2%;",type="text",placeholder="请输入减震配合单位",v-model="projectData.shock")
+      .weui-cell__ft
+     .weui-cell.weui-cell_access(@click="projectSource")
+      .weui-cell__hd(style="width:68.76%")
+       label(@click="projectSource") 项目信息来源
+       .weui-cell__bd
+      input.weui-input.text-ui(style="margin-left:7.2%;",type="text",placeholder="请输入项目信息来源",v-model="projectData.informationSource")
+      .weui-cell__ft
+   .weui-cells
      .weui-cell
       .weui-cell__hd
        label 建筑面积(平方米)
       .weui-cell__bd
-       input.weui-input.text-ui(style="margin-left:19%",type="number",placeholder="请输入建筑面积",v-model="projectData.area")
+       input.weui-input.text-ui(type="number",placeholder="请输入建筑面积",v-model="projectData.area")
      .weui-cell
       .weui-cell__hd
        label 建筑总高度(米)
       .weui-cell__bd
        input.weui-input.text-ui(type="number",placeholder="请输入建筑高度",v-model="projectData.height")
-     .weui-cell.weui-cell_access(@click="constructionPicker") 
-      .weui-cell__bd
-       p 结构类型 
-      .weui-cell__ft {{projectData.structureType}}
-     .weui-cell.weui-cell_access(@click='estimatedStartDate')
-      .weui-cell__bd
-       p 预计开工时间 
-      .weui-cell__ft {{projectData.date}}
+   .weui-cells(style="margin-bottom:70px;")
+     .weui-cell.weui-cell_access(@click="constructionPicker")
+      .weui-cell__hd(style="width:68.76%")
+       label(@click="constructionPicker") 结构类型
+       .weui-cell__bd
+      input.weui-input.text-ui(style="margin-left:7.2%;",type="text",placeholder="请输入项目信息来源",v-model="projectData.structureType")
+      .weui-cell__ft
+     .weui-cell.weui-cell_access(@click="estimatedStartDate")
+      .weui-cell__hd(style="width:68.76%")
+       label(@click="estimatedStartDate") 预计开工时间
+       .weui-cell__bd
+      input.weui-input.text-ui(style="margin-left:7.2%;",type="text",placeholder="请输入预计开工时间",v-model="projectData.date")
+      .weui-cell__ft
      .weui-cell
       .weui-cell__bd
        textarea.weui-textarea(v-model='projectData.generalSituation',placeholder="工程概况",rows="2")
@@ -102,6 +127,7 @@
        textarea.weui-textarea(v-model='projectData.remarks',placeholder="报备意见",rows="2")
        .weui-textarea-counter
         span 0/100
+      .weui-cells
  .weui-tabbar.tabbar-class
        .weui-btn.weui-btn_primary.weui-tanbar-btn.weui-btn-tz.weui-btn-commit(@click="projectCommits") 提交
  mt-popup(v-model="isPicker",position="bottom",ref='Popup',popup-transition="popup-fade",class="poput")
@@ -109,6 +135,7 @@
     span(class="mint-datetime-action mint-datetime-cancel",@click="closePopup") 取消
     span(class="mint-datetime-action mint-datetime-confirm",@click="pickerSave") 确定
  address-picker(@confirm="handle", v-model="isAreaPicker")
+ units-picker(@confirm="unitHandle", v-model="isUnitPicker",:showAddressPicker="isUnitPicker")
  mt-datetime-picker(ref='datePicker',type='date', year-format="{value} 年",month-format="{value} 月"
   ,date-format="{value} 日",@confirm='dateConfirm',:startDate='startDate')
 </template>
@@ -120,11 +147,12 @@ import { DatetimePicker } from 'mint-ui'
 import { Toast } from 'mint-ui'
 import axios from 'axios'
 import addressPicker from '../../components/addressPicker/addressPicker.vue'
+import unitsPicker from '../../components/unitsPicker/unitsPicker.vue'
 const manba  =require('manba')
 const sd = require('silly-datetime');
 
 export default {
-  middleware: 'wechat-auth',
+  // middleware: 'wechat-auth',
   head(){
       return {
           title:'项目提交'
@@ -135,6 +163,7 @@ export default {
           isPicker:false,//普通选择器
           isDatePicker:false,//时间选择器选择器
           isAreaPicker:false,//地区选择器
+          isUnitPicker:false,//建设单位选择器
           slots:[],
           projectData:{
               projectName:'',//项目名称
@@ -218,9 +247,9 @@ export default {
         this.projectData.address =viewModel.address
      }
 
-    //  if(viewModel.regionCode){
-    //    this.projectData.regionCode =viewModel.regionCode
-    //  }
+     if(viewModel.regionCode){
+       this.projectData.regionCode =viewModel.regionCode
+     }
      
      if(viewModel.date){
         this.projectData.date =viewModel.date
@@ -416,9 +445,14 @@ export default {
       
     },
     //地区
-    areaPicker(){
+    areaPicker(val){
+       // 从子组件接受返回所选值 val
+      // this.projectData.regionCode = val
+      // this.showAddressPicker = !this.showAddressPicker
+
       this.isAreaPicker =true
     },
+  
     //勘察设计单位
     surveyUnit(){
       this.$store.dispatch('updateProject',this.projectData)
@@ -431,13 +465,15 @@ export default {
     },
     //建设单位
     developmentPicker(){
-       this.$store.dispatch('updateProject',this.projectData)
-       this.$router.push({
-          path:'/project/unitList',
-          query:{
-             str:'建设单位'
-          }
-       })
+      console.log('1213123');
+      this.isUnitPicker =true
+      //  this.$store.dispatch('updateProject',this.projectData)
+      //  this.$router.push({
+      //     path:'/project/unitList',
+      //     query:{
+      //        str:'建设单位'
+      //     }
+      //  })
     },
     //施工单位
     roadWorkPicker(){
@@ -523,9 +559,22 @@ export default {
     handle(value){
      // this.projectData.Address =`${value.province.name}-${value.city.name}-${value.district.name}`
       //this.RegionCode=value.district.name
+      console.log('2'+value.split('-')[1]+'2') 
+      if(value.split('-')[1]==''){
+         this.projectData.regionCode =''
+      }
+      else{
+        this.projectData.regionCode = value
+      }
+      
+      this.showAddressPicker = !this.showAddressPicker
+      this.isAreaPicker =false
+    },
+    unitHandle(value){
+      this.projectData.clientUnit=value
+      this.isUnitPicker =false
     },
     projectCommits(){
-      console.log(this.projectData)
        let result  =this.verifyData(this.projectData)
        if(!result){
          Toast({
@@ -639,7 +688,8 @@ export default {
     "mt-popup":Popup,
     "mt-picker":Picker,
     'address-picker':addressPicker,
-    "mt-datetime-picker":DatetimePicker
+    "mt-datetime-picker":DatetimePicker,
+    "units-picker":unitsPicker
   },
   deactivated() {
       clearTimeout(this.timer)
@@ -696,6 +746,31 @@ export default {
     }
     .weui-btn-commit{
        width:80%;
+    }
+    .weui-cell__hd{
+      width:38%;
+      
+    }
+  
+    /* .weui-cell__bd>label{
+       width:39.49%;
+    } */
+    .containers{
+      display:flex;
+      justify-content:space-between;
+      flex-direction:column;
+    }
+    .page__bd{
+      flex: 1;
+      flex-direction:column 
+    }
+  .tabbar-class{
+    position:fixed;
+    bottom:0px;
+    overflow: hidden;
+    }
+    .text-ui{
+      margin-left:9%;
     }
 </style>
 
